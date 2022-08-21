@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Benoit Gaüzère website</title>
+    <link>https://pagesperso.litislab.fr/news/</link>
+    <description>Recent content in News on Benoit Gaüzère website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Aug 2022 14:06:29 +0200</lastBuildDate><atom:link href="https://pagesperso.litislab.fr/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Initial blog post</title>
+      <link>https://pagesperso.litislab.fr/news/my-first-news/</link>
+      <pubDate>Sun, 07 Aug 2022 14:06:29 +0200</pubDate>
+      
+      <guid>https://pagesperso.litislab.fr/news/my-first-news/</guid>
+      <description>First test for a blog post.</description>
+    </item>
+    
+  </channel>
+</rss>
