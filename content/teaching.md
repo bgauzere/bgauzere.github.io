@@ -1,7 +1,7 @@
 ---
 title: "Teaching activities"
 date: 2022-08-07T14:06:29+02:00
-draft: true
+draft: false
 ---
 
 # Teaching activities
