@@ -20,7 +20,9 @@ pdf, please drop a mail.
 Most of papers have been implemented. Please check my [github](https://github.com/bgauzere/).
 
 ## Last papers
-
+* A new open access paper on the stability of graph edit distance heuristics.
+  -> [here](https://www.mdpi.com/2079-9292/11/20/3312)
+  
 * A paper on a new pooling scheme for graph neural network based on maximal independant
   vertex set. To be presented at [S+SSPR 2022](https://sspr2022.encs.concordia.ca/).
   
