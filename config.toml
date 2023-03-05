@@ -1,11 +1,12 @@
 baseURL = 'https://bgauzere.github.io'
 languageCode = 'en-us'
 title = 'Benoit Gaüzère website'
-theme = "researcher"
+theme = "researcher" #"PaperMod"# https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
-math = false          # enable KaTeX (https://katex.org/) globally
+math = true          # enable KaTeX (https://katex.org/) globally
 #googleAnalytics = ""  # add your tracking id
+ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
 
 [params]
   author = "Benoit Gaüzère"
@@ -14,13 +15,13 @@ math = false          # enable KaTeX (https://katex.org/) globally
   logo = ""  # url or path to a logo to put in the header
   [params.footer]
     text = "Benoit Gaüzère 2022"
-    url = "https://github.com/ojroques/hugo-researcher"
+		#    url = "https://github.com/ojroques/hugo-researcher"
   [params.style]  # appearance options (can be omitted)
     fontFamily = "Inconsolata"
     fontSize = "12pt"
     pageWidth = "850px"
     avatarSize = "90px"
-    colorBlack = "#111111"
+    colorBlack = "#333333"
     colorRed = "#000099"
   [[params.socialIcons]]
     icon = "fab fa-twitter"
@@ -47,10 +48,10 @@ math = false          # enable KaTeX (https://katex.org/) globally
     name = "Home"
     url = "/"
     weight = 1
-  # [[menu.main]]
-  #   name = "Blog"
-  #   url = "/news"
-  #   weight = 2
+  [[menu.main]]
+    name = "Blog"
+    url = "/news"
+    weight = 2
   [[menu.main]]
     name = "Research"
     url = "/research"
@@ -73,3 +74,22 @@ math = false          # enable KaTeX (https://katex.org/) globally
 
 [markup.goldmark.renderer]
   unsafe = true  # allow raw HTML in markdown files
+
+
+# [markup]
+#   [markup.highlight]
+#     anchorLineNos = false
+#     codeFences = true
+#     guessSyntax = false
+#     hl_Lines = ''
+#     hl_inline = false
+#     lineAnchors = ''
+#     lineNoStart = 1
+#     lineNos = false
+#     lineNumbersInTable = true
+#     noClasses = true
+#     noHl = false
+#     style = 'monokai'
+#     tabWidth = 4
+# 		pygmentsCodeFences = true
+# 		pygmentsUseClasses = true		
