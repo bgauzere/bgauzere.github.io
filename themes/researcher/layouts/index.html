@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="container">
+    {{ .Content }}
+
+    <ul>
+      {{ range (where .Site.RegularPages "Section" "news") }}
+            <li><a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
