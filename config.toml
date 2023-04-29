@@ -5,7 +5,7 @@ theme = "researcher" #"PaperMod"# https://github.com/adityatelange/hugo-PaperMod
 disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 math = true          # enable KaTeX (https://katex.org/) globally
-#googleAnalytics = ""  # add your tracking id
+googleAnalytics = "G-BJ1N6WLD1Q"  # add your tracking id
 ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
 
 [params]
