@@ -4,8 +4,8 @@
 My current research lies at the interface of graph based representation of data and
 the definition of machine learning methods operating on graphs. In my recent works, I
 focused on :
-* learning edit costs for graph edit distanceI'm currently working at 
-* improve pooling layer for GNN : poolinga
+* learning edit costs for graph edit distance 
+* improve pooling layer for GNN : pooling
 * define methods to alleviate the problem of preimage of graphs
 * apply graph based machine learning methods to chemoinformatics
 
