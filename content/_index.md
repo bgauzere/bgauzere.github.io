@@ -6,7 +6,7 @@ I'm Benoit Gaüzère, assistant professor (Maitre de Conférences) in machine le
 research is done within [LITIS lab](https://www.litislab.fr/) and teaching is mainly conducted at [INSA
 Rouen Normandie](https://www.insa-rouen.fr/).
 
-This website is a tentative to gather my [teaching](/teaching) and [research](/research)
+This website is an attempt to gather my [teaching](/teaching) and [research](/research)
 activities.
 
 
