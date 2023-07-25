@@ -17,7 +17,10 @@ All publications are available for download on
 [HAL](https://cv.archives-ouvertes.fr/benoit-gauzere?langChosen=fr). If you still need any
 pdf, please drop a mail.
 
-Most of papers have been implemented. Please check my [github](https://github.com/bgauzere/).
+Most of papers have been implemented. Please check my
+[github](https://github.com/bgauzere/).
+
+My [ORCID record](https://orcid.org/0000-0001-9980-2641).
 
 ## Last papers
 * A new open access paper on the stability of graph edit distance heuristics.
