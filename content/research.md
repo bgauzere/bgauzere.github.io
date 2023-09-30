@@ -23,16 +23,25 @@ Most of papers have been implemented. Please check my
 My [ORCID record](https://orcid.org/0000-0001-9980-2641).
 
 ## Last papers
+* A paper on how we can use Normalizing Flows to build pre image free machine
+  learning models operating on graphs -> [Paper in
+  GbR](https://link.springer.com/chapter/10.1007/978-3-031-42795-4_9)
+  
+* Also a paper in GbR on the combination of MIVS and pooling in GNN
+-> [link to paper](https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=YqmqE9gAAAAJ&sortby=pubdate&citation_for_view=YqmqE9gAAAAJ:tKAzc9rXhukC)
+
 * A new open access paper on the stability of graph edit distance heuristics.
   -> [here](https://www.mdpi.com/2079-9292/11/20/3312)
   
-* A paper on a new pooling scheme for graph neural network based on maximal independant
-  vertex set. To be presented at [S+SSPR 2022](https://sspr2022.encs.concordia.ca/).
-  
-  -> [The paper](https://hal.archives-ouvertes.fr/hal-03739114/document)
-  
   
 ## Projects
+
+* [FAMOUS]() An ANR project on the definition of fair prediction models, with
+  application on graphs. This project includes people from
+  [LIS](https://www.lis-lab.fr/qarma-2/),
+  [INT](https://www.int.univ-amu.fr/recherche), [Laboratoire Hubert
+  Curien](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html) and
+  [EURONOVA](http://euranova.eu/).  
 
 * [CodeGNN](https://www.normastic.fr/projet-anr-codegnn/) ANR project focused on new
   contributions to Graph Neural Networks both on convolutions and pooling
