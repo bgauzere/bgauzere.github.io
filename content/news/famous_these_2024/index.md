@@ -67,7 +67,7 @@ Ready to embark on this exciting journey? Send your resume, academic results, an
 - **Guillaume Auzias:** [guillaume.auzias@univ-amu.fr](mailto:guillaume.auzias@univ-amu.fr)
 - **Sylvain Takerkart:** [sylvain.takerkart@univ-amu.fr](mailto:sylvain.takerkart@univ-amu.fr)
 
-full offer is available [here](phd_famous.pdf).
+full offer is available [here](/phd_famous.pdf).
 
 ### Publications for Further Reading
 
