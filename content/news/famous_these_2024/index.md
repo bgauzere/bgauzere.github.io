@@ -9,6 +9,13 @@ type: blog
 
  
 ![Brain Graphs](./brain_famous.png)
+
+------
+
+# ALERT 20/06 : The Phd student has been chosen, thank you for your interest 
+
+---------
+
 ## Unlocking the Mysteries of the Brain with Graph-Based Machine Learning
 
 In the fascinating world of neuroscience, understanding the brain's
