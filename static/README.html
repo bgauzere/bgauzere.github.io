@@ -1,0 +1,31 @@
+<h1 id="graphadon">GRAPHADON</h1>
+<p>Repository for the 2024 Graphadon practical session on Graph Neural
+Networks</p>
+<h2 id="venv-configuration">Venv configuration</h2>
+<p>To make this practical course working correctly, please install the
+following venv using <a href="https://python-poetry.org/">poetry</a>
+:</p>
+<ul class="incremental">
+<li><p>Copy the <code>pyproject.toml</code> file inside a working
+directory</p></li>
+<li><p>in the working directory :</p></li>
+</ul>
+<p><code>$&gt; export POETRY_VIRTUALENVS_IN_PROJECT=1; poetry install</code></p>
+<p><code>$&gt; poetry run python -m ipykernel install --name "graphadon" --user</code></p>
+<ul class="incremental">
+<li>Now launch python and check if torch, torch_geometric and sklearn
+are available</li>
+</ul>
+<p><code>$&gt; poetry run python</code></p>
+<p><code>$&gt; import torch</code></p>
+<p><code>$&gt; import torch_geometric</code></p>
+<p><code>$&gt; import networkx</code></p>
+<p>If no errors, everything is ok. If you have some errors :</p>
+<ul class="incremental">
+<li><p>check that you have a python &gt;= 3.10 and &lt;3.13</p></li>
+<li><p>try to install torch and torch geometric by yourself :
+https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html</p></li>
+</ul>
+<p>Now you should be able to launch a notebook :</p>
+<p><code>$&gt; poetry run jupyter notebook</code></p>
+<p>and choose the <code>graphadon</code> kernel.</p>
