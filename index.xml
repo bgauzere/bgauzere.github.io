@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Benoit Gaüzère website</title><link>https://bgauzere.github.io/</link><description>Recent content on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>PhD Opportunity GNN and Brain data</title><link>https://bgauzere.github.io/news/famous_these_2024/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/famous_these_2024/</guid><description>&lt;p>&lt;img src="./brain_famous.png" alt="Brain Graphs">&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Benoit Gaüzère website</title><link>https://bgauzere.github.io/</link><description>Recent content on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Participation to S+SSPR 2024 in Venice</title><link>https://bgauzere.github.io/news/sspr_2024/</link><pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/sspr_2024/</guid><description>&lt;h1 id="ssspr-2024">S+SSPR 2024&lt;/h1>
+&lt;p>For this edition of S+SSPR 2024, I had the pleasure to present our work entitled
+&lt;a href="./Evaluation_of_a_Continuous_Approximation_of_GED.pdf">A Differentiable Approximation of the Graph Edit Distance&lt;/a>. This paper, not
+in its camera ready version yet, consists in an adaptation of the well known
+Sinkhorn algorithm to replace the Hungarian algorithm to solve the LSAPE problem
+related to the approximation of the graph edit distance. The main advantage of
+this approach is to be differentiable, which opens a path to compute the graph
+edit distance, and edit costs, in an end to end manner.&lt;/p></description></item><item><title>PhD Opportunity GNN and Brain data</title><link>https://bgauzere.github.io/news/famous_these_2024/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/famous_these_2024/</guid><description>&lt;p>&lt;img src="./brain_famous.png" alt="Brain Graphs">&lt;/p>
 &lt;hr>
 &lt;h1 id="alert-2006--the-phd-student-has-been-chosen-thank-you-for-your-interest">ALERT 20/06 : The Phd student has been chosen, thank you for your interest&lt;/h1>
 &lt;hr>
@@ -92,7 +99,13 @@ department.&lt;/p>
 &lt;li>&lt;a href="https://moodle.insa-rouen.fr/course/view.php?id=169">Statistics&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Introduction to statistics and data science including descriptive statistics, linear
-regression and statistical signifiance tests.&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;h1 id="research-activities">Research Activities&lt;/h1>
+regression and statistical signifiance tests.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://moodle.unistra.fr/course/view.php?id=999">Introduction to Machine Learning&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>A course given at &lt;a href="https://www.ufaz.az/">UFAZ&lt;/a>, a Franco-Azerbaijani university. It
+focuses on basics of machine learning including unsupervised (KMeans, PCA) and supervised
+(Ridge Regression, SVM) methods. It also includes evaluation protocol and theory.&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;h1 id="research-activities">Research Activities&lt;/h1>
 &lt;p>My current research lies at the interface of graph based representation of data and
 the definition of machine learning methods operating on graphs. In my recent works, I
 focused on :&lt;/p>
