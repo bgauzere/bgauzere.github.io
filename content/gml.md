@@ -7,7 +7,7 @@ corrections.
 ## Lessons
 
 1. [Introduction](/gml/1_introduction_to_graphs.html)
-2. [Algorithms on Graphs](/gml/2_Algorithms_on_graphs.html)
+2. [Algorithms on Graphs](/gml/2_Algorithms_on_graphs.html)
 3. [Introduction to Machine Learning with
   Graphs](/gml/3_Intro_ML_on_Graphs.html)
 4. [Node and Graph Embeddings Techniques](/gml/4_Graph_Embedding.html)
