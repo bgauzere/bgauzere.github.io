@@ -116,8 +116,8 @@ focuses on basics of machine learning including unsupervised (KMeans, PCA) and s
 corrections.&lt;/p>
 &lt;h2 id="lessons">Lessons&lt;/h2>
 &lt;ol>
-&lt;li>&lt;a href="https://bgauzere.github.io/gml/1_introduction_to_graphs.html">Introduction&lt;/a>
-2. &lt;a href="https://bgauzere.github.io/gml/2_Algorithms_on_graphs.html">Algorithms on Graphs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bgauzere.github.io/gml/1_introduction_to_graphs.html">Introduction&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bgauzere.github.io/gml/2_Algorithms_on_graphs.html">Algorithms on Graphs&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://bgauzere.github.io/gml/3_Intro_ML_on_Graphs.html">Introduction to Machine Learning with
 Graphs&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://bgauzere.github.io/gml/4_Graph_Embedding.html">Node and Graph Embeddings Techniques&lt;/a>&lt;/li>
