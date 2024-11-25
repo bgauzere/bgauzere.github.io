@@ -16,6 +16,6 @@ corrections.
 
 ## Practical works
 
-Download all materials for the practicals sessions [here](/gml/pratical.zip)
+Download all materials for the practicals sessions [here](/gml/practical.zip)
 
 Corrections will be available soon. 
