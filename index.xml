@@ -108,7 +108,25 @@ regression and statistical signifiance tests.&lt;/p>
 &lt;/ul>
 &lt;p>A course given at &lt;a href="https://www.ufaz.az/">UFAZ&lt;/a>, a Franco-Azerbaijani university. It
 focuses on basics of machine learning including unsupervised (KMeans, PCA) and supervised
-(Ridge Regression, SVM) methods. It also includes evaluation protocol and theory.&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;h1 id="research-activities">Research Activities&lt;/h1>
+(Ridge Regression, SVM) methods. It also includes evaluation protocol and theory.&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/gml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/gml/</guid><description>&lt;h1 id="graph-machine-learning-in-yamoussoukro">Graph Machine Learning in Yamoussoukro&lt;/h1>
+&lt;blockquote>
+&lt;p>25th to 30th of November 2024&lt;/p>
+&lt;/blockquote>
+&lt;p>In this webpage, you will find all ressources for my lessons, together with the
+corrections.&lt;/p>
+&lt;h2 id="lessons">Lessons&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="https://bgauzere.github.io/gml/1_introduction_to_graphs.html">Introduction&lt;/a>
+2. &lt;a href="https://bgauzere.github.io/gml/2_Algorithms_on_graphs.html">Algorithms on Graphs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bgauzere.github.io/gml/3_Intro_ML_on_Graphs.html">Introduction to Machine Learning with
+Graphs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bgauzere.github.io/gml/4_Graph_Embedding.html">Node and Graph Embeddings Techniques&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bgauzere.github.io/gml/5_GNN.pdf">Graph Neural Networks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://bgauzere.github.io/gml/6_Advanced_GNN.html">Advanced GNN&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;h2 id="practical-works">Practical works&lt;/h2>
+&lt;p>Download all materials for the practicals sessions &lt;a href="https://bgauzere.github.io/gml/pratical.zip">here&lt;/a>&lt;/p>
+&lt;p>Corrections will be available soon.&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;h1 id="research-activities">Research Activities&lt;/h1>
 &lt;p>My current research lies at the interface of graph based representation of data and
 the definition of machine learning methods operating on graphs. In my recent works, I
 focused on :&lt;/p>
