@@ -18,4 +18,4 @@ corrections.
 
 Download all materials for the practicals sessions [here](/gml/practical.zip)
 
-Corrections will be available soon. 
+Corrections are available [here](/gml/corrections.zip). 
