@@ -126,7 +126,14 @@ Graphs&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h2 id="practical-works">Practical works&lt;/h2>
 &lt;p>Download all materials for the practicals sessions &lt;a href="https://bgauzere.github.io/gml/practical.zip">here&lt;/a>&lt;/p>
-&lt;p>Corrections are available &lt;a href="https://bgauzere.github.io/gml/corrections.zip">here&lt;/a>.&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;h1 id="research-activities">Research Activities&lt;/h1>
+&lt;p>Corrections are available &lt;a href="https://bgauzere.github.io/gml/corrections.zip">here&lt;/a>.&lt;/p>
+&lt;h2 id="projectcompetition">Project/Competition&lt;/h2>
+&lt;p>To complete the project, do your best on the Kaggle competition &lt;a href="https://www.kaggle.com/competitions/graph-machine-learning-in-yamoussoukro/overview">Graph Machine
+Learning in
+Yamoussoukro&lt;/a>
+The deadline is set to Friday 20th of December. A report (jupyter notebook is
+ok) explaining your work and strategy is required to be sent by mail at
+&lt;a href="mailto:benoit.gauzere@insa-rouen.fr">benoit.gauzere@insa-rouen.fr&lt;/a> with subject [Project GMLY].&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;h1 id="research-activities">Research Activities&lt;/h1>
 &lt;p>My current research lies at the interface of graph based representation of data and
 the definition of machine learning methods operating on graphs. In my recent works, I
 focused on :&lt;/p>
