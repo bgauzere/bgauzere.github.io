@@ -127,6 +127,38 @@ Graphs&lt;/a>&lt;/li>
 &lt;h2 id="practical-works">Practical works&lt;/h2>
 &lt;p>Download all materials for the practicals sessions &lt;a href="https://bgauzere.github.io/gml/practical.zip">here&lt;/a>&lt;/p>
 &lt;p>Corrections are available &lt;a href="https://bgauzere.github.io/gml/corrections.zip">here&lt;/a>.&lt;/p>
+&lt;hr>
+&lt;h2 id="references">References&lt;/h2>
+&lt;h3 id="neural-networks">Neural Networks&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU">Machine Learning course of Andrew
+Ng&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.manning.com/books/deep-learning-with-python">Book : Deep Learning with
+Python of François Chollet&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.packtpub.com/en-us/product/python-machine-learning-9781789955750">Python Machine Learning de Sebastian
+Raschka&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.college-de-france.fr/fr/chaire/yann-lecun-informatique-et-sciences-numeriques-chaire-annuelle/events">Cours de Yann LeCun au Collège de
+France&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.3blue1brown.com/topics/neural-networks">Chaine Youtube 3Blue1Brown, Series Neural
+Networks&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="gnns">GNNs&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=w6Pw4MOzMuo">Keynote ICLR 2021 of Michael
+Bronstein&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://geometricdeeplearning.com/book/">Geometric Deep Learning Book&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cs.mcgill.ca/~wlh/grl_book/">Graph Representation Learning Book of
+W. Hamilton&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Reference Lessons&lt;/strong>
+&lt;ul>
+&lt;li>&lt;a href="http://web.stanford.edu/class/cs224w/">Jure Leskovec&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/xbresson/GML2023">Xavier Bresson&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dataflowr.github.io/website/">Marc Lelarge&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://universitice.univ-rouen.fr/course/view.php?id=8224">Sébastien Adam&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
 &lt;h2 id="projectcompetition">Project/Competition&lt;/h2>
 &lt;p>To complete the project, do your best on the Kaggle competition &lt;a href="https://www.kaggle.com/competitions/graph-machine-learning-in-yamoussoukro/overview">Graph Machine
 Learning in
