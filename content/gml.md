@@ -20,6 +20,35 @@ Download all materials for the practicals sessions [here](/gml/practical.zip)
 
 Corrections are available [here](/gml/corrections.zip). 
 
+---
+
+## References 
+### Neural Networks
+* [Machine Learning course of Andrew
+  Ng](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)
+*   [Book : Deep Learning with
+   Python of François Chollet](https://www.manning.com/books/deep-learning-with-python)
+* [Python Machine Learning de Sebastian
+  Raschka](https://www.packtpub.com/en-us/product/python-machine-learning-9781789955750) 
+* [Cours de Yann LeCun au Collège de
+    France](https://www.college-de-france.fr/fr/chaire/yann-lecun-informatique-et-sciences-numeriques-chaire-annuelle/events)
+* [Chaine Youtube 3Blue1Brown, Series Neural
+  Networks](https://www.3blue1brown.com/topics/neural-networks)
+  
+### GNNs
+* [Keynote ICLR 2021 of Michael
+  Bronstein](https://www.youtube.com/watch?v=w6Pw4MOzMuo)
+ * [Geometric Deep Learning Book](https://geometricdeeplearning.com/book/)
+ * [Graph Representation Learning Book of
+   W. Hamilton](https://www.cs.mcgill.ca/~wlh/grl_book/)
+* **Reference Lessons**
+	* [Jure Leskovec](http://web.stanford.edu/class/cs224w/)
+   * [Xavier Bresson](https://github.com/xbresson/GML2023)
+   * [Marc Lelarge](https://dataflowr.github.io/website/)
+   * [Sébastien Adam](https://universitice.univ-rouen.fr/course/view.php?id=8224)
+
+---
+
 ## Project/Competition
 
 To complete the project, do your best on the Kaggle competition [Graph Machine
