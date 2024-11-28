@@ -53,7 +53,7 @@ Corrections are available [here](/gml/corrections.zip).
 
 To complete the project, do your best on the Kaggle competition [Graph Machine
 Learning in
-Yamoussoukro](https://www.kaggle.com/competitions/graph-machine-learning-in-yamoussoukro/overview)
+Yamoussoukro](https://www.kaggle.com/t/0ea1ce3977c54b3eb0d6d1983fa600a7)
 The deadline is set to Friday 20th of December. A report (jupyter notebook is
 ok) explaining your work and strategy is required to be sent by mail at
 benoit.gauzere@insa-rouen.fr with subject [Project GMLY].
