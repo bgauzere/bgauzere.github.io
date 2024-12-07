@@ -10,7 +10,7 @@ Normandie](https://www.insa-rouen.fr/), within the computer engineering
 ([ITI](https://www.insa-rouen.fr/formation/specialites-ingenieurses/informatique-et-technologie-de-linformation))
 department.
 
-Here a list with ressources to my principal courses.
+Here a list with ressources to some of my principal courses.
 
 * [Analyse Numérique](https://moodle.insa-rouen.fr/course/view.php?id=159)
 
@@ -29,7 +29,8 @@ regression and statistical signifiance tests.
 
 A course given at [UFAZ](https://www.ufaz.az/), a Franco-Azerbaijani university. It
 focuses on basics of machine learning including unsupervised (KMeans, PCA) and supervised
-(Ridge Regression, SVM) methods. It also includes evaluation protocol and theory.
+(Ridge Regression, SVM) methods. It also includes evaluation protocol and
+theory. All ressources can be freely download [here](https://nuage.insa-rouen.fr/index.php/s/g65DXRrNQjyB2zy)
 
 
 Feel free to contact me if you need any material.
