@@ -111,8 +111,7 @@ focuses on basics of machine learning including unsupervised (KMeans, PCA) and s
 (Ridge Regression, SVM) methods. It also includes evaluation protocol and
 theory. All ressources can be freely download &lt;a href="https://nuage.insa-rouen.fr/index.php/s/g65DXRrNQjyB2zy">here&lt;/a>&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/gml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/gml/</guid><description>&lt;h1 id="graph-machine-learning-in-yamoussoukro">Graph Machine Learning in Yamoussoukro&lt;/h1>
 &lt;blockquote>
-&lt;p>25th to 30th of November 2024&lt;/p>
-&lt;/blockquote>
+&lt;p>25th to 30th of November 2024&lt;/p>&lt;/blockquote>
 &lt;p>In this webpage, you will find all ressources for my lessons, together with the
 corrections.&lt;/p>
 &lt;h2 id="lessons">Lessons&lt;/h2>
@@ -177,4 +176,14 @@ focused on :&lt;/p>
 &lt;li>apply graph based machine learning methods to chemoinformatics&lt;/li>
 &lt;/ul>
 &lt;p>An up to date list of publications can be found at &lt;a href="https://scholar.google.com/citations?user=YqmqE9gAAAAJ&amp;amp;hl=fr">Google
-Scholar&lt;/a>.&lt;/p></description></item></channel></rss>
+Scholar&lt;/a>.&lt;/p></description></item><item><title/><link>https://bgauzere.github.io/tpia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/tpia/</guid><description>&lt;h1 id="-tp---découverte-de-lintelligence-artificielle--entraînez-un-modèle-pour-reconnaître-des-images">🧠 TP - Découverte de l’Intelligence Artificielle : entraînez un modèle pour reconnaître des images&lt;/h1>
+&lt;p>Bienvenue dans ce TP où tu vas découvrir comment fonctionne &lt;strong>l’apprentissage automatique (machine learning)&lt;/strong> en créant &lt;strong>un modèle qui reconnaît des images&lt;/strong>, sans avoir besoin d’écrire de code au départ !&lt;/p>
+&lt;p>Nous allons :&lt;/p>
+&lt;ul>
+&lt;li>créer un modèle pour reconnaître &lt;strong>des chiens et des chats&lt;/strong>,&lt;/li>
+&lt;li>&lt;strong>le tester automatiquement en Python&lt;/strong> avec Google Colab,&lt;/li>
+&lt;li>et même essayer de créer &lt;strong>ton propre modèle avec d’autres images&lt;/strong> !&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="-partie-1--créer-un-premier-modèle-avec-teachable-machine">🔍 Partie 1 – Créer un premier modèle avec Teachable Machine&lt;/h2>
+&lt;p>👉 Lien : &lt;a href="https://teachablemachine.withgoogle.com/train/image">Teachable Machine - Image Project&lt;/a>&lt;/p></description></item></channel></rss>
