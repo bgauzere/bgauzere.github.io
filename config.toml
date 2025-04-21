@@ -2,7 +2,7 @@ baseURL = 'https://bgauzere.github.io'
 languageCode = 'en-us'
 title = 'Benoit Gaüzère website'
 theme = "researcher" #"PaperMod"# https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
-disableKinds = ["taxonomy", "term"]
+# Enabling taxonomies for proper post handling
 enableEmoji = true
 math = true          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = "G-BJ1N6WLD1Q"  # add your tracking id
@@ -49,17 +49,21 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Blog"
+    name = "News"
     url = "/news"
     weight = 2
   [[menu.main]]
+    name = "Articles"
+    url = "/posts"
+    weight = 3
+  [[menu.main]]
     name = "Research"
     url = "/research"
-    weight = 3
+    weight = 4
   [[menu.main]]
     name = "Teaching"
     url = "/teaching"
-    weight = 4
+    weight = 5
   # [[menu.main]]
   #   name = "Resume"
   #   url = "/resume.pdf"

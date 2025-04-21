@@ -2,7 +2,7 @@
 > 25th to 30th of November 2024
 
 In this webpage, you will find all ressources for my lessons, together with the
-corrections. 
+corrections
 
 ## Lessons
 
