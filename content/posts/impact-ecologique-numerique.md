@@ -127,3 +127,7 @@ L’optimisation logicielle agit principalement sur la phase **Usage** mais pré
 - **ADEME/ARCEP – Évaluation 2024 de l’empreinte carbone du numérique en France**
 - **Zhang X. et al. – Energy and Water Footprint of Large Language Models (Nature Sustainability, 2024)**
 - **Initiative “AI Energy Star” – Indice d’efficacité énergétique des modèles IA (brouillon 2025)**
+
+---
+
+**Disclaimer** La synthèse et le rendu ont été assistés par IA, la collecte et le choix des informations a été fait et est assumé par moi. Si une erreur factuelle est présente ou une ressource pertinente est manquante, merci de me le signaler par mail.
