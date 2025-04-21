@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Benoit Gaüzère website</title><link>https://bgauzere.github.io/</link><description>Recent content on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 24 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>New Paper on Graph Pooling !</title><link>https://bgauzere.github.io/news/stanovic_paper_2024/</link><pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/stanovic_paper_2024/</guid><description>&lt;h1 id="graph-neural-networks-with-maximal-independent-set-based-pooling-mitigating-over-smoothing-and-over-squashing">Graph Neural Networks with Maximal Independent Set-Based Pooling: Mitigating Over-Smoothing and Over-Squashing&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Benoit Gaüzère website</title><link>https://bgauzere.github.io/</link><description>Recent content on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>🌍💻 Synthèse Perso – Impact écologique du numérique</title><link>https://bgauzere.github.io/posts/impact-ecologique-numerique/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/impact-ecologique-numerique/</guid><description>&lt;h1 id="-synthèse--impact-écologique-du-numérique">🌍💻 Synthèse – Impact écologique du numérique&lt;/h1>
+&lt;h2 id="1-constat-global-">1. Constat global 📊&lt;/h2>
+&lt;ul>
+&lt;li>Le numérique représentait &lt;strong>4,4 %&lt;/strong> de l’empreinte carbone française en 2022 (ADEME/ARCEP, révision 2024).&lt;/li>
+&lt;li>Répartition : 50 % terminaux, 46 % centres de données, 4 % réseaux (&lt;em>ADEME/ARCEP – Évaluation 2024&lt;/em>).&lt;/li>
+&lt;li>Règle empirique « 80 / 20 » : le matériel concentre ~80 % de l’impact, le logiciel ~20 % (&lt;em>ADEME Magazine « Numérique : quel impact environnemental ? », avril 2022 – 65‑90 % des impacts attribués aux terminaux, selon l’indicateur&lt;/em>).&lt;/li>
+&lt;li>Les impacts dépassent le CO₂ : pression sur ressources minières, eau douce 💧, biodiversité 🌿, pollutions locales et génération de déchets électroniques 🗑️.&lt;/li>
+&lt;/ul>
+&lt;h2 id="2-analyse-par-phase-du-cycle-de-vie-">2. Analyse par phase du cycle de vie 🔄&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Phase&lt;/th>
+ &lt;th>Impacts dominants&lt;/th>
+ &lt;th>Tendances&lt;/th>
+ &lt;th>Points de vigilance&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Extraction &amp;amp; fabrication des terminaux&lt;/strong>&lt;/td>
+ &lt;td>Émissions grises, épuisement des métaux critiques, déchets miniers&lt;/td>
+ &lt;td>Croissance du parc, miniaturisation énergivore&lt;/td>
+ &lt;td>Durée de vie courte, obsolescence perçue&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Infrastructures (centres de données)&lt;/strong>&lt;/td>
+ &lt;td>Électricité (11 % de la conso française), eau pour le refroidissement, construction&lt;/td>
+ &lt;td>IA générative ↗ : +GPU, +énergie&lt;/td>
+ &lt;td>Externalisation hors frontières rend le suivi difficile&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Réseaux&lt;/strong>&lt;/td>
+ &lt;td>Électricité ⚡, cuivre/fibres, antennes&lt;/td>
+ &lt;td>Efficacité énergétique par octet ↘ mais volumes ↗&lt;/td>
+ &lt;td>Déploiement 5G et IoT multiplicateurs&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Usage&lt;/strong>&lt;/td>
+ &lt;td>Consommation des appareils &amp;amp; serveurs&lt;/td>
+ &lt;td>Streaming, IA, cloud gaming&lt;/td>
+ &lt;td>Effet rebond, qualité vidéo ↗&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>Fin de vie&lt;/strong>&lt;/td>
+ &lt;td>E-déchets, extraction secondaire&lt;/td>
+ &lt;td>e‑waste ↑ (53 Mt en 2023)&lt;/td>
+ &lt;td>Recyclage incomplet, export hors UE&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="3-focus-thématiques-">3. Focus thématiques 🎯&lt;/h2>
+&lt;h3 id="31-streaming-vidéo">3.1 Streaming vidéo&lt;/h3>
+&lt;ul>
+&lt;li>Empreinte moyenne : &lt;strong>≈ 55 g CO₂e / h&lt;/strong> de VOD en Europe (&lt;em>Carbon Trust et al., 2023&lt;/em>).&lt;/li>
+&lt;li>Le type de terminal domine le bilan ; passer de HD à SD a un effet marginal.&lt;/li>
+&lt;/ul>
+&lt;h3 id="32-ia-générative--grands-modèles">3.2 IA générative &amp;amp; grands modèles&lt;/h3>
+&lt;ul>
+&lt;li>Servir un prompt ChatGPT : &lt;strong>≈ 4 g CO₂e&lt;/strong> (&lt;em>Zhang X. et al., 2024&lt;/em>).&lt;/li>
+&lt;li>Le &lt;strong>serving&lt;/strong> dépasse le &lt;strong>training&lt;/strong> pour certains modèles.&lt;/li>
+&lt;li>Refroidissement par eau : jusqu’à &lt;strong>≈ 4 × 0,5 L&lt;/strong> par requête (&lt;em>Zhang X. et al., 2024&lt;/em>).&lt;/li>
+&lt;/ul>
+&lt;h3 id="33-trafic-vs-infrastructures">3.3 Trafic vs infrastructures&lt;/h3>
+&lt;ul>
+&lt;li>Réduire le trafic ne baisse pas directement les impacts, mais peut freiner la construction d’infrastructures si la demande se stabilise.&lt;/li>
+&lt;/ul>
+&lt;h2 id="4-leviers-daction-collectifs--réglementaires-">4. Leviers d’action collectifs &amp;amp; réglementaires 🛠️&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Allongement de la durée de vie&lt;/strong> : Directive UE 2024/1799 (« Right to Repair »), indices de réparabilité, pièces détachées.&lt;/li>
+&lt;li>&lt;strong>Réduction du nombre d’appareils&lt;/strong> : sobriété &amp;amp; mutualisation (réemploi, location, partage).&lt;/li>
+&lt;li>&lt;strong>Stabilisation des infrastructures&lt;/strong> : moratoires locaux sur data centers (ex. Irlande), cloud régionalisé bas‑carbone.&lt;/li>
+&lt;li>&lt;strong>Écoconception logicielle &amp;amp; web&lt;/strong> : poids des pages, architecture frugale, monitoring.&lt;/li>
+&lt;li>&lt;strong>Transparence &amp;amp; reporting&lt;/strong> : métriques normalisées, obligation de divulgation des intensités carbone &amp;amp; hydriques.&lt;/li>
+&lt;/ul>
+&lt;h3 id="41-écoconception-logicielle--web-">4.1 Écoconception logicielle &amp;amp; web ♻️&lt;/h3>
+&lt;p>L’optimisation logicielle agit principalement sur la phase &lt;strong>Usage&lt;/strong> mais présente un &lt;strong>levier indirect majeur&lt;/strong> : allonger la durée de vie des terminaux en évitant l’obsolescence logicielle.&lt;/p></description></item><item><title>New Paper on Graph Pooling !</title><link>https://bgauzere.github.io/news/stanovic_paper_2024/</link><pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/stanovic_paper_2024/</guid><description>&lt;h1 id="graph-neural-networks-with-maximal-independent-set-based-pooling-mitigating-over-smoothing-and-over-squashing">Graph Neural Networks with Maximal Independent Set-Based Pooling: Mitigating Over-Smoothing and Over-Squashing&lt;/h1>
 &lt;p>I am excited to announce our latest work entitled
 &lt;a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865524003106">Graph Neural Networks with Maximal Independent Set-Based Pooling: Mitigating Over-Smoothing and Over-Squashing&lt;/a>.&lt;/p>
 &lt;p>This paper introduces a novel pooling method for graph neural networks (GNNs) based on maximal independent sets (MIS). By leveraging MIS-based pooling, we address two fundamental issues in GNNs: &lt;strong>over-smoothing&lt;/strong> (where node features become indistinguishable across layers) and &lt;strong>over-squashing&lt;/strong> (where information from distant nodes becomes bottlenecked). Our approach offers a principled way to enhance the representational capacity of GNNs while improving scalability and robustness.&lt;/p></description></item><item><title>Participation to S+SSPR 2024 in Venice</title><link>https://bgauzere.github.io/news/sspr_2024/</link><pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/sspr_2024/</guid><description>&lt;h1 id="ssspr-2024">S+SSPR 2024&lt;/h1>
@@ -113,7 +189,7 @@ theory. All ressources can be freely download &lt;a href="https://nuage.insa-rou
 &lt;blockquote>
 &lt;p>25th to 30th of November 2024&lt;/p>&lt;/blockquote>
 &lt;p>In this webpage, you will find all ressources for my lessons, together with the
-corrections.&lt;/p>
+corrections&lt;/p>
 &lt;h2 id="lessons">Lessons&lt;/h2>
 &lt;ol>
 &lt;li>&lt;a href="https://bgauzere.github.io/gml/1_introduction_to_graphs.html">Introduction&lt;/a>&lt;/li>
