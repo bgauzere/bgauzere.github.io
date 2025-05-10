@@ -1,0 +1,184 @@
+<!doctype html><html lang><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Implémentation de différents tests d'isomorphisme de graphes</title>
+<meta name=description content="Personal website to introduce research and teaching activities."><meta name=author content='Benoit Gaüzère'><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css integrity=sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2 crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous><link rel=stylesheet href=/sass/researcher.min.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-BJ1N6WLD1Q"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-BJ1N6WLD1Q")}</script></head><body><div class="container mt-5"><nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0"><a class="navbar-brand mx-0 mr-sm-auto" href=https://bgauzere.github.io/ title="Benoit Gaüzère website">Benoit Gaüzère website</a><div class="navbar-nav flex-row flex-wrap justify-content-center"><a class="nav-item nav-link" href=/ title=Home>Home
+</a><span class="nav-item navbar-text mx-1">/</span>
+<a class="nav-item nav-link" href=/news title=News>News
+</a><span class="nav-item navbar-text mx-1">/</span>
+<a class="nav-item nav-link" href=/posts title=Articles>Articles
+</a><span class="nav-item navbar-text mx-1">/</span>
+<a class="nav-item nav-link" href=/research title=Research>Research
+</a><span class="nav-item navbar-text mx-1">/</span>
+<a class="nav-item nav-link" href=/teaching title=Teaching>Teaching</a></div></nav></div><hr><div id=content><div class=container><h1 id=introduction>Introduction</h1><p>Dans ce document, nous allons implémenter différents algorithmes d&rsquo;isomorphismes de sous graphes, optimaux ou non.</p><p>Dans un premier temps, nous allons nous concentrer sur 3 algorithmes différents, à savoir :</p><ul><li>Weisfeler-Lehman : revenu à la mode avec le noyau sur graphe puis les graph neural network</li><li>Morgan Numbering (TODO): utilisé en chimie, assez similaire à Weisfeler-Lehman dans le principe</li><li>VF2 (TODO): un algorithme d&rsquo;isomorphisme de graphes reconnu, dévellopé au MIVIA lab de Salerno</li></ul><h1 id=création-des-graphes>Création des graphes</h1><p>Avant d&rsquo;implémenter les algos, nous allons créer 3 graphes simples à visualiser. Deux d&rsquo;entre eux ($G_1$ et $G_3$) sont isormorphes. C&rsquo;est à dire qu&rsquo;ils représentent le même graphe, mais que l&rsquo;ordre des noeuds de chacun des graphes est différent. Il y a une permutation des nœuds.</p><p>$G_2$ n&rsquo;est pas isomorphe à $G_1$ et $G_3$</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#f92672>import</span> networkx <span style=color:#66d9ef>as</span> nx
+</span></span><span style=display:flex><span><span style=color:#f92672>import</span> matplotlib.pyplot <span style=color:#66d9ef>as</span> plt
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>G1 <span style=color:#f92672>=</span> nx<span style=color:#f92672>.</span>Graph([[<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>],[<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>],[<span style=color:#ae81ff>3</span>,<span style=color:#ae81ff>4</span>],[<span style=color:#ae81ff>4</span>,<span style=color:#ae81ff>5</span>],[<span style=color:#ae81ff>5</span>,<span style=color:#ae81ff>1</span>],[<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>3</span>]])
+</span></span><span style=display:flex><span>colors <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;orange&#34;</span>,<span style=color:#e6db74>&#34;yellow&#34;</span>,<span style=color:#e6db74>&#34;green&#34;</span>,<span style=color:#e6db74>&#34;grey&#34;</span>,<span style=color:#e6db74>&#34;blue&#34;</span>]
+</span></span><span style=display:flex><span>pos1 <span style=color:#f92672>=</span> {<span style=color:#ae81ff>1</span>:(<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>4</span>), <span style=color:#ae81ff>2</span>:(<span style=color:#ae81ff>.2</span>,<span style=color:#ae81ff>2</span>),<span style=color:#ae81ff>3</span>:(<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>0</span>),<span style=color:#ae81ff>4</span>:(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>1</span>),<span style=color:#ae81ff>5</span>:(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>3</span>)}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> G1<span style=color:#f92672>.</span>nodes():
+</span></span><span style=display:flex><span>    G1<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>G2 <span style=color:#f92672>=</span> nx<span style=color:#f92672>.</span>Graph([[<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>],[<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>],[<span style=color:#ae81ff>3</span>,<span style=color:#ae81ff>4</span>],[<span style=color:#ae81ff>4</span>,<span style=color:#ae81ff>5</span>],[<span style=color:#ae81ff>5</span>,<span style=color:#ae81ff>1</span>],[<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>3</span>],[<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>4</span>]])
+</span></span><span style=display:flex><span>colors <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;orange&#34;</span>,<span style=color:#e6db74>&#34;yellow&#34;</span>,<span style=color:#e6db74>&#34;green&#34;</span>,<span style=color:#e6db74>&#34;grey&#34;</span>,<span style=color:#e6db74>&#34;blue&#34;</span>]
+</span></span><span style=display:flex><span>pos1 <span style=color:#f92672>=</span> {<span style=color:#ae81ff>1</span>:(<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>4</span>), <span style=color:#ae81ff>2</span>:(<span style=color:#ae81ff>.2</span>,<span style=color:#ae81ff>2</span>),<span style=color:#ae81ff>3</span>:(<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>0</span>),<span style=color:#ae81ff>4</span>:(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>1</span>),<span style=color:#ae81ff>5</span>:(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>3</span>)}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> G2<span style=color:#f92672>.</span>nodes():
+</span></span><span style=display:flex><span>    G2<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># G1 and G3 are isomorphic</span>
+</span></span><span style=display:flex><span>G3 <span style=color:#f92672>=</span> nx<span style=color:#f92672>.</span>Graph([[<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>],[<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>],[<span style=color:#ae81ff>3</span>,<span style=color:#ae81ff>4</span>],[<span style=color:#ae81ff>4</span>,<span style=color:#ae81ff>5</span>],[<span style=color:#ae81ff>5</span>,<span style=color:#ae81ff>1</span>],[<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>4</span>]])
+</span></span><span style=display:flex><span>colors <span style=color:#f92672>=</span> [<span style=color:#e6db74>&#34;blue&#34;</span>,<span style=color:#e6db74>&#34;orange&#34;</span>,<span style=color:#e6db74>&#34;yellow&#34;</span>,<span style=color:#e6db74>&#34;green&#34;</span>,<span style=color:#e6db74>&#34;grey&#34;</span>]
+</span></span><span style=display:flex><span>pos2 <span style=color:#f92672>=</span> {<span style=color:#ae81ff>1</span>:(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>3</span>),<span style=color:#ae81ff>2</span>:(<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>4</span>), <span style=color:#ae81ff>3</span>:(<span style=color:#ae81ff>.2</span>,<span style=color:#ae81ff>2</span>),<span style=color:#ae81ff>4</span>:(<span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>0</span>),<span style=color:#ae81ff>5</span>:(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>1</span>)}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> G3<span style=color:#f92672>.</span>nodes():
+</span></span><span style=display:flex><span>    G3<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>] <span style=color:#f92672>=</span> <span style=color:#ae81ff>1</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>fig,axes <span style=color:#f92672>=</span> plt<span style=color:#f92672>.</span>subplots(<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>3</span>,figsize<span style=color:#f92672>=</span>(<span style=color:#ae81ff>15</span>,<span style=color:#ae81ff>5</span>))
+</span></span><span style=display:flex><span>nx<span style=color:#f92672>.</span>draw_networkx(G1,pos<span style=color:#f92672>=</span>pos1,node_color<span style=color:#f92672>=</span>colors,ax<span style=color:#f92672>=</span>axes[<span style=color:#ae81ff>0</span>])
+</span></span><span style=display:flex><span>nx<span style=color:#f92672>.</span>draw_networkx(G2,pos<span style=color:#f92672>=</span>pos1,node_color<span style=color:#f92672>=</span>colors,ax<span style=color:#f92672>=</span>axes[<span style=color:#ae81ff>1</span>])
+</span></span><span style=display:flex><span>nx<span style=color:#f92672>.</span>draw_networkx(G3,pos<span style=color:#f92672>=</span>pos2,node_color<span style=color:#f92672>=</span>colors,ax<span style=color:#f92672>=</span>axes[<span style=color:#ae81ff>2</span>])
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> i <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>3</span>):
+</span></span><span style=display:flex><span>    axes[i]<span style=color:#f92672>.</span>set_title(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;$G_</span><span style=color:#e6db74>{</span>i<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span><span style=color:#e6db74>}</span><span style=color:#e6db74>$&#34;</span>)
+</span></span><span style=display:flex><span>fig<span style=color:#f92672>.</span>suptitle(<span style=color:#e6db74>&#34;Les trois graphes à tester. Seul $G_2$, au milieu, est différent des autres.&#34;</span>);
+</span></span></code></pre></div><p><img src=cell-6-output-1.png alt></p><h1 id=weisfeler---lehman>Weisfeler - Lehman</h1><p>Le WL test est un test d&rsquo;isomorphisme itératif non optimal. C&rsquo;est à dire que le résultat de l&rsquo;algorithme n&rsquo;est pas tout le temps exact au regard de la relation d&rsquo;isomorphisme entre deux graphes. Si le résultat du test est que les deux graphes sont non isomorphes, alors les deux graphes seront réellement différents. À l&rsquo;inverse, si le résultat indique que les deux graphes sont isomorphes, le résultat peut être faux pour certains cas particuliers. Ce désavantage est contre balancé par la complexité polynomiale de l&rsquo;algorithme.</p><p>Quelques ressources:</p><ul><li><a href=https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/>https://davidbieber.com/post/2019-05-10-weisfeiler-lehman-isomorphism-test/</a></li><li><a href=https://arxiv.org/pdf/2201.07083.pdf>https://arxiv.org/pdf/2201.07083.pdf</a></li></ul><p>De manière générale, l&rsquo;algorithme consiste à calculer une signature du graphe à partir de signatures de chacun des noeuds, chaque signature prenant en compte le voisinage des noeuds. Si l&rsquo;ensemble des signatures des noeuds des deux graphes sont équivalentes, alors on conclura à un isomorphisme entre les graphes.</p><h3 id=notes>Notes</h3><ul><li>Chaque noeud se voit attribué un multiset des voisins, implémenté par une liste des voisins ordonnée</li><li>L&rsquo;ensemble des étiquettes de chaque noeud et leur nombre d&rsquo;occurences définit la représentation du graphe à comparer</li><li>L&rsquo;algo s&rsquo;arrête lorsque les partitions n&rsquo;ont pas changé entre deux itérations. Deux partitions sont les mêmes si les groupes de noeuds avec un même label sont les mêmes (avec possiblement un label différent entre les deux itérations)</li></ul><h2 id=lalgo-étape-par-étape>L&rsquo;algo étape par étape</h2><h3 id=caractériser-le-voisinage>Caractériser le voisinage</h3><p>La première étape de l&rsquo;algo consiste à agréger l&rsquo;information concernant le voisinage de chacun des noeuds. Par exemple pour le noeud 1 de $G_1$ :</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>G_test <span style=color:#f92672>=</span> G1<span style=color:#f92672>.</span>copy()
+</span></span><span style=display:flex><span>labels <span style=color:#f92672>=</span> dict(G_test<span style=color:#f92672>.</span>nodes(data<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;label&#34;</span>))
+</span></span><span style=display:flex><span>labels_neighbors <span style=color:#f92672>=</span> [labels[m] <span style=color:#66d9ef>for</span> m <span style=color:#f92672>in</span> G_test[<span style=color:#ae81ff>1</span>]]
+</span></span><span style=display:flex><span>labels_neighbors<span style=color:#f92672>.</span>sort()
+</span></span><span style=display:flex><span>print(labels_neighbors)
+</span></span></code></pre></div><pre><code>[1, 1, 1]
+</code></pre><p>Ensuite, les étiquettes des voisins est agrégé avec l&rsquo;étiquette du noeud courant afin de caractériser la structure locale autour de chaque noeud. Un &lsquo;hash&rsquo; est calculé afin d&rsquo;identifier simplement les environnements similaires.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>new_label <span style=color:#f92672>=</span> [labels[<span style=color:#ae81ff>1</span>]] <span style=color:#f92672>+</span> labels_neighbors
+</span></span><span style=display:flex><span>new_desc <span style=color:#f92672>=</span> hash(tuple(new_label)) <span style=color:#75715e># hash sur immutable</span>
+</span></span><span style=display:flex><span>G_test<span style=color:#f92672>.</span>nodes[<span style=color:#ae81ff>1</span>][<span style=color:#e6db74>&#34;label&#34;</span>]<span style=color:#f92672>=</span>new_desc <span style=color:#75715e># mise à jour du label</span>
+</span></span><span style=display:flex><span>print(G_test<span style=color:#f92672>.</span>nodes[<span style=color:#ae81ff>1</span>][<span style=color:#e6db74>&#34;label&#34;</span>])
+</span></span><span style=display:flex><span>print(labels)
+</span></span></code></pre></div><pre><code>-84722638022233667
+{1: 1, 2: 1, 3: 1, 4: 1, 5: 1}
+</code></pre><h3 id=partionnement-des-nœuds>Partionnement des nœuds</h3><p>Une fois l&rsquo;étape précédente effectuée pour chaque noeud, chaque noeud a un nouveau label caractérisant son voisinage proche. On peut alors calculer une description du graphe en calculant l&rsquo;histogramme des nouveaux labels. Cela indiquera combien de noeuds ont un voisinage similaire, et cette opération n&rsquo;est pas sensible aux permutations choisies pour parcourir les noeuds du graphe.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> range(<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>6</span>): <span style=color:#75715e>#on met à jour les autres noeuds</span>
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Mise à jour noeud </span><span style=color:#e6db74>{</span>n<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>    labels_neighbors <span style=color:#f92672>=</span> [labels[m] <span style=color:#66d9ef>for</span> m <span style=color:#f92672>in</span> G_test[n]]
+</span></span><span style=display:flex><span>    labels_neighbors<span style=color:#f92672>.</span>sort()
+</span></span><span style=display:flex><span>    new_label <span style=color:#f92672>=</span> [labels[n]] <span style=color:#f92672>+</span> labels_neighbors
+</span></span><span style=display:flex><span>    print(new_label)
+</span></span><span style=display:flex><span>    new_desc <span style=color:#f92672>=</span> hash(tuple(new_label)) <span style=color:#75715e># hash sur immutable</span>
+</span></span><span style=display:flex><span>    G_test<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>]<span style=color:#f92672>=</span>new_desc <span style=color:#75715e># mise à jour du label</span>
+</span></span><span style=display:flex><span>    print(G_test<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>])
+</span></span></code></pre></div><pre><code>Mise à jour noeud 2
+[1, 1, 1]
+5750192569890809213
+Mise à jour noeud 3
+[1, 1, 1, 1]
+-84722638022233667
+Mise à jour noeud 4
+[1, 1, 1]
+5750192569890809213
+Mise à jour noeud 5
+[1, 1, 1]
+5750192569890809213
+</code></pre><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>compute_wl_label</span>(graph):
+</span></span><span style=display:flex><span>    labels <span style=color:#f92672>=</span> {}
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> graph<span style=color:#f92672>.</span>nodes():
+</span></span><span style=display:flex><span>        label <span style=color:#f92672>=</span> graph<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>]
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> label <span style=color:#f92672>in</span> labels:
+</span></span><span style=display:flex><span>            labels[label]<span style=color:#f92672>.</span>append(n)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>            labels[label] <span style=color:#f92672>=</span> [n]
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> labels
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>labels <span style=color:#f92672>=</span> compute_wl_label(G_test)
+</span></span><span style=display:flex><span>print(labels)
+</span></span></code></pre></div><pre><code>{-84722638022233667: [1, 3], 5750192569890809213: [2, 4, 5]}
+</code></pre><p>Ici, on observe que le noeud 2,4 et 5 ont un même label, alors que 1 et 3 ont un label différent. Puisque dans notre cas tous les labels sont égaux, nous avons simplement discriminé sur le degré de chacun des noeuds.</p><h3 id=itérations>Itérations</h3><p>Afin de prendre en compte un voisinage de plus en plus grand, les deux étapes précédentes sont répétées jusqu&rsquo;à que l&rsquo;une des deux conditions suivantes soient rencontrées :</p><ul><li>les partitions de noeuds n&rsquo;ont plus bougées : c&rsquo;est à dire que les mêmes ensemble de noeuds se retrouvent avec un label commun entre deux itérations</li><li>Le nombre d&rsquo;itérations a atteint la taille du graphe : tout le voisinage a été pris en compte.</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e>#Second itération</span>
+</span></span><span style=display:flex><span>labels <span style=color:#f92672>=</span> dict(G_test<span style=color:#f92672>.</span>nodes(data<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;label&#34;</span>))
+</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> G_test<span style=color:#f92672>.</span>nodes(): <span style=color:#75715e>#on met à jour les autres noeuds</span>
+</span></span><span style=display:flex><span>    print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;Mise à jour noeud </span><span style=color:#e6db74>{</span>n<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>    labels_neighbors <span style=color:#f92672>=</span> [labels[m] <span style=color:#66d9ef>for</span> m <span style=color:#f92672>in</span> G_test[n]]
+</span></span><span style=display:flex><span>    labels_neighbors<span style=color:#f92672>.</span>sort()
+</span></span><span style=display:flex><span>    new_label <span style=color:#f92672>=</span> [labels[n]] <span style=color:#f92672>+</span> labels_neighbors
+</span></span><span style=display:flex><span>    print(new_label)
+</span></span><span style=display:flex><span>    new_desc <span style=color:#f92672>=</span> hash(tuple(new_label)) <span style=color:#75715e># hash sur immutable</span>
+</span></span><span style=display:flex><span>    G_test<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>]<span style=color:#f92672>=</span>new_desc <span style=color:#75715e># mise à jour du label</span>
+</span></span><span style=display:flex><span>    print(G_test<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>])
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>labels <span style=color:#f92672>=</span> compute_wl_label(G_test)
+</span></span><span style=display:flex><span>print(labels)
+</span></span></code></pre></div><pre><code>Mise à jour noeud 1
+[-84722638022233667, -84722638022233667, 5750192569890809213, 5750192569890809213]
+-7481653653512719100
+Mise à jour noeud 2
+[5750192569890809213, -84722638022233667, -84722638022233667]
+1651756523991284482
+Mise à jour noeud 3
+[-84722638022233667, -84722638022233667, 5750192569890809213, 5750192569890809213]
+-7481653653512719100
+Mise à jour noeud 4
+[5750192569890809213, -84722638022233667, 5750192569890809213]
+-224185658846573216
+Mise à jour noeud 5
+[5750192569890809213, -84722638022233667, 5750192569890809213]
+-224185658846573216
+{-7481653653512719100: [1, 3], 1651756523991284482: [2], -224185658846573216: [4, 5]}
+</code></pre><p>Au bout de la deuxième itération, on observe que la partition 2,4,5 a été splitté en deux : 2 et 4,5. Donc on continue !</p><h3 id=conclusion-du-test-disomorphisme>Conclusion du test d&rsquo;isomorphisme</h3><p>Lorsque nous allons appliquer l&rsquo;algorithme itératif décrit plus haut à chacun des deux graphes à comparer, nous obtenons une partition pour chacun des graphes. La conclusion du test d&rsquo;isomophisme est déduite de la comparaison des histogrammes de chacune des partitions. Si les deux graphes ont le même nombre de noeuds avec un label similaires, alors nos deux graphes sont potentiellement isomorphes. À l&rsquo;inverse, si les histogrammes sont différents, alors nous pouvons conclure avec certitude que les deux graphes sont isomorphes.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#75715e># Calcul de l&#39;histogramme des labels de G_test</span>
+</span></span><span style=display:flex><span>histogramme <span style=color:#f92672>=</span> {label : len(labels[label]) <span style=color:#66d9ef>for</span> label <span style=color:#f92672>in</span> labels}
+</span></span><span style=display:flex><span>print(histogramme)
+</span></span></code></pre></div><pre><code>{-7481653653512719100: 2, 1651756523991284482: 1, -224185658846573216: 2}
+</code></pre><h2 id=version-finale-du-code>Version finale du code</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>wl_test_id</span>(graph):
+</span></span><span style=display:flex><span>    LABEL_WL <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;wl&#39;</span>
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    Returns a dictionnary labels LABEL_WL as keys and list of nodes having this label as value iterative wl
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>    &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>compute_wl_label</span>(graph):
+</span></span><span style=display:flex><span>        labels <span style=color:#f92672>=</span> {}
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> graph<span style=color:#f92672>.</span>nodes():
+</span></span><span style=display:flex><span>            label <span style=color:#f92672>=</span> graph<span style=color:#f92672>.</span>nodes[n][LABEL_WL]
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>if</span> label <span style=color:#f92672>in</span> labels:
+</span></span><span style=display:flex><span>                labels[label]<span style=color:#f92672>.</span>append(n)
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>else</span>:
+</span></span><span style=display:flex><span>                labels[label] <span style=color:#f92672>=</span> [n]
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> labels
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>compute_wl_signature</span>(graph):
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Compute an histogram from the dicts of labels. 
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>        labels <span style=color:#f92672>=</span> compute_wl_label(graph)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> {label : len(labels[label]) <span style=color:#66d9ef>for</span> label <span style=color:#f92672>in</span> labels}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>compute_partition</span>(graph):
+</span></span><span style=display:flex><span>        <span style=color:#e6db74>&#34;&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        Returns a list where each element is a list of nodes having the same label 
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>        &#34;&#34;&#34;</span>
+</span></span><span style=display:flex><span>        labels <span style=color:#f92672>=</span> compute_wl_label(graph)
+</span></span><span style=display:flex><span>        partition <span style=color:#f92672>=</span> list(labels<span style=color:#f92672>.</span>values())
+</span></span><span style=display:flex><span>        [l<span style=color:#f92672>.</span>sort() <span style=color:#66d9ef>for</span> l <span style=color:#f92672>in</span> partition]
+</span></span><span style=display:flex><span>        partition<span style=color:#f92672>.</span>sort()
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> partition
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    iter <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    old_partition <span style=color:#f92672>=</span> {}
+</span></span><span style=display:flex><span>    conv <span style=color:#f92672>=</span> <span style=color:#66d9ef>False</span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># Initialisation des labels</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> graph<span style=color:#f92672>.</span>nodes():
+</span></span><span style=display:flex><span>        graph<span style=color:#f92672>.</span>nodes[n][LABEL_WL] <span style=color:#f92672>=</span> graph<span style=color:#f92672>.</span>nodes[n][<span style=color:#e6db74>&#34;label&#34;</span>]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e># max number of iterations is the number of nodes</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (iter <span style=color:#f92672>&lt;</span>  graph<span style=color:#f92672>.</span>order() <span style=color:#f92672>and</span> <span style=color:#f92672>not</span> conv):
+</span></span><span style=display:flex><span>        <span style=color:#75715e>#compute tuple</span>
+</span></span><span style=display:flex><span>        old_labels <span style=color:#f92672>=</span> dict(graph<span style=color:#f92672>.</span>nodes(data<span style=color:#f92672>=</span>LABEL_WL))
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span> n <span style=color:#f92672>in</span> graph<span style=color:#f92672>.</span>nodes():
+</span></span><span style=display:flex><span>            <span style=color:#75715e># we compute the new label</span>
+</span></span><span style=display:flex><span>            labels_neighbors <span style=color:#f92672>=</span> [old_labels[m] <span style=color:#66d9ef>for</span> m <span style=color:#f92672>in</span> graph[n]]
+</span></span><span style=display:flex><span>            labels_neighbors<span style=color:#f92672>.</span>sort()
+</span></span><span style=display:flex><span>            <span style=color:#75715e># compute hash</span>
+</span></span><span style=display:flex><span>            new_label_list <span style=color:#f92672>=</span> [old_labels[n]] <span style=color:#f92672>+</span> labels_neighbors
+</span></span><span style=display:flex><span>            new_desc <span style=color:#f92672>=</span> hash(tuple(new_label_list)) <span style=color:#75715e># hash sur immutable</span>
+</span></span><span style=display:flex><span>            graph<span style=color:#f92672>.</span>nodes[n][LABEL_WL]<span style=color:#f92672>=</span>new_desc
+</span></span><span style=display:flex><span>        <span style=color:#75715e># partitions</span>
+</span></span><span style=display:flex><span>        partition <span style=color:#f92672>=</span> compute_partition(graph)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> partition <span style=color:#f92672>==</span> old_partition:
+</span></span><span style=display:flex><span>            conv <span style=color:#f92672>=</span> <span style=color:#66d9ef>True</span>
+</span></span><span style=display:flex><span>        old_partition<span style=color:#f92672>=</span>partition
+</span></span><span style=display:flex><span>        iter <span style=color:#f92672>+=</span> <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> compute_wl_signature(graph)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>def</span> <span style=color:#a6e22e>wl_test</span>(graph_1,graph_2):
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> wl_test_id(graph_1) <span style=color:#f92672>==</span> wl_test_id(graph_2)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;$G_1$ $G_3$ sont isomorphes : </span><span style=color:#e6db74>{</span>wl_test(G1,G3)<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;$G_1$ $G_1$ sont isomorphes : </span><span style=color:#e6db74>{</span>wl_test(G1,G1)<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>print(<span style=color:#e6db74>f</span><span style=color:#e6db74>&#34;$G_1$ $G_2$ sont isomorphes : </span><span style=color:#e6db74>{</span>wl_test(G1,G2)<span style=color:#e6db74>}</span><span style=color:#e6db74>&#34;</span>)
+</span></span></code></pre></div><pre><code>$G_1$ $G_3$ sont isomorphes : True
+$G_1$ $G_1$ sont isomorphes : True
+$G_1$ $G_2$ sont isomorphes : False
+</code></pre><h2 id=conclusion>Conclusion</h2><p>Ce test d&rsquo;isomorphisme, rapide à implémenter et à comprendre a été remis au gout du jour par les noyaux sur graphes (Weisfeler Lehman Graph kernel) ainsi que par l&rsquo;étude théorique de la capacité des Graph Neural Networks à distinguer deux graphes différents.</p></div></div><div id=footer class=mb-5><hr><div class="container text-center"><a href=https://twitter.com/BGauzere class="fab fa-twitter fa-1x" title=Twitter></a><a href=mailto:benoit.gauzere@insa-rouen.fr class="fas fa-envelope fa-1x" title=E-mail></a><a href=https://github.com/bgauzere/ class="fab fa-github fa-1x" title=Github></a><a href="https://scholar.google.com/citations?hl=en&amp;user=YqmqE9gAAAAJ" class="fab fa-google fa-1x" title="Google scholar"></a></div><div class="container text-center"><a href=https://bgauzere.github.io/ title="Benoit Gaüzère 2022"><small>Benoit Gaüzère 2022</small></a></div></div></body></html>
