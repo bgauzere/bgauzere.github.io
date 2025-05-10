@@ -1,0 +1,99 @@
+# Hugo default output directory
+/public/
+
+# Hugo resources directory (caches)
+/resources/_gen/
+/assets/jsconfig.json
+/.hugo_build.lock
+
+# Temporary files
+*.tmp
+*~
+
+# OS-specific files
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+## Linux
+.directory
+.Trash-*
+.fuse_hidden*
+.nfs*
+
+# Editor/IDE specific files
+## VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+## JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+## Vim
+*.swp
+*.swo
+*.swn
+.*.sw[a-z]
+Session.vim
+
+## Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+## Emacs
+*~
+\#*\#
+.\#*
+*.*~
+.emacs.desktop
+.emacs.desktop.lock
+
+# Node modules (if using any frontend tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python virtual environments
+venv/
+env/
+ENV/
+
+# Local Netlify folder (if using Netlify)
+.netlify/
+
