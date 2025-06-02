@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Benoit Gaüzère website</title><link>https://bgauzere.github.io/posts/</link><description>Recent content in Posts on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 09 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/posts/weisfeiler-lehman/</link><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/weisfeiler-lehman/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Benoit Gaüzère website</title><link>https://bgauzere.github.io/posts/</link><description>Recent content in Posts on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/posts/weisfeiler-lehman/</link><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/weisfeiler-lehman/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
 &lt;p>Dans ce document, nous allons implémenter différents algorithmes d&amp;rsquo;isomorphismes de sous graphes, optimaux ou non.&lt;/p>
 &lt;p>Dans un premier temps, nous allons nous concentrer sur 3 algorithmes différents, à savoir :&lt;/p>
 &lt;ul>
@@ -8,6 +8,12 @@
 &lt;/ul>
 &lt;h1 id="création-des-graphes">Création des graphes&lt;/h1>
 &lt;p>Avant d&amp;rsquo;implémenter les algos, nous allons créer 3 graphes simples à visualiser. Deux d&amp;rsquo;entre eux ($G_1$ et $G_3$) sont isormorphes. C&amp;rsquo;est à dire qu&amp;rsquo;ils représentent le même graphe, mais que l&amp;rsquo;ordre des noeuds de chacun des graphes est différent. Il y a une permutation des nœuds.&lt;/p></description></item><item><title>🌍💻 Synthèse Perso – Impact écologique du numérique</title><link>https://bgauzere.github.io/posts/impact-ecologique-numerique/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/impact-ecologique-numerique/</guid><description>&lt;h1 id="-synthèse--impact-écologique-du-numérique">🌍💻 Synthèse – Impact écologique du numérique&lt;/h1>
+&lt;p style="text-align: right;
+ font-style: italic;
+ font-size: 0.9em;
+ color: #666;
+ margin-top: 2em;"> Dernière mise à jour : 01/01/0001&lt;/p>
+
 &lt;h2 id="1-constat-global-">1. Constat global 📊&lt;/h2>
 &lt;ul>
 &lt;li>Le numérique représentait &lt;strong>4,4 %&lt;/strong> de l’empreinte carbone française en 2022 (ADEME/ARCEP, révision 2024).&lt;/li>
