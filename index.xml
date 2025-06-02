@@ -8,12 +8,6 @@
 &lt;/ul>
 &lt;h1 id="création-des-graphes">Création des graphes&lt;/h1>
 &lt;p>Avant d&amp;rsquo;implémenter les algos, nous allons créer 3 graphes simples à visualiser. Deux d&amp;rsquo;entre eux ($G_1$ et $G_3$) sont isormorphes. C&amp;rsquo;est à dire qu&amp;rsquo;ils représentent le même graphe, mais que l&amp;rsquo;ordre des noeuds de chacun des graphes est différent. Il y a une permutation des nœuds.&lt;/p></description></item><item><title>🌍💻 Synthèse Perso – Impact écologique du numérique</title><link>https://bgauzere.github.io/posts/impact-ecologique-numerique/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/impact-ecologique-numerique/</guid><description>&lt;h1 id="-synthèse--impact-écologique-du-numérique">🌍💻 Synthèse – Impact écologique du numérique&lt;/h1>
-&lt;p style="text-align: right;
- font-style: italic;
- font-size: 0.9em;
- color: #666;
- margin-top: 2em;"> Dernière mise à jour : 02/06/2025&lt;/p>
-
 &lt;h2 id="1-constat-global-">1. Constat global 📊&lt;/h2>
 &lt;ul>
 &lt;li>Le numérique représentait &lt;strong>4,4 %&lt;/strong> de l’empreinte carbone française en 2022 (ADEME/ARCEP, révision 2024).&lt;/li>
