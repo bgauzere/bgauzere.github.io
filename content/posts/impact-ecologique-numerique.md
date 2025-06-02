@@ -1,12 +1,15 @@
 ---
 title: "🌍💻 Synthèse Perso – Impact écologique du numérique"
 date: 2025-04-21
+lastmod: 2025-06-02
 draft: false
 description: "Résumé chiffré, leviers et ressources pour comprendre l’empreinte environnementale du numérique."
 tags: ["numérique", "écologie", "ACV", "sobriété"]
 toc: true
 ---
 # 🌍💻 Synthèse – Impact écologique du numérique
+
+{{< gitlastmod >}}
 
 ## 1. Constat global 📊
 
@@ -74,19 +77,31 @@ L’optimisation logicielle agit principalement sur la phase **Usage** mais pré
 - **Outils d’estimation** : Ecograder, WebsiteCarbon → ordres de grandeur, pas ACV complètes.
 - **Pas de prise directe sur l’extraction minière** : à combiner avec la réparabilité matérielle.
 
+### 4.2 🌱 Mesure de l'impact des calculs
+Le projet Green Algorithms aide à définir des mesures de l'impact carbone des algorithmes en proposant un calculateur. De manière intéressante, ils utilisent une mesure sous forme de "arbres mois" pour quantifier la quantité de CO_2. Associé au groupe de recherche de Loïc Lannelongue (https://www.lannelongue-group.org/). Ils proposent une équation précise de la mesure de l'impact.
+
+## Green Algorithms: Quantifying the Carbon Footprint of Computation
+https://www.green-algorithms.org/assets/publications/2021_Green%20Algorithms_AdvScience.pdf 
+> In this work, a methodological framework to estimate the
+> carbon footprint of any computational task in a standardized and reliable way
+> is presented and metrics to contextualize GHG emissions are defined
+
+Section 5 sur le detail en équation du calcul
+
+
 ## 5. Outils & méthodologies 🧰
 
 - **Websitecarbon.com** : estimation page web.
 - **Sustainablewebdesign.org** : formule d’estimation applicative.
 - **ACV complète d'un service numérique :  Treebal** [🌲](https://gauthierroussilhe.com/book/treebal/)
 - **AI Energy Star** (initiative ouverte) : comparatif d’efficacité des modèles.
+- 🌱 **Green Algorithm** - outil de calcul de l'empreinte carbone des algorithmes (<https://green-algorithm.org/>).
 
 ## 6. Lacunes & pistes de recherche 🔍
 
 1. **Données ouvertes** : peu d’accès aux facteurs d’émission réels des clouds, GPU, LLM.
 2. **Eau & métaux critiques** : indicateurs rarement publiés 💧.
 3. **Effets rebond** : quantification hétérogène, manque de consensus.
-4. **Scope 3 des équipements réseau & centres de données** : sous‑documenté.
 5. **Fin de vie hors UE** : filières d’export peu traçables.
 6. **Impacts sociaux** : conditions d’extraction, travail en centres de modération.
 7. **Émissions évitées** : méthodologies immatures, risque de greenwashing.
@@ -119,6 +134,7 @@ L’optimisation logicielle agit principalement sur la phase **Usage** mais pré
 - **Outil Website Carbon** : [https://www.websitecarbon.com/how-does-it-work/](https://www.websitecarbon.com/how-does-it-work/)
 - **Méthodo Sustainable Web Design** : [https://sustainablewebdesign.org/estimating-digital-emissions/](https://sustainablewebdesign.org/estimating-digital-emissions/)
 - **ACV Treebal (2023)** : [https://gauthierroussilhe.com/book/treebal/](https://gauthierroussilhe.com/book/treebal/)
+- **GREENER principles for environmentally sustainable computational science**, L. Lannelongue, H.-E. G. Aronson, A. Bateman, E. Birney, T. Caplan, M. Juckes, J. McEntyre, A. D. Morris, G. Reilly and M. Inouye, Nat Comput Sci, vol. 3, no. 6, pp. 514–521, Jun. 2023, doi: 10.1038/s43588-023-00461-y. [pdf](https://www.green-algorithms.org/assets/publications/2023_GREENER_NatCompSci.pdf)
 
 ### 7.2 Références additionnelles 📖 (2023‑2025)
 
