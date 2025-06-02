@@ -9,8 +9,6 @@ toc: true
 ---
 # 🌍💻 Synthèse – Impact écologique du numérique
 
-{{< gitlastmod >}}
-
 ## 1. Constat global 📊
 
 - Le numérique représentait **4,4 %** de l’empreinte carbone française en 2022 (ADEME/ARCEP, révision 2024).
