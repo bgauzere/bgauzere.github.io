@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Benoit Gaüzère website</title><link>https://bgauzere.github.io/posts/</link><description>Recent content in Posts on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/posts/weisfeiler-lehman/</link><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/weisfeiler-lehman/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Benoit Gaüzère website</title><link>https://bgauzere.github.io/posts/</link><description>Recent content in Posts on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Jun 2025 12:51:42 +0200</lastBuildDate><atom:link href="https://bgauzere.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/posts/weisfeiler-lehman/</link><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/weisfeiler-lehman/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
 &lt;p>Dans ce document, nous allons implémenter différents algorithmes d&amp;rsquo;isomorphismes de sous graphes, optimaux ou non.&lt;/p>
 &lt;p>Dans un premier temps, nous allons nous concentrer sur 3 algorithmes différents, à savoir :&lt;/p>
 &lt;ul>
@@ -12,7 +12,7 @@
  font-style: italic;
  font-size: 0.9em;
  color: #666;
- margin-top: 2em;"> Dernière mise à jour : 01/01/0001&lt;/p>
+ margin-top: 2em;"> Dernière mise à jour : 02/06/2025&lt;/p>
 
 &lt;h2 id="1-constat-global-">1. Constat global 📊&lt;/h2>
 &lt;ul>
