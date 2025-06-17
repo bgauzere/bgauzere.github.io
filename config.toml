@@ -7,7 +7,7 @@ enableEmoji = true
 math = true          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = "G-BJ1N6WLD1Q"  # add your tracking id
 ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
-enableGitInfo = true
+#enableGitInfo = true
 
 [params]
   author = "Benoit Gaüzère"

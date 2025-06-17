@@ -7,6 +7,7 @@ description: "Résumé chiffré, leviers et ressources pour comprendre l’empre
 tags: ["numérique", "écologie", "ACV", "sobriété"]
 toc: true
 ---
+
 # 🌍💻 Synthèse – Impact écologique du numérique
 
 ## 1. Constat global 📊
@@ -38,6 +39,7 @@ toc: true
 - Servir un prompt ChatGPT : **≈ 4 g CO₂e** (*Zhang X. et al., 2024*).
 - Le **serving** dépasse le **training** pour certains modèles.
 - Refroidissement par eau : jusqu’à **≈ 4 × 0,5 L** par requête (*Zhang X. et al., 2024*).
+- [Impact ChatGPT]({{< ref "impact_chatgpt" >}}  "Impact ChatGPT")
 
 ### 3.3 Trafic vs infrastructures
 
