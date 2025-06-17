@@ -97,3 +97,4 @@ ENV/
 # Local Netlify folder (if using Netlify)
 .netlify/
 
+public/
