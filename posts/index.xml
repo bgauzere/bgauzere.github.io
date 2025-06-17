@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Benoit Gaüzère website</title><link>https://bgauzere.github.io/posts/</link><description>Recent content in Posts on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 02 Jun 2025 14:53:37 +0200</lastBuildDate><atom:link href="https://bgauzere.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/posts/weisfeiler-lehman/</link><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/weisfeiler-lehman/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Benoit Gaüzère website</title><link>https://bgauzere.github.io/posts/</link><description>Recent content in Posts on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 17 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Impact Énergétique de ChatGPT</title><link>https://bgauzere.github.io/posts/impact_chatgpt/</link><pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/impact_chatgpt/</guid><description>&lt;h2 id="1-énergie-et-co-par-requête">1. Énergie et CO₂ par requête&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Scénario&lt;/th>
+ &lt;th>Modèle / Contexte&lt;/th>
+ &lt;th>Énergie (Wh)&lt;/th>
+ &lt;th>CO₂ (g)*&lt;/th>
+ &lt;th>Ratio vs Google&lt;/th>
+ &lt;th>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;strong>Google Search&lt;/strong> (chiffre officiel)&lt;/td>
+ &lt;td>Datacenters Google (2009–encore valable)&lt;/td>
+ &lt;td>&lt;strong>0,28 Wh&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>0,11 g&lt;/strong>&lt;/td>
+ &lt;td>1×&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>ChatGPT basse&lt;/strong>&lt;/td>
+ &lt;td>GPT-4o + GPU H100, prompt court (2025)&lt;/td>
+ &lt;td>&lt;strong>0,3 Wh&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>0,12 g&lt;/strong>&lt;/td>
+ &lt;td>1 – 1,1×&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>ChatGPT médiane&lt;/strong>&lt;/td>
+ &lt;td>GPT-4 normal, « requête moyenne » (EPRI 2024)&lt;/td>
+ &lt;td>&lt;strong>2,9 Wh&lt;/strong>&lt;/td>
+ &lt;td>&lt;strong>1,16 g&lt;/strong>&lt;/td>
+ &lt;td>~10×&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;strong>ChatGPT haute&lt;/strong>&lt;/td>
+ &lt;td>Hypothèses grand-public (2024)&lt;/td>
+ &lt;td>4 – 5 Wh&lt;/td>
+ &lt;td>1,6 – 2 g&lt;/td>
+ &lt;td>14 – 18×&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>*Conversion avec une intensité carbone mondiale moyenne de 0,4 kg CO₂/kWh.&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>Autre source :
+&lt;img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22f72acd-bf02-4b85-92bc-262902012108_759x447.png" alt="">&lt;/p></description></item><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/posts/weisfeiler-lehman/</link><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/weisfeiler-lehman/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
 &lt;p>Dans ce document, nous allons implémenter différents algorithmes d&amp;rsquo;isomorphismes de sous graphes, optimaux ou non.&lt;/p>
 &lt;p>Dans un premier temps, nous allons nous concentrer sur 3 algorithmes différents, à savoir :&lt;/p>
 &lt;ul>
@@ -69,6 +125,7 @@
 &lt;li>Servir un prompt ChatGPT : &lt;strong>≈ 4 g CO₂e&lt;/strong> (&lt;em>Zhang X. et al., 2024&lt;/em>).&lt;/li>
 &lt;li>Le &lt;strong>serving&lt;/strong> dépasse le &lt;strong>training&lt;/strong> pour certains modèles.&lt;/li>
 &lt;li>Refroidissement par eau : jusqu’à &lt;strong>≈ 4 × 0,5 L&lt;/strong> par requête (&lt;em>Zhang X. et al., 2024&lt;/em>).&lt;/li>
+&lt;li>&lt;a href="https://bgauzere.github.io/posts/impact_chatgpt/" title="Impact ChatGPT">Impact ChatGPT&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="33-trafic-vs-infrastructures">3.3 Trafic vs infrastructures&lt;/h3>
 &lt;ul>
