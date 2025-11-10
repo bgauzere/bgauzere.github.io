@@ -1,5 +1,5 @@
 # Graph Machine Learning in Yamoussoukro 
-> 25th to 30th of November 2024
+> 24th to 28th of November 2024
 
 In this webpage, you will find all ressources for my lessons, together with the
 corrections
@@ -53,18 +53,18 @@ Corrections are available [here](/gml/corrections.zip).
 
 To complete the project, do your best on the Kaggle competition [Graph Machine
 Learning in
-Yamoussoukro](https://www.kaggle.com/t/0ea1ce3977c54b3eb0d6d1983fa600a7)
+Yamoussoukro](https://www.kaggle.com/t/69c3d02732344c31a23f11ae0d4de5fc)
 The deadline is set to Friday 20th of December. A report (jupyter notebook is
 ok) explaining your work and strategy is required to be sent by mail at
 benoit.gauzere@insa-rouen.fr with subject [Project GMLY].
 
 **Data** : Data for the competition is available [here](/gml/data.zip)
 
-## MCQ Evaluation
+<!-- ## MCQ Evaluation -->
 
-Please follow this
-[link](https://app.wooclap.com/GYQATJ/questionnaires/674742c8253a82b1a4577121)
-for the evaluation. The MQC will be published during the evaluation, and answers
-will be available at the end of the evaluation.
+<!-- Please follow this -->
+<!-- [link](https://app.wooclap.com/GYQATJ/questionnaires/674742c8253a82b1a4577121) -->
+<!-- for the evaluation. The MQC will be published during the evaluation, and answers -->
+<!-- will be available at the end of the evaluation. -->
 
-**Don't forget to add your name**
+<!-- **Don't forget to add your name** -->
