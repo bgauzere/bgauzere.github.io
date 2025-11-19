@@ -11,7 +11,7 @@ corrections
 3. [Introduction to Machine Learning with
   Graphs](/gml/3_Intro_ML_on_Graphs.html)
 4. [Node and Graph Embeddings Techniques](/gml/4_Graph_Embedding.html)
-5. [Graph Neural Networks](/gml/5_GNN.pdf)
+5. [Graph Neural Networks](/gml/5_GNN.html)
 6. [Advanced GNN](/gml/6_Advanced_GNN.html)
 
 ## Practical works
