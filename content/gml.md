@@ -1,5 +1,5 @@
 # Graph Machine Learning in Yamoussoukro 
-> 24th to 28th of November 2024
+> 23rd to 29th of November 2025
 
 In this webpage, you will find all ressources for my lessons, together with the
 corrections
@@ -19,6 +19,10 @@ corrections
 Download all materials for the practicals sessions [here](/gml/practical.zip)
 
 Corrections are available [here](/gml/corrections.zip). 
+
+## Drive 
+
+Ressources utilisées pour le cours : [lien google drive](https://drive.google.com/drive/folders/1xk41O1oG9dw0dltnqm5GrJWIwdHRBIpT?usp=sharing)
 
 ---
 
