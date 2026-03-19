@@ -1,0 +1,85 @@
+{{ $.Scratch.Set "currentYear" "" }}
+
+<div class="publications-list">
+  {{/* 1. On trie sur le champ "date" en ordre décroissant */}}
+  {{ range sort .Site.Data.publications "date" "desc" }}
+    
+    {{/* Zotero peut exporter "2020" ou "2020-03". On ne garde que les 4 premiers caractères */}}
+    {{ $date := index . "date" | default "Date inconnue" }}
+    {{ $year := substr $date 0 4 }}
+    
+    {{/* --- GESTION DES ANNÉES --- */}}
+    {{ if ne ($.Scratch.Get "currentYear") $year }}
+      {{ if ne ($.Scratch.Get "currentYear") "" }}</ul>{{ end }}
+      
+      <h3 style="margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.5rem;">{{ $year }}</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+      
+      {{ $.Scratch.Set "currentYear" $year }}
+    {{ end }}
+
+    {{/* --- AFFICHAGE DE LA PUBLICATION --- */}}
+    <li style="margin-bottom: 1.5rem;">
+      
+      {{/* TITRE */}}
+      {{ if .title }}
+        <strong style="font-size: 1.1em; display: block;">
+          {{ replaceRE "[{}]" "" .title }}
+        </strong>
+      {{ end }}
+      
+      {{/* AUTEURS : Inversion "Nom, Prénom" -> "Prénom Nom" + Mise en gras */}}
+      {{ if .author }}
+        <em style="color: #555; display: block; margin-top: 0.2rem;">
+          {{ $authorsList := slice }}
+          {{ $cleanAuthors := replaceRE "[{}]" "" .author }}
+          
+          {{/* On sépare chaque auteur */}}
+          {{ range split $cleanAuthors " and " }}
+            {{/* On sépare le nom et le prénom */}}
+            {{ $parts := split . ", " }}
+            {{ if eq (len $parts) 2 }}
+              {{/* On rassemble "Prénom Nom" */}}
+              {{ $authorsList = $authorsList | append (printf "%s %s" (index $parts 1) (index $parts 0)) }}
+            {{ else }}
+              {{ $authorsList = $authorsList | append . }}
+            {{ end }}
+          {{ end }}
+          
+          {{/* On rejoint tous les auteurs avec une virgule */}}
+          {{ $authorStr := delimit $authorsList ", " }}
+          
+          {{/* On met ton nom en gras (gère les accents : Gaüzère, Gauzere, Gaüzere) */}}
+          {{ $authorStr = replaceRE "(Beno[iî]t Ga[üu]z[èe]re)" "<strong>$1</strong>" $authorStr }}
+          
+          {{/* safeHTML permet d'interpréter la balise <strong> */}}
+          {{ $authorStr | safeHTML }}
+        </em>
+      {{ end }}
+      
+      {{/* REVUE OU CONFÉRENCE (On vérifie journaltitle, journal et booktitle) */}}
+      <span style="display: block; margin-top: 0.2rem;">
+        {{ if .journaltitle }}
+          {{ replaceRE "[{}]" "" .journaltitle }}
+        {{ else if .journal }}
+          {{ replaceRE "[{}]" "" .journal }}
+        {{ else if .booktitle }}
+          {{ replaceRE "[{}]" "" .booktitle }}
+        {{ end }}
+      </span>
+      
+      {{/* LIENS */}}
+      <div style="margin-top: 0.3rem;">
+        {{ if .url }}
+          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" style="font-size: 0.9em; font-weight: bold; text-decoration: none;">[🔗 Lien vers l'article]</a>
+        {{ end }}
+        {{ if .doi }}
+          <a href="https://doi.org/{{ .doi }}" target="_blank" rel="noopener noreferrer" style="font-size: 0.9em; font-weight: bold; text-decoration: none; margin-left: 0.5rem;">[🔗 Lien DOI]</a>
+        {{ end }}
+      </div>
+      
+    </li>
+  {{ end }}
+  
+  {{ if ne ($.Scratch.Get "currentYear") "" }}</ul>{{ end }}
+</div>

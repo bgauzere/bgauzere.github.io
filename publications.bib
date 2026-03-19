@@ -1,0 +1,806 @@
+@article{abu2017graph,
+  title = {Graph Edit Distance Contest: {{Results}} and Future Challenges},
+  author = {Abu-Aisheh, Zeina and Gaüzere, Benoit and Bougleux, Sébastien and Ramel, Jean-Yves and Brun, Luc and Raveaux, Romain and Héroux, Pierre and Adam, Sébastien},
+  date = {2017},
+  journaltitle = {Pattern Recognition Letters},
+  volume = {100},
+  pages = {96--103},
+  publisher = {North-Holland},
+  issn = {01678655},
+  doi = {10.1016/j.patrec.2017.10.007},
+  abstract = {© 2017 Elsevier B.V. Graph Distance Contest (GDC) was organized in the context of ICPR 2016. Its main challenge was to inspect and report performances and effectiveness of exact and approximate graph edit distance methods by comparison with a ground truth. This paper presents the context of this competition, the metrics and datasets used for evaluation, and the results obtained by the eight submitted methods. Results are analyzed and discussed in terms of computation time and accuracy. We also highlight the future challenges in graph edit distance regarding both future methods and evaluation metrics. The contest was supported by the Technical Committee on Graph-Based Representations in Pattern Recognition (TC-15) of the International Association of Pattern Recognition (IAPR).},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/G2MQZW9F/Graph edit distance contest Results and future challenges - Abu-Aisheh et al. - 2017.pdf}
+}
+
+@unpublished{balcilar2020bridging,
+  title = {Bridging the Gap between Spectral and Spatial Domains in Graph Neural Networks},
+  author = {Balcilar, Muhammet and Renton, Guillaume and Héroux, Pierre and Gaüzère, Benoit and Adam, Sebastien and Honeine, Paul and Gauzere, Benoit and Adam, Sebastien and Honeine, Paul},
+  date = {2020},
+  eprint = {2003.11702},
+  eprinttype = {arXiv},
+  abstract = {Copyright © 2020, arXiv, All rights reserved. This paper aims at revisiting Graph Convolutional Neural Networks by bridging the gap between spectral and spatial design of graph convolutions. We theoretically demonstrate some equivalence of the graph convolution process regardless it is designed in the spatial or the spectral domain. The obtained general framework allows to lead a spectral analysis of the most popular ConvGNNs, explaining their performance and showing their limits. Moreover, the proposed framework is used to design new convolutions in spectral domain with a custom frequency profile while applying them in the spatial domain. We also propose a generalization of the depthwise separable convolution framework for graph convolutional networks, what allows to decrease the total number of trainable parameters by keeping the capacity of the model. To the best of our knowledge, such a framework has never been used in the GNNs literature. Our proposals are evaluated on both transductive and inductive graph learning problems. Obtained results show the relevance of the proposed method and provide one of the first experimental evidence of transferability of spectral filter coefficients from one graph to another. Our source codes are publicly available at: https://github.com/balcilar/Spectral-Designed-Graph-ConvolutionsMSC Codes 68T05},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/M3NJFRC5/Bridging the gap between spectral and spatial domains in graph neural networks - Balcilar et al. - 2020.pdf}
+}
+
+@inproceedings{balcilar2020spectral,
+  title = {Spectral-Designed Depthwise Separable Graph Neural Networks},
+  booktitle = {Proceedings of {{Thirty-seventh International Conference}} on {{Machine Learning}} ({{ICML}} 2020)-{{Workshop}} on {{Graph Representation Learning}} and {{Beyond}} ({{GRL}}+ 2020)},
+  author = {Balcilar, Muhammet and Renton, Guillaume and Héroux, Pierre and Gaüzère, Benoit and Adam, Sébastien and Honeine, Paul},
+  date = {2020},
+  keywords = {hdr}
+}
+
+@inproceedings{balcilar2021analyzing,
+  title = {Analyzing the {{Expressive Power}} of {{Graph Neural Networks}} in a {{Spectral Perspective}}},
+  author = {Balcilar, Muhammet and Guillaume, Renton and Héroux, Pierre and Gaüzère, Benoit and Adam, Sébastien and Honeine, Paul},
+  date = {2021-05-04},
+  url = {https://hal-normandie-univ.archives-ouvertes.fr/hal-03135633},
+  urldate = {2023-05-15},
+  abstract = {In the recent literature of Graph Neural Networks (GNN), the expressive power of models has been studied through their capability to distinguish if two given graphs are isomorphic or not. Since the graph isomorphism problem is NP-intermediate, and Weisfeiler-Lehman (WL) test can give sufficient but not enough evidence in polynomial time, the theoretical power of GNNs is usually evaluated by the equivalence of WL-test order, followed by an empirical analysis of the models on some reference inductive and transductive datasets. However, such analysis does not account the signal processing pipeline, whose capability is generally evaluated in the spectral domain. In this paper, we argue that a spectral analysis of GNNs behavior can provide a complementary point of view to go one step further in the understanding of GNNs. By bridging the gap between the spectral and spatial design of graph convolutions, we theoretically demonstrate some equivalence of the graph convolution process regardless it is designed in the spatial or the spectral domain. Using this connection, we managed to re-formulate most of the state-of-the-art graph neural networks into one common framework. This general framework allows to lead a spectral analysis of the most popular GNNs, explaining their performance and showing their limits according to spectral point of view. Our theoretical spectral analysis is confirmed by experiments on various graph databases. Furthermore, we demonstrate the necessity of high and/or band-pass filters on a graph dataset, while the majority of GNN is limited to only low-pass and inevitably it fails. Code available at https://github.com/balcilar/gnn-spectral-expressive-power.},
+  eventtitle = {Proceedings of the {{International Conference}} on {{Learning Representations}} ({{ICLR}})},
+  langid = {english},
+  file = {/home/bgauzere/work/Zotero/storage/QXUNP8LL/Balcilar et al. - 2021 - Analyzing the Expressive Power of Graph Neural Net.pdf}
+}
+
+@inproceedings{balcilar2021breaking,
+  title = {Breaking the {{Limits}} of {{Message Passing Graph Neural Networks}}},
+  booktitle = {Proceedings of the 38th {{International Conference}} on {{Machine Learning}}},
+  author = {Balcilar, Muhammet and Heroux, Pierre and Gauzere, Benoit and Vasseur, Pascal and Adam, Sebastien and Honeine, Paul},
+  date = {2021-07-01},
+  pages = {599--608},
+  publisher = {PMLR},
+  issn = {2640-3498},
+  url = {https://proceedings.mlr.press/v139/balcilar21a.html},
+  urldate = {2023-05-15},
+  abstract = {Since the Message Passing (Graph) Neural Networks (MPNNs) have a linear complexity with respect to the number of nodes when applied to sparse graphs, they have been widely implemented and still raise a lot of interest even though their theoretical expressive power is limited to the first order Weisfeiler-Lehman test (1-WL). In this paper, we show that if the graph convolution supports are designed in spectral-domain by a non-linear custom function of eigenvalues and masked with an arbitrary large receptive field, the MPNN is theoretically more powerful than the 1-WL test and experimentally as powerful as a 3-WL existing models, while remaining spatially localized. Moreover, by designing custom filter functions, outputs can have various frequency components that allow the convolution process to learn different relationships between a given input graph signal and its associated properties. So far, the best 3-WL equivalent graph neural networks have a computational complexity in (𝑛3)O(n3)\textbackslash mathcal\{O\}(n\textasciicircum 3) with memory usage in (𝑛2)O(n2)\textbackslash mathcal\{O\}(n\textasciicircum 2), consider non-local update mechanism and do not provide the spectral richness of output profile. The proposed method overcomes all these aforementioned problems and reaches state-of-the-art results in many downstream tasks.},
+  eventtitle = {International {{Conference}} on {{Machine Learning}}},
+  langid = {english},
+  file = {/home/bgauzere/work/Zotero/storage/DQZGE5V6/Balcilar et al. - 2021 - Breaking the Limits of Message Passing Graph Neura.pdf;/home/bgauzere/work/Zotero/storage/KWPBRXIV/Balcilar et al. - 2021 - Breaking the Limits of Message Passing Graph Neura.pdf}
+}
+
+@article{blumenthal2021scalable,
+  title = {Scalable Generalized Median Graph Estimation and Its Manifold Use in Bioinformatics, Clustering, Classification, and Indexing},
+  author = {Blumenthal, David B and Boria, Nicolas and Bougleux, Sébastien and Brun, Luc and Gamper, Johann and Gaüzère, Benoit},
+  date = {2021},
+  journaltitle = {Information Systems},
+  pages = {101766},
+  publisher = {Elsevier Ltd.},
+  issn = {0306-4379},
+  doi = {10.1016/j.is.2021.101766},
+  url = {https://www.sciencedirect.com/science/article/pii/S0306437921000284},
+  abstract = {In this paper, we present GMG-BCU —a local search algorithm based on block coordinate update for estimating a generalized median graph for a given collection of labeled or unlabeled input graphs. Unlike all competitors, GMG-BCU is designed for both discrete and continuous label spaces and can be configured to run in linear time w.r.t. the size of the graph collection whenever median node and edge labels are computable in linear time. These properties make GMG-BCU usable for applications such as differential microbiome data analysis, graph classification, clustering, and indexing. We also prove theoretical properties of generalized median graphs, namely, that they exist under reasonable assumptions which are met in almost all application scenarios, that they are in general non-unique, that they are NP-hard to compute and APX-hard to approximate, and that no polynomial α-approximation exists for any α unless the graph isomorphism problem is in P. Extensive experiments on six different datasets show that our heuristic GMG-BCU always outperforms the state of the art in terms of runtime or quality (on most datasets, both w.r.t. runtime and quality), that it is the only available heuristic which can cope with collections containing several thousands of graphs, and that it shows very promising potential when used for the aforementioned applications. GMG-BCU is freely available on GitHub: https://github.com/dbblumenthal/gedlib/.},
+  file = {/home/bgauzere/work/Zotero/storage/TMA3ZQMZ/Blumenthal et al. - 2021 - Scalable generalized median graph estimation and its manifold use in bioinformatics, clustering, cla.pdf}
+}
+
+@inproceedings{boria2019generalized,
+  title = {Generalized Median Graph via Iterative Alternate Minimizations},
+  booktitle = {International Workshop on Graph-Based Representations in Pattern Recognition},
+  author = {Boria, Nicolas and Bougleux, Sébastien and Gaüzère, Benoit and Brun, Luc},
+  date = {2019},
+  volume = {11510 LNCS},
+  pages = {99--109},
+  publisher = {Springer, Cham},
+  issn = {16113349},
+  doi = {10.1007/978-3-030-20081-7_10},
+  isbn = {978-3-030-20080-0},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/JACKECWL/Generalized median graph via iterative alternate minimizations - Boria et al. - 2019.pdf}
+}
+
+@online{bougleux_quadratic_2015,
+  title = {A {{Quadratic Assignment Formulation}} of the {{Graph Edit Distance}}},
+  author = {Bougleux, Sébastien and Brun, Luc and Carletti, Vincenzo and Foggia, Pasquale and Gaüzère, Benoit and Vento, Mario},
+  date = {2015},
+  doi = {10.48550/ARXIV.1512.07494},
+  url = {https://arxiv.org/abs/1512.07494},
+  urldate = {2026-03-06},
+  abstract = {Computing efficiently a robust measure of similarity or dissimilarity between graphs is a major challenge in Pattern Recognition. The Graph Edit Distance (GED) is a flexible measure of dissimilarity between graphs which arises in error-tolerant graph matching. It is defined from an optimal sequence of edit operations (edit path) transforming one graph into an other. Unfortunately, the exact computation of this measure is NP-hard. In the last decade, several approaches have been proposed to approximate the GED in polynomial time, mainly by solving linear programming problems. Among them, the bipartite GED has received much attention. It is deduced from a linear sum assignment of the nodes of the two graphs, which can be efficiently computed by Hungarian-type algorithms. However, edit operations on nodes and edges are not handled simultaneously, which limits the accuracy of the approximation. To overcome this limitation, we propose to extend the linear assignment model to a quadratic one, for directed or undirected graphs having labelized nodes and edges. This is realized through the definition of a family of edit paths induced by assignments between nodes. We formally show that the GED, restricted to the paths in this family, is equivalent to a quadratic assignment problem. Since this problem is NP-hard, we propose to compute an approximate solution by an adaptation of the Integer Projected Fixed Point method. Experiments show that the proposed approach is generally able to reach a more accurate approximation of the optimal GED than the bipartite GED, with a computational cost that is still affordable for graphs of non trivial sizes.},
+  pubstate = {prepublished},
+  version = {1},
+  keywords = {Data Structures and Algorithms (cs.DS),FOS: Computer and information sciences},
+  file = {/home/bgauzere/work/Zotero/storage/WKLKRKQA/A Quadratic Assignment Formulation of the Graph Edit Distance - Bougleux et al. - 2015.pdf}
+}
+
+@inproceedings{Bougleux2012,
+  title = {Shape Similarity Based on Combinatorial Maps and a Tree Pattern Kernel},
+  booktitle = {Proceedings - {{International Conference}} on {{Pattern Recognition}}},
+  author = {Bougleux, S. and Dupe, F.-X. and Brun, L. and Gaüzère, Benoit and Mokhtari, M.},
+  date = {2012},
+  issn = {10514651},
+  abstract = {While the skeleton of a 2D shape corresponds to a planar graph, its encoding by usual graph data structures does not allow to capture its planar properties. Graph kernels may be defined on graph's encoding of the skeleton in order to define a similarity measure between shapes. Such graph kernels are usually based on a decomposition of graphs into bags of walks or trails. These linear patterns do not allow to fully encode the structure of a skeleton on branching points, hence losing important informations about the shape. This paper aims to solve these two drawbacks by using an encoding of the skeleton taking explicitly into account the orientation of the plane and by decomposing the resulting graph model into both linear and nonlinear patterns. © 2012 ICPR Org Committee.},
+  isbn = {978-4-9906441-0-9},
+  file = {/home/bgauzere/work/Zotero/storage/2QXB2WMC/Shape similarity based on combinatorial maps and a tree pattern kernel - Bougleux et al. - 2012.pdf}
+}
+
+@inproceedings{bougleux2016appariement,
+  title = {Appariement d’ensembles Avec Édition: {{Application}} à La Distance d’édition Bipartie Entre Graphes},
+  booktitle = {{{RFIA}}},
+  author = {Bougleux, Sébastien and Gaüzère, Benoit and Brun, Luc},
+  date = {2016}
+}
+
+@article{bougleux2016graph,
+  title = {Graph {{Edit Distance}} as a {{Quadratic Assignment Problem}}},
+  author = {Bougleux, Sébastien Sebastien and Brun, Luc and Carletti, Vincenzo and Foggia, Pasquale and Gaüzère, Benoit and Vento, Mario},
+  date = {2016},
+  journaltitle = {Pattern Recognition Letters},
+  volume = {87},
+  pages = {38--46},
+  publisher = {North-Holland},
+  issn = {01678655},
+  doi = {10.1016/j.patrec.2016.10.001},
+  url = {http://linkinghub.elsevier.com/retrieve/pii/S0167865516302665},
+  abstract = {The Graph Edit Distance (GED) is a flexible measure of dissimilarity between graphs which arises in error-correcting graph matching. It is defined from an optimal sequence of edit operations (edit path) transforming one graph into another. Unfortunately, the exact computation of this measure is NP-hard. In the last decade, several approaches were proposed to approximate the GED in polynomial time, mainly by solving linear programming problems. Among them, the bipartite GED received much attention. It is deduced from a linear sum assignment of the nodes of the two graphs, which can be efficiently computed by Hungarian-type algorithms. However, edit operations on nodes and edges are not handled simultaneously, which limits the accuracy of the approximation. To overcome this limitation, we propose to extend the linear assignment model to a quadratic one. This is achieved through the definition of a family of edit paths induced by assignments between nodes. We formally show that the GED, restricted to the paths in this family, is equivalent to a quadratic assignment problem. Since this problem is NP-hard, we propose to compute an approximate solution by adapting two algorithms: Integer Projected Fixed Point method and Graduated Non Convexity and Concavity Procedure. Experiments show that the proposed approach is generally able to reach a more accurate approximation of the exact GED than the bipartite GED, with a computational cost that is still affordable for graphs of non trivial sizes.},
+  file = {/home/bgauzere/work/Zotero/storage/BJQIZRTX/Graph Edit Distance as a Quadratic Assignment Problem - Bougleux et al. - 2016.pdf;/home/bgauzere/work/Zotero/storage/HKCX9ZFR/Graph edit distance as a quadratic assignment problem - Bougleux et al. - 2017.pdf}
+}
+
+@inproceedings{Bougleux2017b,
+  title = {A {{Hungarian}} Algorithm for Error-Correcting Graph Matching},
+  booktitle = {International Workshop on Graph-Based Representations in Pattern Recognition},
+  author = {Bougleux, Sébastien and Gaüzère, Benoit and Brun, Luc},
+  date = {2017},
+  volume = {10310 LNCS},
+  pages = {118--127},
+  publisher = {Springer, Cham},
+  issn = {16113349},
+  doi = {10.1007/978-3-319-58961-9_11},
+  abstract = {Bipartite graph matching algorithms become more and more popular to solve error-correcting graph matching problems and to approximate the graph edit distance of two graphs. However, the memory requirements and execution times of this method are respectively proportional to (n + m)2 and (n + m)3 where n and m are the order of the graphs. Subsequent developments reduced these complexities. However, these improvements are valid only under some constraints on the parameters of the graph edit distance. We propose in this paper a new formulation of the bipartite graph matching algorithm designed to solve efficiently the associated graph edit distance problem. The resulting algorithm requires O(nm) memory space and O(min(n,m)2 max(n,m)) execution times.},
+  isbn = {978-3-319-58960-2},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/6P9AEW7Y/A Hungarian algorithm for error-correcting graph matching - Bougleux, Gaüzère, Brun - 2017.pdf}
+}
+
+@inproceedings{bougleux2017graph,
+  title = {Graph Edit Distance as a Quadratic Program},
+  booktitle = {Proceedings - {{International Conference}} on {{Pattern Recognition}}},
+  author = {Bougleux, S. and Gaüzère, Benoit and Brun, L.},
+  date = {2017},
+  issn = {10514651},
+  doi = {10.1109/ICPR.2016.7899881},
+  abstract = {© 2016 IEEE. The graph edit distance (GED) measures the amount of distortion needed to transform a graph into another graph. Such a distance, developed in the context of error-tolerant graph matching, is one of the most flexible tool used in structural pattern recognition. However, the computation of the exact GED is NP-complete. Hence several suboptimal solutions, such as the ones based on bipartite assignments with edition, have been proposed. In this paper we propose a binary quadratic programming problem whose global minimum corresponds to the exact GED. This problem is interpreted as a quadratic assignment problem (QAP) where some constraints have been relaxed. This allows to adapt the integer projected fixed point algorithm, initially designed for the QAP, to efficiently compute an approximate GED by finding an interesting local minimum. Experiments show that our method remains quite close to the exact GED for datasets composed of small graphs, while keeping low execution times on datasets composed of larger graphs.},
+  isbn = {978-1-5090-4847-2},
+  file = {/home/bgauzere/work/Zotero/storage/CUPSG5VX/Graph edit distance as a quadratic program - Bougleux, Gaüzère, Brun - 2017.pdf}
+}
+
+@article{bougleux2020fast,
+  title = {Fast Linear Sum Assignment with Error-Correction and No Cost Constraints},
+  author = {Bougleux, Sébastien and Gaüzère, Benoit and Blumenthal, D.B. David B and Brun, Luc},
+  date = {2020},
+  journaltitle = {Pattern Recognition Letters},
+  volume = {134},
+  pages = {37--45},
+  publisher = {North-Holland},
+  issn = {01678655},
+  doi = {10.1016/j.patrec.2018.03.032},
+  abstract = {© 2018 Elsevier B.V. We propose an algorithm that efficiently solves the linear sum assignment problem with error-correction and no cost constraints. This problem is encountered for instance in the approximation of the graph edit distance. The fastest currently available solvers for the linear sum assignment problem require the pairwise costs to respect the triangle inequality. Our algorithm is as fast as these algorithms, but manages to drop the cost constraint. The main technical ingredient of our algorithm is a cost-dependent factorization of the node substitutions.},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/RIKERRJN/Fast linear sum assignment with error-correction and no cost constraints - Bougleux et al. - 2020.pdf}
+}
+
+@online{brun_new_2021,
+  title = {A New {{Sinkhorn}} Algorithm with {{Deletion}} and {{Insertion}} Operations},
+  author = {Brun, Luc and Gaüzère, Benoit and Bougleux, Sébastien and Yger, Florian},
+  date = {2021},
+  doi = {10.48550/ARXIV.2111.14565},
+  url = {https://arxiv.org/abs/2111.14565},
+  urldate = {2026-03-06},
+  abstract = {This technical report is devoted to the continuous estimation of an epsilon-assignment. Roughly speaking, an epsilon assignment between two sets V1 and V2 may be understood as a bijective mapping between a sub part of V1 and a sub part of V2 . The remaining elements of V1 (not included in this mapping) are mapped onto an epsilon pseudo element of V2 . We say that such elements are deleted. Conversely, the remaining elements of V2 correspond to the image of the epsilon pseudo element of V1. We say that these elements are inserted. As a result our method provides a result similar to the one of the Sinkhorn algorithm with the additional ability to reject some elements which are either inserted or deleted. It thus naturally handles sets V1 and V2 of different sizes and decides mappings/insertions/deletions in a unified way. Our algorithms are iterative and differentiable and may thus be easily inserted within a backpropagation based learning framework such as artificial neural networks.},
+  pubstate = {prepublished},
+  version = {2},
+  keywords = {FOS: Computer and information sciences,FOS: Mathematics,Machine Learning (cs.LG),Neural and Evolutionary Computing (cs.NE),Optimization and Control (math.OC)},
+  file = {/home/bgauzere/work/Zotero/storage/WWEA66LA/Brun et al. - 2021 - A new Sinkhorn algorithm with Deletion and Inserti.pdf}
+}
+
+@online{brun2012relationships,
+  title = {Relationships between Graph Edit Distance and Maximal Common Unlabeled Subgraph},
+  author = {Brun, Luc and Gaüzère, Benoit and Fourey, Sébastien},
+  date = {2012},
+  pubstate = {prepublished},
+  file = {/home/bgauzere/work/Zotero/storage/H5BGZE7L/Relationships between graph edit distance and maximal common unlabeled subgraph - Brun, Gaüzère, Fourey - 2012.pdf}
+}
+
+@inproceedings{brun2022differentiable,
+  title = {A Differentiable Approximation for the {{Linear Sum Assignment Problem}} with {{Edition}}},
+  booktitle = {2022 26th {{International Conference}} on {{Pattern Recognition}} ({{ICPR}})},
+  author = {Brun, Luc and Gaüzere, Benoit and Renton, Guillaume and Bougleux, Sébastien and Yger, Florian},
+  date = {2022},
+  pages = {3822--3828},
+  publisher = {IEEE},
+  file = {/home/bgauzere/work/Zotero/storage/BP2BDIXI/Brun et al. - 2022 - A differentiable approximation for the Linear Sum Assignment Problem with Edition.pdf}
+}
+
+@inproceedings{carletti2015approximate,
+  title = {Approximate Graph Edit Distance Computation Combining Bipartite Matching and Exact Neighborhood Substructure Distance},
+  booktitle = {International {{Workshop}} on {{Graph-Based Representations}} in {{Pattern Recognition}}},
+  author = {Carletti, Vincenzo and Gaüzère, Benoit and Brun, Luc and Vento, Mario and Gaüzere, Benoit and Brun, Luc and Vento, Mario},
+  date = {2015},
+  volume = {9069},
+  pages = {188--197},
+  publisher = {Springer, Cham},
+  issn = {16113349},
+  doi = {10.1007/978-3-319-18224-7_19},
+  abstract = {© Springer International Publishing Switzerland 2015. Graph edit distance corresponds to a flexible graph dissimilarity measure. Unfortunately, its computation requires an exponential complexity according to the number of nodes of both graphs being compared. Some heuristics based on bipartite assignment algorithms have been proposed in order to approximate the graph edit distance. However, these heuristics lack of accuracy since they are based either on small patterns providing a too local information or walks whose tottering induce some bias in the edit distance calculus. In this work, we propose to extend previous heuristics by considering both less local and more accurate patterns using subgraphs defined around each node.},
+  isbn = {978-3-319-18223-0},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/RG6MUB84/Approximate graph edit distance computation combining bipartite matching and exact neighborhood substructure distance - Carletti et al..pdf}
+}
+
+@inproceedings{conte2013comparison,
+  title = {A Comparison of Explicit and Implicit Graph Embedding Methods for Pattern Recognition},
+  booktitle = {International {{Workshop}} on {{Graph-Based Representations}} in {{Pattern Recognition}}},
+  author = {Conte, Donatello and Ramel, Jean-Yves J.-Y. and Sidere, Nicolas and Luqman, M.M. Muhammad Muzzamil and Gaüzère, Benoit and Gibert, Jaume and Brun, Luc and Vento, Mario and Sidère, N. and Luqman, M.M. Muhammad Muzzamil and Gaüzère, Benoit and Gibert, Jaume and Brun, Luc and Vento, Mario},
+  date = {2013},
+  volume = {7877 LNCS},
+  pages = {81--90},
+  publisher = {Springer, Berlin, Heidelberg},
+  issn = {03029743},
+  doi = {10.1007/978-3-642-38221-5_9},
+  abstract = {In recent years graph embedding has emerged as a promising solution for enabling the expressive, convenient, powerful but computational expensive graph based representations to benefit from mature, less expensive and efficient state of the art machine learning models of statistical pattern recognition. In this paper we present a comparison of two implicit and three explicit state of the art graph embedding methodologies. Our preliminary experimentation on different chemoinformatics datasets illustrates that the two implicit and three explicit graph embedding approaches obtain competitive performance for the problem of graph classification. © 2013 Springer-Verlag.},
+  isbn = {978-3-642-38220-8},
+  file = {/home/bgauzere/work/Zotero/storage/BBGH27ZU/A comparison of explicit and implicit graph embedding methods for pattern recognition - Conte et al. - 2013.pdf}
+}
+
+@article{couteaud_spatio_2025,
+  title = {Towards {{Spatio Temporal Graph Representations}} for {{Historical Spatial Data}}},
+  author = {Couteaud, Anne-Pauline and DEL MONDO, Geraldine and Gaüzère, Benoit and Hautefeuille, Florent and Chatelain, Clément},
+  date = {2025-09-20},
+  publisher = {Zenodo},
+  doi = {10.5281/ZENODO.14713998},
+  url = {https://zenodo.org/doi/10.5281/zenodo.14713998},
+  urldate = {2026-02-19},
+  abstract = {This paper explores the use of spatio-temporal graphs to analyse social dynamics from historical documents such as maps and fiscal registers. Historians often face difficulties in combining various document types to study the evolution of human activities over time. Our research addresses the challenges of identifying specific social dynamic characteristics and effectively modelling these dynamics for easier data retrieval. We propose a framework to encode historical data, enhancing computer-based analysis and enabling the processing of larger datasets. Additionally, we discuss potential issues in developing a comprehensive and effective model.},
+  file = {/home/bgauzere/work/Zotero/storage/N4CFDU9G/Couteaud et al. - 2025 - Towards Spatio Temporal Graph Representations for Historical Spatial Data.pdf}
+}
+
+@inproceedings{daller2018approximate,
+  title = {Approximate Graph Edit Distance by Several Local Searches in Parallel},
+  booktitle = {7th {{International Conference}} on {{Pattern Recognition Applications}} and {{Methods}}},
+  author = {Daller, Évariste and Bougleux, Sébastien and Gaüzère, Benoit and Brun, Luc},
+  date = {2018},
+  volume = {2018-Janua},
+  pages = {149--158},
+  doi = {10.5220/0006599901490158},
+  abstract = {Solving or approximating the linear sum assignment problem (LSAP) is an important step of several constructive and local search strategies developed to approximate the graph edit distance (GED) of two attributed graphs, or more generally the solution to quadratic assignment problems. Constructive strategies find a first estimation of the GED by solving an LSAP. This estimation is then refined by a local search strategy. While these search strategies depend strongly on the initial assignment, several solutions to the linear problem usually exist. They are not taken into account to get better estimations. All the estimations of the GED based on an LSAP select randomly one solution. This paper explores the insights provided by the use of several solutions to an LSAP, refined in parallel by a local search strategy based on the relaxation of the search space, and conditional gradient descent. Other generators of initial assignments are also considered, approximate solutions to an LSAP and random assignments. Experimental evaluations on several datasets show that the proposed estimation is comparable to more global search strategies in a reduced computational time.},
+  isbn = {978-989-758-276-9},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/LLFMUU62/Approximate Graph Edit Distance by Several Local Searches in Parallel To cite this version HAL Id hal-01664529 Approximate Graph Edit.pdf}
+}
+
+@inproceedings{Foggia2015,
+  title = {Human Action Recognition Using an Improved String Edit Distance},
+  booktitle = {{{AVSS}} 2015 - 12th {{IEEE International Conference}} on {{Advanced Video}} and {{Signal Based Surveillance}}},
+  author = {Foggia, P. and Gaüzère, Benoit and Saggese, A. and Vento, M.},
+  date = {2015},
+  pages = {1--6},
+  publisher = {IEEE},
+  doi = {10.1109/AVSS.2015.7301761},
+  abstract = {© 2015 IEEE. In this paper we propose an improvement of a human action recognition method that uses a string-based representation and a string edit distance to compare the observed action with reference actions in the training set. In particular, the original improvement is based on a specific formulation of the string edit distance that is more suited to take into account the problems related to noise and to different execution speeds that are observed in an action recognition system. The experimentation has been carried out on two widely adopted datasets, namely the MIVIA and the MHAD datasets, and the obtained results, compared with both the original method and other state of the art approaches, confirm the significance of the proposed improvement and the effectiveness of the method.},
+  isbn = {978-1-4673-7632-7},
+  file = {/home/bgauzere/work/Zotero/storage/7MZPWCC3/Human action recognition using an improved string edit distance - Foggia et al. - 2015.pdf}
+}
+
+@article{Gauzere2011,
+  title = {Two New Graph Kernels and Applications to Chemoinformatics},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2011},
+  journaltitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+  volume = {6658 LNCS},
+  pages = {112--121},
+  issn = {03029743},
+  doi = {10.1007/978-3-642-20844-7_12},
+  abstract = {Chemoinformatics is a well established research field concerned with the discovery of molecule’s properties through informational techniques. Computer science’s research fields mainly concerned by the chemoinformatics field are machine learning and graph theory. From this point of view, graph kernels provide a nice framework combining machine learning techniques with graph theory. Such kernels prove their efficiency on several chemoinformatics problems. This paper presents two new graph kernels applied to regression and classification problems within the chemoinformatics field. The first kernel is based on the notion of edit distance while the second is based on sub trees enumeration. Several experiments show the complementary of both approaches.},
+  isbn = {9783642208430},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/IYHREQNP/Two new graph kernels and applications to chemoinformatics - Gaüzère, Brun, Villemin - 2011.pdf}
+}
+
+@inproceedings{gauzere2011deux,
+  title = {Deux Nouveaux Noyaux Sur Graphes et Leurs Applications En Chimioinformatique},
+  booktitle = {{{CAp}} 2011---{{Conférence Francophone}} d'{{Apprentissage}} 2011},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2011},
+  pages = {AGS--5},
+  url = {http://hal.archives-ouvertes.fr/hal-00596513/},
+  abstract = {La chimioinformatique utilise des méthodes issues de l’informatique, plus particulièrement la théorie des graphes et l’apprentissage automatique, afin de traiter d’importants volumes de données fournis par l’étude de familles de molécules. Dans ce contexte, les noyaux sur graphes fournissent une approche intéressante en combinant les méthodes d’apprentissage automatique avec la théorie des graphes. Précédemment, les noyaux sur graphes ont été appliqués avec succès sur quelques problèmes proposés par la chimioinformatique. Dans cet article, nous présentons deux nouveaux noyaux sur graphes appliqués sur des problèmes de régression et de classification. Le premier noyau est basé sur la notion de distance d’édition entre deux graphes tandis que le second se base sur l’énumération des sous arbres d’un graphe. La dernière partie montre la complémentarité des deux approches grâce à plusieurs expériences.},
+  file = {/home/bgauzere/work/Zotero/storage/WYXQFFKN/Deux nouveaux noyaux sur graphes et leurs applications en chimioinformatique To cite this version HAL Id hal-00596513 Deux nouveaux.pdf}
+}
+
+@book{Gauzere2012b,
+  title = {Implicit and Explicit Graph Embedding: {{Comparison}} of Both Approaches on Chemoinformatics Applications},
+  author = {Gaüzère, Benoit and Hasegawa, M. and Brun, L. and Tabbone, S.},
+  date = {2012},
+  journaltitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
+  volume = {7626 LNCS},
+  issn = {03029743},
+  doi = {10.1007/978-3-642-34166-3_56},
+  abstract = {Defining similarities or distances between graphs is one of the bases of the structural pattern recognition field. An important trend within this field consists in going beyond the simple formulation of similarity measures by studying properties of graph's spaces induced by such distance or similarity measures. Such a problematic is closely related to the graph embedding problem. In this article, we investigate two types of similarity measures. The first one is based on the notion of graph edit distance which aims to catch a global dissimilarity between graphs. The second family is based on comparisons of bags of patterns extracted from graphs to be compared. Both approaches are detailed and their performances are evaluated on different chemoinformatics problems. © 2012 Springer-Verlag Berlin Heidelberg.},
+  isbn = {978-3-642-34165-6},
+  file = {/home/bgauzere/work/Zotero/storage/J3PQGNC3/Implicit and explicit graph embedding Comparison of both approaches on chemoinformatics applications - Gaüzère et al. - 2012.pdf}
+}
+
+@inproceedings{Gauzere2012c,
+  title = {Graph Kernels: Crossing Information from Different Patterns Using Graph Edit Distance},
+  booktitle = {Structural, {{Syntactic}}, and {{Statistical}} …},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2012},
+  volume = {7626 LNCS},
+  pages = {42--50},
+  issn = {03029743},
+  doi = {10.1007/978-3-642-34166-3_5},
+  url = {http://link.springer.com/chapter/10.1007/978-3-642-34166-3_5},
+  urldate = {2013-04-15},
+  abstract = {Graph kernels allow to define metrics on graph space and constitute thus an efficient tool to combine advantages of structural and statistical pattern recognition fields. Within the chemoinformatics framework, kernels are usually defined by comparing the number of occurences of patterns extracted from two different graphs. Such a graph kernel construction scheme neglects the fact that similar but not identical patterns may lead to close properties. We propose in this paper to overcome this drawback by defining our kernel as a weighted sum of comparisons between all couples of patterns. In addition, we propose an efficient computation of the optimal edit distance on a limited set of finite trees. This extension has been tested on two chemoinformatics problems. © 2012 Springer-Verlag Berlin Heidelberg.},
+  isbn = {978-3-642-34165-6},
+  file = {/home/bgauzere/work/Zotero/storage/ZRTVEEUK/Graph kernels crossing information from different patterns using graph edit distance - Gaüzère, Brun, Villemin - 2012.pdf}
+}
+
+@inproceedings{gauzere2012graph,
+  title = {Graph Kernels Based on Relevant Patterns and Cycle Information for Chemoinformatics},
+  booktitle = {Proceedings of the 21st {{International Conference}} on {{Pattern Recognition}} ({{ICPR2012}})},
+  author = {Gaüzére, Benoit and Brun, Luc and Villemin, Didier and Brun, Myriam},
+  date = {2012},
+  pages = {1775--1778},
+  publisher = {IEEE},
+  issn = {10514651},
+  abstract = {Chemoinformatics aim to predict molecule's properties through informational methods. Computer science's research fields concerned with chemoinformatics are machine learning and graph theory. From this point of view, graph kernels provide a nice framework for combining these two fields. We present in this paper two contributions to this research field: a graph kernel based on an optimal linear combination of kernels applied to acyclic patterns and a new kernel on the cyclic system of two graphs. These two extensions are validated on two chemoinformatics datasets. © 2012 ICPR Org Committee.},
+  isbn = {978-4-9906441-0-9},
+  file = {/home/bgauzere/work/Zotero/storage/JI3T8GB5/Graph kernels based on relevant patterns and cycle information for chemoinformatics - Gaüzére et al. - 2012.pdf}
+}
+
+@inproceedings{gauzere2012noyau,
+  title = {Noyau de {{Treelets Appliqué}} Aux {{Graphes Étiquetés}}},
+  booktitle = {{{RFIA}} 2012 ({{Reconnaissance}} Des {{Formes}} et {{Intelligence Artificielle}})},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2012},
+  pages = {972--978},
+  location = {Lyon, France},
+  url = {http://hal.archives-ouvertes.fr/hal-00656519},
+  abstract = {La ch\{é\}moinformatique utilise des m\{é\}thodes issues de l'informatique, plus particuli\{è\}rement la th\{é\}orie des graphes et l'apprentissage automatique, afin de classifier ou pr\{é\}dire les propri\{é\}t\{é\}s de bases de mol\{é\}cules. Dans ce contexte, les noyaux sur graphes fournissent une approche int\{é\}ressante en combinant les m\{é\}thodes d'apprentissage automatique et la repr\{é\}sentation naturelle des mol\{é\}cules par graphes. Plusieurs m\{é\}thodes bas\{é\}es sur les noyaux sur graphes ont \{é\}t\{é\} propos\{é\}es pour r\{é\}soudre des probl\{è\}mes en ch\{é\}moinformatique. La d\{é\}composition du graphe en sous structures repr\{é\}sente une importante famille de noyau. Dans cet article, nous pr\{é\}sentons une extension d'un noyau pr\{é\}c\{é\}demment bas\{é\} sur les sous structures non \{é\}tiquet\{é\}es \{à\} l'\{é\}num\{é\}ration de sous structures \{é\}tiquet\{é\}es. Nous proposons \{é\}galement deux m\{é\}thodes it\{é\}ratives permettant de s\{é\}lectionner un ensemble de sous structures afin d'am\{é\}liorer la pr\{é\}cision de la pr\{é\}diction. Le noyau a \{é\}t\{é\} valid\{é\} sur deux jeux de donn\{é\}es impliquant des graphes \{é\}tiquet\{é\}s},
+  file = {/home/bgauzere/work/Zotero/storage/KA5GPLZ9/Noyau de Treelets Appliqué aux Graphes Étiquetés - Gaüzère, Brun, Villemin - 2012.pdf}
+}
+
+@article{gauzere2012two,
+  title = {Two New Graphs Kernels in Chemoinformatics},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier and Gaüzere, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2012},
+  journaltitle = {Pattern Recognition Letters},
+  volume = {33},
+  number = {15},
+  pages = {2038--2047},
+  publisher = {North-Holland},
+  issn = {01678655},
+  doi = {10.1016/j.patrec.2012.03.020},
+  abstract = {Chemoinformatics is a well established research field concerned with the discovery of molecule's properties through informational techniques. Computer science's research fields mainly concerned by chemoinformatics are machine learning and graph theory. From this point of view, graph kernels provide a nice framework combining machine learning and graph theory techniques. Such kernels prove their efficiency on several chemoinformatics problems and this paper presents two new graph kernels applied to regression and classification problems. The first kernel is based on the notion of edit distance while the second is based on subtrees enumeration. The design of this last kernel is based on a variable selection step in order to obtain kernels defined on parsimonious sets of patterns. Performances of both kernels are investigated through experiments. © 2012 Elsevier B.V. All rights reserved.},
+  file = {/home/bgauzere/work/Zotero/storage/Y7RYEA9E/Two new graphs kernels in chemoinformatics - Gaüzère et al. - 2012.pdf}
+}
+
+@inproceedings{Gauzere2013a,
+  title = {A New Hypergraph Molecular Representation},
+  booktitle = {6 Ièmes {{Journées}} de La {{Chémoinformatique}}., {{Oct}} 2013, {{Nancy}}, {{France}}},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2013},
+  file = {/home/bgauzere/work/Zotero/storage/XZ8SYF6L/A new hypergraph molecular representation - Gaüzère, Brun, Villemin - 2013.pdf}
+}
+
+@thesis{gauzere2013application,
+  title = {Application Des Méthodes à Noyaux Sur Graphes Pour La Prédiction Des Propriétés Des Molécules.},
+  author = {Gaüzère, Benoit},
+  date = {2013},
+  institution = {Université de Caen},
+  file = {/home/bgauzere/work/Zotero/storage/9BLASRRZ/Application des méthodes à noyaux sur graphes pour la prédiction des propriétés des molécules. - Gaüzère - 2013.pdf}
+}
+
+@article{Gauzere2013b,
+  title = {Noyau de {{Treelets Appliqué}} Aux {{Graphes Etiquetés}} et Aux {{Graphes}} de {{Cycles}}.},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2013},
+  journaltitle = {Revue d'Intelligence Artificielle},
+  volume = {27},
+  number = {1},
+  pages = {121--144},
+  issn = {0992499X},
+  doi = {10.3166/RIA.27.121-144},
+  abstract = {Chemoinformatics consists to discover or predict molecule's properties through informational techniques.Computer science's research fields mainly concerned by chemoinformatics are machine learning and graph theory. From this point of view, graph kernels provide a nice framework combining machine learning and graph theory techniques. Among methods based on graph kernels, an major family is based on a decomposition of a graph into substructures. In this paper, we present two extensions of a kernel previously based on unlabeled sub structures to labeled substructures and cyclic information. We also propose selection methods which allow us to weight the set of considered sub structures in order to improve prediction accuracy. © 2013 Lavoisier.},
+  file = {/home/bgauzere/work/Zotero/storage/2BERXD7Y/Noyau de Treelets Appliqué aux Graphes Etiquetés et aux Graphes de Cycles. - Gaüzère, Brun, Villemin - 2013.pdf}
+}
+
+@inproceedings{gauzere2013relevant,
+  title = {Relevant Cycle Hypergraph Representation for Molecules},
+  booktitle = {International {{Workshop}} on {{Graph-Based Representations}} in {{Pattern Recognition}}},
+  author = {Gaüzere, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2013},
+  volume = {7877 LNCS},
+  pages = {111--120},
+  publisher = {Springer, Berlin, Heidelberg},
+  issn = {03029743},
+  doi = {10.1007/978-3-642-38221-5_12},
+  abstract = {Chemoinformatics aims to predict molecule's properties through informational methods. Some methods base their prediction model on the comparison of molecular graphs. Considering such a molecular representation, graph kernels provide a nice framework which allows to combine machine learning techniques with graph theory. Despite the fact that molecular graph encodes all structural information of a molecule, it does not explicitly encode cyclic information. In this paper, we propose a new molecular representation based on a hypergraph which explicitly encodes both cyclic and acyclic information into one molecular representation called relevant cycle hypergraph. In addition, we propose a similarity measure in order to compare relevant cycle hypergraphs and use this molecular representation in a chemoinformatics prediction problem. © 2013 Springer-Verlag.},
+  isbn = {978-3-642-38220-8},
+  file = {/home/bgauzere/work/Zotero/storage/52EI9QT7/Relevant cycle hypergraph representation for molecules - Gaüzere, Brun, Villemin - 2013.pdf}
+}
+
+@inproceedings{Gauzere2014a,
+  title = {Représentation Des Cycles d'une Molécule Sous Forme d'hypergraphe},
+  booktitle = {Reconnaissance de {{Formes}} et {{Intelligence Artificielle}} ({{RFIA}}) 2014, {{Jun}} 2014},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2014},
+  file = {/home/bgauzere/work/Zotero/storage/9SSQVWL2/Représentation des cycles d ’ une molécule sous forme d ’ hypergraphe To cite this version HAL Id hal-00989071 - Gaüzère et al.pdf}
+}
+
+@inproceedings{gauzere2014approximate,
+  title = {Approximate {{Graph Edit Distance Guided}} by {{Bipartite Matching}} of {{Bags}} of {{Walks}}},
+  booktitle = {Structural, {{Syntactic}}, and {{Statistical Pattern Recognition}}},
+  author = {Gaüzère, Benoit and Bougleux, Sébastien and Riesen, Kaspar and Brun, Luc},
+  editor = {Fränti, Pasi and Brown, Gavin and Loog, Marco and Escolano, Francisco and Pelillo, Marcello},
+  date = {2014},
+  pages = {73--82},
+  publisher = {Springer},
+  location = {Berlin, Heidelberg},
+  doi = {10.1007/978-3-662-44415-3_8},
+  abstract = {The definition of efficient similarity or dissimilarity measures between graphs is a key problem in structural pattern recognition. This problem is nicely addressed by the graph edit distance, which constitutes one of the most flexible graph dissimilarity measure in this field. Unfortunately, the computation of an exact graph edit distance is known to be exponential in the number of nodes. In the early beginning of this decade, an efficient heuristic based on a bipartite assignment algorithm has been proposed to find efficiently a suboptimal solution. This heuristic based on an optimal matching of nodes’ neighborhood provides a good approximation of the exact edit distance for graphs with a large number of different labels and a high density. Unfortunately, this heuristic works poorly on unlabeled graphs or graphs with a poor diversity of neighborhoods. In this work we propose to extend this heuristic by considering a mapping of bags of walks centered on each node of both graphs.},
+  isbn = {978-3-662-44415-3},
+  langid = {english},
+  keywords = {Cost Matrix,Edge Label,Edit Distance,Label Graph,Quadratic Assignment Problem},
+  file = {/home/bgauzere/work/Zotero/storage/GVLVL8E5/Gaüzère et al. - 2014 - Approximate Graph Edit Distance Guided by Bipartite Matching of Bags of Walks.pdf}
+}
+
+@inproceedings{gauzere2014graph,
+  title = {Graph {{Kernel Encoding Substituents}}' {{Relative Positioning}}},
+  booktitle = {Proceedings of {{International Conference}} on {{Pattern Recognition}}},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2014},
+  pages = {637--642},
+  publisher = {IEEE},
+  issn = {10514651},
+  doi = {10.1109/ICPR.2014.120},
+  abstract = {© 2014 IEEE. Chemo informatics aims to predict molecular properties using informational methods. Computer science's research fields concerned by this domain are machine learning and graph theory. An interesting approach consists in using graph kernels which allow to combine graph theory and machine learning frameworks. Graph kernels allow to define a similarity measure between molecular graphs corresponding to a scalar product in some Hilbert space. Most of existing graph kernels proposed in chemo informatics do not allow to explicitly encode cyclic information, hence limiting the efficiency of these approaches. In this paper, we propose to define a cyclic representation encoding the relative positioning of substituents around a cycle. We also propose a graph kernel taking into account this information. This contribution has been tested on three classification problems proposed in chemo informatics.},
+  isbn = {978-1-4799-5208-3},
+  file = {/home/bgauzere/work/Zotero/storage/MGLCY8RK/Graph Kernel Encoding Substituents' Relative Positioning - Gaüzère, Brun, Villemin - 2014.pdf}
+}
+
+@inproceedings{Gauzere2015,
+  title = {Semantic Web Technologies for Object Tracking and Video Analytics},
+  booktitle = {International {{Symposium}} on {{Visual Computing}}, 2015},
+  author = {Gaüzère, Benoit and Greco, Claudia and Ritrovato, Pierluigi and Saggese, Alessia and Vento, Mario},
+  date = {2015},
+  volume = {9475},
+  pages = {574--585},
+  publisher = {Springer, Cham},
+  issn = {16113349},
+  doi = {10.1007/978-3-319-27863-6_53},
+  abstract = {© Springer International Publishing Switzerland 2015. As demonstrated in several research contexts, some of the best performing state of the art algorithms for object tracking integrate a traditional bottom-up approach with some knowledge of the scene and aims of the algorithm. In this paper, we propose the use of the Semantic Web technology for representing high-level knowledge describing the elements of the scene to be analysed. In particular, we demonstrate how to use the OWL ontology language to describe scene elements and their relationships together with a SPARQL based rule language to infer on the knowledge. The proof of the implemented concept prototype is able to track people even when occlusions between persons and/or objects occur, only using the bounding box dimensions, positions and directions. We also demonstrate how the Semantic Web Technology enables powerful video analytics functions for video surveillance applications.},
+  isbn = {978-3-319-27862-9},
+  file = {/home/bgauzere/work/Zotero/storage/5AEE8KM4/Semantic web technologies for object tracking and video analytics - Gaüzère et al. - 2015.pdf}
+}
+
+@article{Gauzere2015a,
+  title = {Treelet Kernel Incorporating Cyclic, Stereo and Inter Pattern Information in Chemoinformatics},
+  author = {Gaüzère, Benoit and Grenier, Pierre Anthony and Brun, Luc and Villemin, Didier},
+  date = {2015},
+  journaltitle = {Pattern Recognition},
+  volume = {48},
+  number = {2},
+  pages = {356--367},
+  issn = {00313203},
+  doi = {10.1016/j.patcog.2014.07.029},
+  abstract = {© 2014 Elsevier Ltd. All rights reserved. Chemoinformatics is a research field concerned with the study of physical or biological molecular properties through computer sciences research fields such as machine learning and graph theory. From this point of view, graph kernels provide a nice framework which allows to naturally combine machine learning and graph theory techniques. Graph kernels based on bags of patterns have proven their efficiency on several problems both in terms of accuracy and computational time. Treelet kernel is a graph kernel based on a bag of small subtrees. We propose in this paper several extensions of this kernel devoted to chemoinformatics problems. These extensions aim to weight each pattern according to its influence, to include the comparison of non-isomorphic patterns, to include stereo information and finally to explicitly encode cyclic information into kernel computation.},
+  file = {/home/bgauzere/work/Zotero/storage/PRX9T5NK/Treelet kernel incorporating cyclic, stereo and inter pattern information in chemoinformatics - Gaüzère et al. - 2015.pdf}
+}
+
+@incollection{gauzere2015graph,
+  title = {Graph Kernels in Chemoinformatics},
+  booktitle = {Quantitative Graph Theory: Mathematical Foundations and Applications},
+  author = {Gaüzère, Benoit and Brun, Luc and Villemin, Didier},
+  date = {2015},
+  volume = {33},
+  number = {15},
+  pages = {2038--2047},
+  publisher = {CRC Press},
+  isbn = {978-1-4665-8451-8},
+  file = {/home/bgauzere/work/Zotero/storage/DSG4TCTY/Graph kernels in chemoinformatics - Gaüzère, Brun, Villemin - 2015.pdf}
+}
+
+@incollection{gauzere2015human,
+  title = {Human {{Tracking Using}} a {{Top-Down}} and {{Knowledge Based Approach}}},
+  booktitle = {Image {{Analysis}} and {{Processing}}—{{ICIAP}} 2015},
+  author = {Gaüzère, Benoit and Ritrovato, Pierluigi and Saggese, Alessia and Vento, Mario},
+  date = {2015},
+  volume = {9279},
+  pages = {257--267},
+  publisher = {Springer International Publishing},
+  issn = {16113349},
+  doi = {10.1007/978-3-319-23231-7_24},
+  abstract = {© Springer International Publishing Switzerland 2015. In this paper, we propose a new top-down and knowledge-based approach to perform human tracking in video sequences. First, introduction of knowledge allows to anticipate most of common problems encountered by tracking methods. Second, we define a top-down approach rather than a classical bottom-up approach to encode the knowledge. The more global point of view of the scene provided by our top-down approach also allows to keep some consistency among the set of trajectories extracted from the video sequence. A preliminary experimentation has been conducted over some challenging sequences of the PETS 2009 dataset. The obtained results confirm that our approach can still achieve promising performance even with a consistent reduction in the amount of information taken into account during the tracking process. In order to show the relevance of considering knowledge to address tracking problem, we strongly reduce the amount of information provided to our approach.},
+  isbn = {978-3-319-23230-0},
+  file = {/home/bgauzere/work/Zotero/storage/L4KX35Y7/Human Tracking Using a Top-Down and Knowledge Based Approach - Gaüzère et al. - 2015.pdf}
+}
+
+@inproceedings{gauzere2016approximating,
+  title = {Approximating Graph Edit Distance Using {{GNCCP}}},
+  booktitle = {Joint {{IAPR International Workshops}} on {{Statistical Techniques}} in {{Pattern Recognition}} ({{SPR}}) and {{Structural}} and {{Syntactic Pattern Recognition}} ({{SSPR}})},
+  author = {Gaüzère, Benoit and Bougleux, Sébastien and Brun, Luc},
+  date = {2016},
+  volume = {10029 LNCS},
+  eprint = {9780201398298},
+  eprinttype = {arXiv},
+  pages = {496--506},
+  publisher = {Springer, Cham},
+  issn = {16113349},
+  doi = {10.1007/978-3-319-49055-7_44},
+  abstract = {The graph edit distance (GED) is a flexible and widely used dissimilarity measure between graphs. Computing the GED between two graphs can be performed by solving a quadratic assignment problem (QAP). However, the problem is NP complete hence forbidding the com- putation of the optimal GED on large graphs. To tackle this drawback, recent heuristics are based on a linear approximation of the initial QAP formulation. In this paper, we propose a method providing a better local minimum of the QAP formulation than our previous proposition based on IPFP. We adapt a convex concave regularization scheme initially designed for graph matching which allows to reach better local mini- mum and avoids the need of an initialization step. Several experiments demonstrate that our method outperforms previous methods in terms of accuracy, with a time still much lower than the computation of a GED.},
+  isbn = {978-3-319-49054-0},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/AE83YFRF/Approximating graph edit distance using GNCCP - Gaüzère, Bougleux, Brun - 2016.pdf}
+}
+
+@inproceedings{gledel_graph_2023,
+  title = {Graph {{Normalizing Flows}} to~{{Pre-image Free Machine Learning}} for~{{Regression}}},
+  booktitle = {Graph-{{Based Representations}} in {{Pattern Recognition}}},
+  author = {Glédel, Clément and Gaüzère, Benoît and Honeine, Paul},
+  editor = {Vento, Mario and Foggia, Pasquale and Conte, Donatello and Carletti, Vincenzo},
+  date = {2023},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {92--101},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-42795-4_9},
+  abstract = {In Machine Learning, data embedding is a fundamental aspect of creating nonlinear models. However, they often lack interpretability due to the limited access to the embedding space, also called latent space. As a result, it is highly desirable to represent, in the input space, elements from the embedding space. Nevertheless, obtaining the inverse embedding is a challenging task, and it involves solving the hard pre-image problem. This task becomes even more challenging when dealing with structured data like graphs, which are complex and discrete by nature. This article presents a novel approach for graph regression using Normalizing Flows (NFs), in order to avoid the pre-image problem. By creating a latent representation space using a NF, the method overcomes the difficulty of finding an inverse transformation. The approach aims at supervising the space generation process in order to create a space suitable for the specific regression task. Furthermore, any result obtained in the generated space can be translated into the input space through the application of the inverse transformation learned by the model. The effectiveness of our approach is demonstrated by using a NF model on different regression problems. We validate the ability of the method to efficiently handle both the pre-image generation and the regression task.},
+  isbn = {978-3-031-42795-4},
+  langid = {english},
+  keywords = {hdr}
+}
+
+@inproceedings{gledelNormalizingFlowApplique2022,
+  title = {Normalizing {{Flow}} Appliqué Aux Problèmes de Pré-Image de Noyau},
+  booktitle = {24-Ème {{Conférence}} d’{{Apprentissage}} Automatique ({{CAp}})},
+  author = {Glédel, Clément and Gaüzère, Benoit and Honeine, Paul},
+  date = {2022},
+  pages = {1--10}
+}
+
+@article{Hoffmann2020,
+  title = {Predicting Experimental Electrophilicities from Quantum and Topological Descriptors: {{A}} Machine Learning Approach},
+  author = {Hoffmann, Guillaume and Balcilar, Muhammet and Tognetti, Vincent and Héroux, Pierre and Gaüzère, Benoit Beno\textbackslash\textasciicircum\textbackslash it and Adam, Sébastien and Joubert, Laurent},
+  date = {2020},
+  journaltitle = {Journal of Computational Chemistry},
+  volume = {41},
+  number = {24},
+  pages = {2124--2136},
+  publisher = {John Wiley \& Sons, Inc. Hoboken, USA},
+  doi = {10.1002/jcc.26376},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.26376},
+  abstract = {Abstract In this paper, we assess the ability of various machine learning methods, either linear or non-linear, to efficiently predict Mayr's experimental scale for electrophilicity. To this aim, molecular and atomic descriptors rooted in conceptual density functional theory and in the quantum theory of atoms-in-molecules as well as topological features defined within graph theory were evaluated for a large set of molecules widely used in organic chemistry. State-of-the-art regression tools belonging to the support vector machines family and decision tree models were in particular considered and implemented. They afforded a promising predictive model, validating the use of such methodologies for the study of chemical reactivity.},
+  file = {/home/bgauzere/work/Zotero/storage/4J43VCIE/Predicting experimental electrophilicities from quantum and topological descriptors A machine learning approach - Hoffmann et al. - 2020.pdf}
+}
+
+@inproceedings{imbert_insights_2025,
+  title = {Insights on Using Graph Neural Networks for Sulcal Graphs Predictive Models},
+  booktitle = {Graph-Based Representations in Pattern Recognition},
+  author = {Imbert, Alexis and Gaüzère, Benoit and Takerkart, Sylvain and Auzias, Guillaume and Honeine, Paul},
+  editor = {Brun, Luc and Carletti, Vincenzo and Bougleux, Sébastien and Gaüzère, Benoît},
+  date = {2025},
+  pages = {79--89},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  abstract = {Graph representations have emerged as a powerful tool in medical imaging to analyze complex structures such as the brain. In particular, studying the geometry of the brain surface provides valuable insights into individual characteristics. To model the brain as a graph, sulcal graphs are derived from MRI data by assigning a node to each fold of the cortical surface and connecting these nodes based on their adjacency. This approach encodes the geometry of the brain surface, making sulcal graphs a relevant data representation for predictive models. In this study, we explore the effectiveness of Graph Neural Networks (GNNs) to extract meaningful information from these graph representations, using sex classification as a pretext task. Our experiments reveal that the structural information captured by the graph is largely driven by the 3D coordinates of the nodes, raising questions about the added value of graph connectivity in these representations. Additionally, we find that conventional Multi-Layer Perceptron (MLP) models achieve comparable or superior performance to GNNs, suggesting that graph structure may not provide significant additional discriminative power in this specific task. These findings highlight the challenges of defining optimal GNN architectures for sulcal graphs and motivate further investigations into alternative representations and learning paradigms.},
+  isbn = {978-3-031-94139-9}
+}
+
+@inproceedings{jia_bridging_2023,
+  title = {Bridging {{Distinct Spaces}} in~{{Graph-Based Machine Learning}}},
+  booktitle = {Pattern {{Recognition}}},
+  author = {Jia, Linlin and Ning, Xiao and Gaüzère, Benoit and Honeine, Paul and Riesen, Kaspar},
+  editor = {Lu, Huimin and Blumenstein, Michael and Cho, Sung-Bae and Liu, Cheng-Lin and Yagi, Yasushi and Kamiya, Tohru},
+  date = {2023},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {1--14},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-47637-2_1},
+  abstract = {Graph-based machine learning, encompassing Graph Edit Distances (GEDs), Graph Kernels, and Graph Neural Networks (GNNs), offers extensive capabilities and exciting potential. While each model possesses unique strengths for graph challenges, interrelations between their underlying spaces remain under-explored. In this paper, we introduce a novel framework for bridging these distinct spaces via GED cost learning. A supervised metric learning approach serves as an instance of this framework, enabling space alignment through pairwise distances and the optimization of edit costs. Experiments reveal the framework’s potential for enhancing varied tasks, including regression, classification, and graph generation, heralding new possibilities in these fields.},
+  isbn = {978-3-031-47637-2},
+  langid = {english},
+  file = {/home/bgauzere/work/Zotero/storage/E23NTRPC/Jia et al. - 2023 - Bridging Distinct Spaces in Graph-Based Machine Learning.pdf}
+}
+
+@online{jia_predicting_2023,
+  title = {Predicting {{Redox Potentials}} by {{Graph-Based Machine Learning Methods}}},
+  author = {Jia, Linlin and Brémond, Éric and Zaida, Larissa and Gaüzere, Benoit and Tognetti, Vincent and Joubert, Laurent},
+  date = {2023-11-09},
+  eprinttype = {ChemRxiv},
+  doi = {10.26434/chemrxiv-2023-gmpmg},
+  url = {https://chemrxiv.org/engage/chemrxiv/article-details/654bb7202c3c11ed71fc350b},
+  urldate = {2023-11-20},
+  abstract = {The evaluation of oxidation and reduction potentials is a pivotal task in various chemical fields. However, their accurate prediction by theoretical computations, which is a complementary task and sometimes the only alternative to experimental measurement, may be often resource-intensive and time-consuming. This paper addresses this challenge through the application of machine learning techniques, with a particular focus on graph-based methods (such as graph edit distances, graph kernels, and graph neural networks) that are reviewed to enlighten their deep links with theoreti- cal chemistry. To this aim, we establish the ORedOx159 database, a comprehensive, homogeneous (with reference values stemming from density functional theory calculations), and reliable resource containing 318 one-electron reduction and oxidation reactions and featuring 159 large organic com- pounds. Subsequently, we provide an instructive overview of the good practice in machine learning and of commonly utilized machine learning models. We then assess their predictive performances on the ORedOx159 dataset through extensive analyses. Our simulations using descriptors that are computed in an almost instantaneous way result in a notable improvement in prediction accuracy, with mean absolute error (MAE) values equal to 5.6 kcal mol−1 for reduction and 7.2 kcal mol−1 for oxidation potentials, which paves a way toward efficient in silico design of new electrochemical systems.},
+  langid = {english},
+  pubstate = {prepublished},
+  file = {/home/bgauzere/work/Zotero/storage/C2IXWDQQ/Jia et al. - 2023 - Predicting Redox Potentials by Graph-Based Machine.pdf}
+}
+
+@article{JIA2021,
+  title = {Graphkit-Learn: {{A Python Library}} for {{Graph Kernels Based}} on {{Linear Patterns}}},
+  author = {Jia, Linlin and Gaüzère, Benoit and Honeine, Paul},
+  date = {2021},
+  journaltitle = {Pattern Recognition Letters},
+  issn = {0167-8655},
+  doi = {10.1016/j.patrec.2021.01.003},
+  url = {http://www.sciencedirect.com/science/article/pii/S0167865521000131},
+  abstract = {This paper presents graphkit-learn, the first Python library for efficient computation of graph kernels based on linear patterns, able to address various types of graphs. Graph kernels based on linear patterns are thoroughly implemented, each with specific computing methods, as well as two well-known graph kernels based on non-linear patterns for comparative analysis. Since computational complexity is an Achilles’ heel of graph kernels, we provide several strategies to address this critical issue, including parallelization, the trie data structure, and the FCSP method that we extend to other kernels and edge comparison. All proposed strategies save orders of magnitudes of computing time and memory usage. Moreover, all the graph kernels can be simply computed with a single Python statement, thus are appealing to researchers and practitioners. For the convenience of use, an advanced model selection procedure is provided for both regression and classification problems. Experiments on synthesized datasets and 11 real-world benchmark datasets show the relevance of the proposed library.}
+}
+
+@inproceedings{jia2021graph,
+  title = {A {{Graph Pre-image Method Based}} on {{Graph Edit Distances}}},
+  booktitle = {Proceedings of {{IAPR Joint International Workshops}} on {{Statistical}} Techniques in {{Pattern Recognition}} ({{SPR}} 2020) and {{Structural}} and {{Syntactic Pattern Recognition}} ({{SSPR}} 2020).},
+  author = {Jia, Linlin and Gaüzère, Benoit and Honeine, Paul},
+  date = {2021},
+  keywords = {hdr}
+}
+
+@inproceedings{jia2021metric,
+  title = {A {{Metric Learning Approach}} to {{Graph Edit Costs}} for {{Regression}}},
+  booktitle = {Proceedings of {{IAPR Joint International Workshops}} on {{Statistical}} Techniques in {{Pattern Recognition}} ({{SPR}} 2020) and {{Structural}} and {{Syntactic Pattern Recognition}} ({{SSPR}} 2020)},
+  author = {Jia, Linlin and Gaüzère, Benoit and Yger, Florian and Honeine, Paul},
+  date = {2021},
+  keywords = {hdr}
+}
+
+@article{jia2022study,
+  title = {A {{Study}} on the {{Stability}} of {{Graph Edit Distance Heuristics}}},
+  author = {Jia, Linlin and Tognetti, Vincent and Joubert, Laurent and Gaüzère, Benoit and Honeine, Paul},
+  date = {2022-10-14},
+  journaltitle = {Electronics 2022, Vol. 11, Page 3312},
+  volume = {11},
+  number = {20},
+  pages = {3312},
+  publisher = {Multidisciplinary Digital Publishing Institute},
+  issn = {2079-9292},
+  doi = {10.3390/ELECTRONICS11203312},
+  url = {https://www.mdpi.com/1884774},
+  urldate = {2022-10-14},
+  abstract = {Graph edit distance (GED) is a powerful tool to model the dissimilarity between graphs. However, evaluating the exact GED is NP-hard. To tackle this problem, estimation methods of GED were introduced, e.g., bipartite and IPFP, during which heuristics were employed. The stochastic nature of these methods induces the stability issue. In this paper, we propose the first formal study of stability of GED heuristics, starting with defining a measure of these (in)stabilities, namely the relative error. Then, the effects of two critical factors on stability are examined, namely, the number of solutions and the ratio between edit costs. The ratios are computed on five datasets of various properties. General suggestions are provided to properly choose these factors, which can reduce the relative error by more than an order of magnitude. Finally, we verify the relevance of stability to predict performance of GED heuristics, by taking advantage of an edit cost learning algorithm to optimize the performance and the k-nearest neighbor regression for prediction. Experiments show that the optimized costs correspond to much higher ratios and an order of magnitude lower relative errors than the expert cost.},
+  file = {/home/bgauzere/work/Zotero/storage/8H64TPDP/Jia et al. - 2022 - A Study on the Stability of Graph Edit Distance Heuristics.pdf}
+}
+
+@article{jiaGraphKernelsBased2022,
+  title = {Graph Kernels Based on Linear Patterns: {{Theoretical}} and Experimental Comparisons},
+  author = {Jia, Linlin and Gaüzère, Benoit and Honeine, Paul},
+  date = {2022},
+  journaltitle = {Expert Systems with Applications},
+  volume = {189},
+  pages = {116095},
+  publisher = {Pergamon},
+  file = {/home/bgauzere/work/Zotero/storage/SWTKWAD8/Graph Kernels Based on Linear Patterns Theoretical and Experimental Comparisons To cite this version HAL Id hal-02053946 Graph Kernel.pdf}
+}
+
+@article{oberoiDetectingDynamicPatterns2023,
+  title = {Detecting Dynamic Patterns in Dynamic Graphs Using Subgraph Isomorphism},
+  author = {Oberoi, Kamaldeep Singh and Del Mondo, Géraldine and Gaüzère, Benoît and Dupuis, Yohan and Vasseur, Pascal},
+  date = {2023-02-27},
+  journaltitle = {Pattern Analysis and Applications},
+  shortjournal = {Pattern Anal Applic},
+  issn = {1433-7541, 1433-755X},
+  doi = {10.1007/s10044-023-01145-z},
+  url = {https://link.springer.com/10.1007/s10044-023-01145-z},
+  urldate = {2023-02-27},
+  abstract = {Graphs have been used in different fields of research for performing structural analysis of various systems. In order to compare the structure of two systems, the correspondence between their graphs has to be verified. The problem of graph matching, especially subgraph isomorphism (SI), has been well studied in case of static graphs. However, many applications require incorporating temporal information, making the corresponding graphs dynamic. In this paper, we apply SI to detect dynamic patterns in dynamic graphs. We propose an algorithm for induced SI to detect all the matchings for a given pattern graph while considering snapshot-based representation of dynamic graphs and taking into account the chronological order of these snapshots. This is the novelty of the proposed approach since the existing state-of-the-art algorithms model dynamic graphs using an aggregated model with time-stamped edges. To the best of our knowledge, there does not exist another approach which considers snapshot-based representation of dynamic pattern and dynamic target graphs for this problem. We discussed the time complexity of our algorithm and tested its performance while comparing it with two existing algorithms using the real-world datasets. It was found that our algorithm is the second best overall in terms of the execution time. The results are promising given the fact that the choice of dynamic graph model affects the algorithmic design for solving the problem of SI. For the applications where aggregated model of dynamic graphs is not applicable and snapshot-based representation is indispensable, our algorithm can be directly applied as opposed to the existing ones.},
+  langid = {english},
+  file = {/home/bgauzere/work/Zotero/storage/FDARAC82/Oberoi et al. - 2023 - Detecting dynamic patterns in dynamic graphs using.pdf}
+}
+
+@inproceedings{renton2018apprentissage,
+  title = {Apprentissage Profond Pour l'approximation d'une Distance d'édition Entre Graphes},
+  booktitle = {Conférence Sur l'{{Apprentissage Automatique}}},
+  author = {Renton, Guillaume and Gaüzère, Benoit and Héroux, Pierre and Adam, Sébastien},
+  date = {2018},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/P6FKM6DD/Apprentissage profond pour l'approximation d'une distance d'édition entre graphes - Renton et al. - 2018. - 2019}
+}
+
+@inproceedings{renton2019graph,
+  title = {Graph {{Neural Network}} for {{Symbol Detection}} on {{Document Images}}},
+  booktitle = {13th {{IAPR International Workshop}} on {{Graphics Recognition}}, {{Sep}} 2019, {{Sydney}}, {{Australia}}},
+  author = {Renton, Guillaume and Héroux, Pierre and Gaüzère, Benoit and Adam, Sébastien},
+  date = {2019},
+  volume = {1},
+  pages = {62--67},
+  publisher = {IEEE},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/SFWYRI36/Graph Neural Network for Symbol Detection on Document Images To cite this version HAL Id hal-02490877 Graph Neural Network for Symbol.pdf}
+}
+
+@article{renton2021symbols,
+  title = {Symbols {{Detection}} and {{Classification}} Using {{Graph Neural Networks}}},
+  author = {Renton, Guillaume and Balcilar, Muhammet and Héroux, Pierre and Gaüzère, Benoit and Honeine, Paul and Adam, Sébastien},
+  date = {2021},
+  journaltitle = {Pattern Recognition Letters},
+  volume = {152},
+  pages = {391--397},
+  publisher = {North-Holland},
+  file = {/home/bgauzere/work/Zotero/storage/BHKY32UZ/Renton et al. - 2021 - Symbols Detection and Classification using Graph N.pdf}
+}
+
+@article{RI-gledel2025-PreImageFreeML,
+  title = {Pre-Image Free Graph Machine Learning with {{Normalizing Flows}}},
+  author = {Glédel, Clément and Gaüzère, Benoît and Honeine, Paul},
+  date = {2025},
+  journaltitle = {Pattern Recognition Letters},
+  volume = {190},
+  pages = {45--51},
+  publisher = {North-Holland},
+  issn = {0167-8655},
+  doi = {10.1016/j.patrec.2025.02.005},
+  url = {https://www.sciencedirect.com/science/article/pii/S0167865525000406},
+  abstract = {Nonlinear embeddings are central in machine learning (ML). However, they often suffer from insufficient interpretability, due to the restricted access to the latent space. To improve interpretability, elements of the latent space need to be represented in the input space. The process of finding such inverse transformation is known as the pre-image problem. This challenging task is especially difficult when dealing with complex and discrete data represented by graphs. In this paper, we propose a framework aimed at defining ML models that do not suffer from the pre-image problem. This framework is based on Normalizing Flows (NF), generating the latent space by learning both forward and inverse transformations. From this framework, we propose two specifications to design models working on predictive contexts, namely classification and regression. As a result, our approaches are able to obtain good predictive performances and to generate the pre-image of any element in the latent space. Our experimental results highlight the predictive capabilities and the proficiency in generating graph pre-images, thereby emphasizing the versatility and effectiveness of our approaches for graph machine learning.},
+  keywords = {Classification,Graph Normalizing Flow,Interpretability,Nonlinear embedding,Pre-image problem,Regression}
+}
+
+@inproceedings{stanovic_maximal_2023,
+  title = {Maximal {{Independent Sets}} for~{{Pooling}} in~{{Graph Neural Networks}}},
+  booktitle = {Graph-{{Based Representations}} in {{Pattern Recognition}}},
+  author = {Stanovic, Stevan and Gaüzère, Benoit and Brun, Luc},
+  editor = {Vento, Mario and Foggia, Pasquale and Conte, Donatello and Carletti, Vincenzo},
+  date = {2023},
+  series = {Lecture {{Notes}} in {{Computer Science}}},
+  pages = {113--124},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-42795-4_11},
+  abstract = {Convolutional Neural Networks (CNNs) have enabled major advances in image classification through convolution and pooling. In particular, image pooling transforms a connected discrete lattice into a reduced lattice with the same connectivity and allows reduction functions to consider all pixels in an image. However, there is no pooling that satisfies these properties for graphs. In fact, traditional graph pooling methods suffer from at least one of the following drawbacks: Graph disconnection or overconnection, low decimation ratio, and deletion of large parts of graphs. In this paper, we present three pooling methods based on the notion of maximal independent sets that avoid these pitfalls. Our experimental results confirm the relevance of maximal independent set constraints for graph pooling.},
+  isbn = {978-3-031-42795-4},
+  langid = {english},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/5LIKEKV8/Stanovic et al. - 2023 - Maximal Independent Sets for Pooling in Graph Neur.pdf}
+}
+
+@inproceedings{stanovic_maximal_2023a,
+  title = {Maximal {{Independent Vertex Set}} Applied to {{Graph Pooling}}},
+  booktitle = {Structural, {{Syntactic}}, and {{Statistical Pattern Recognition}}: {{Joint IAPR International Workshops}}, {{S}}+ {{SSPR}} 2022, {{Montreal}}, {{QC}}, {{Canada}}, {{August}} 26–27, 2022, {{Proceedings}}},
+  author = {Stanovic, Stevan and Gaüzère, Benoit and Brun, Luc},
+  date = {2023},
+  eprint = {2208.01648},
+  eprinttype = {arXiv},
+  eprintclass = {cs},
+  pages = {11--21},
+  url = {http://arxiv.org/abs/2208.01648},
+  langid = {english},
+  keywords = {hdr},
+  file = {/home/bgauzere/work/Zotero/storage/Y2P7EEHB/Stanovic et al. - 2023 - Maximal Independent Vertex Set applied to Graph Po.pdf;/home/bgauzere/work/Zotero/storage/ZB7FKXYG/Stanovic et al. - 2022 - Maximal Independent Vertex Set applied to Graph Po.pdf}
+}
+
+@inproceedings{stanovic2022ensemble,
+  title = {Ensemble de Sommets Indépendant Maximal Appliqué Au Pooling Sur Graphes},
+  booktitle = {Congrès Reconnaissance Des Formes, Image, Apprentissage et Perception ({{RFIAP}})},
+  author = {Stanovic, Stevan and Gaüzère, Benoit and Brun, Luc},
+  date = {2022},
+  keywords = {hdr}
+}
+
+@article{stanovic2025graph,
+  title = {Graph Neural Networks with Maximal Independent Set-Based Pooling: {{Mitigating}} over-Smoothing and over-Squashing},
+  author = {Stanovic, Stevan and Gaüzère, Benoit and Brun, Luc},
+  date = {2025},
+  journaltitle = {Pattern Recognition Letters},
+  volume = {187},
+  pages = {14--20},
+  publisher = {North-Holland},
+  keywords = {hdr}
+}
+
+@inproceedings{wallnig_differentiable_2025,
+  title = {A {{Differentiable Approximation}} of~the~{{Graph Edit Distance}}},
+  booktitle = {Structural, {{Syntactic}}, and {{Statistical Pattern Recognition}}},
+  author = {Wallnig, Julia and Brun, Luc and Gaüzère, Benoit and Bougleux, Sébastien and Yger, Florian and Blumenthal, David B.},
+  editor = {Torsello, Andrea and Rossi, Luca and Cosmo, Luca and Minello, Giorgia},
+  date = {2025},
+  pages = {1--10},
+  publisher = {Springer Nature Switzerland},
+  location = {Cham},
+  doi = {10.1007/978-3-031-80507-3_1},
+  abstract = {To determine the similarity of labeled graphs, the graph edit distance (GED) is widely used due to its metric properties on the graph space and its interpretability. It is defined as the minimal cost of a sequence of edit operations transforming one graph into another one, with the cost of each edit operation being a parameter of the distance. Although calculating GED is NP-hard, various heuristics exist which, in practice, typically yield tight upper or lower bounds. Since determining appropriate edit operation costs for a given dataset or application can be challenging, it is attractive to learn these costs from the data, e.g., using metric learning architectures. However, for this approach to be feasible, a differentiable algorithm to approximate the GED is required. In this work, we present such an algorithm and show via an empirical evaluation on three datasets that the obtained distances closely match the distances computed by a state-of-the-art combinatorial GED heuristic.},
+  isbn = {978-3-031-80507-3},
+  langid = {english},
+  keywords = {Differentiable Solver,Graph Edit Distance,Sinkhorn Algorithm},
+  file = {/home/bgauzere/work/Zotero/storage/DLCQE88L/Wallnig et al. - 2025 - A Differentiable Approximation of the Graph Edit Distance.pdf}
+}
