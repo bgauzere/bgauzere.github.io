@@ -5,33 +5,36 @@ draft: false
 ---
 
 # Teaching activities
-Most of my teaching activities are done at [INSA Rouen
-Normandie](https://www.insa-rouen.fr/), within the computer engineering
-([ITI](https://www.insa-rouen.fr/formation/specialites-ingenieurses/informatique-et-technologie-de-linformation))
-department.
 
-Here a list with ressources to some of my principal courses.
+Most of my teaching activities are carried out at [INSA Rouen Normandie](https://www.insa-rouen.fr/), within the computer science and information technology department ([ITI](https://www.insa-rouen.fr/formation/specialites-ingenieurses/informatique-et-technologie-de-linformation)).
 
-* [Analyse Numérique](https://moodle.insa-rouen.fr/course/view.php?id=159)
+My teaching covers numerical analysis, algorithms, statistics, optimization, and machine learning, with a particular interest in keeping courses closely connected to current tools and research topics.
 
-Matrix factorization (LU,QR,Cholesky), linear systems, eigensystems, iterative methods and more.
+Here is a selection of the main courses and teaching activities.
 
-* [Algorithmique](https://moodle.insa-rouen.fr/course/view.php?id=60) (resp. Nicolas Delestre)
+* [Numerical Analysis](https://moodle.insa-rouen.fr/course/view.php?id=159)
 
-C programming, collections, dynamic data structure, advanced algortihms.
+Matrix factorization (LU, QR, Cholesky), linear systems, eigensystems, iterative methods, and scientific computing foundations.
 
-* [Statistics](https://moodle.insa-rouen.fr/course/view.php?id=169) 
+* [Algorithms and C Programming](https://moodle.insa-rouen.fr/course/view.php?id=60) (coordinated by Nicolas Delestre)
 
-Introduction to statistics and data science including descriptive statistics, linear
-regression and statistical signifiance tests.
+C programming, data structures, dynamic memory, collections, and advanced algorithms.
 
-* [Introduction to Machine Learning](https://moodle.unistra.fr/course/view.php?id=999)
+* [Statistics](https://moodle.insa-rouen.fr/course/view.php?id=169)
 
-A course given at [UFAZ](https://www.ufaz.az/), a Franco-Azerbaijani university. It
-focuses on basics of machine learning including unsupervised (KMeans, PCA) and supervised
-(Ridge Regression, SVM) methods. It also includes evaluation protocol and
-theory. All ressources can be freely download [here](https://nuage.insa-rouen.fr/index.php/s/g65DXRrNQjyB2zy)
+Introduction to statistics and data analysis, including descriptive statistics, linear regression, and statistical significance testing.
 
+* [Machine Learning for Chemistry](https://universitice.univ-rouen.fr/course/view.php?id=29058) (Master 2, University of Rouen Normandy)
 
-Feel free to contact me if you need any material.
+An introduction to machine learning for chemistry students, with a focus on data analysis and predictive methods relevant to chemical applications.
+
+* [Introduction to Machine Learning](https://moodle.unistra.fr/course/view.php?id=999) — [UFAZ](https://www.ufaz.az/)
+
+A course taught at the Franco-Azerbaijani University in Baku. It covers the foundations of machine learning, from basic statistics to supervised and unsupervised methods such as PCA, K-means, ridge regression, and SVMs. Course material can be freely downloaded [here](https://nuage.insa-rouen.fr/index.php/s/g65DXRrNQjyB2zy).
+
+* [Graph Machine Learning](https://gitlab.insa-rouen.fr/bgauzere/gml-cours) — [INP-HB, Yamoussoukro](https://inphb.edu.ci/)
+
+A teaching module on machine learning for graphs, developed for École Polytechnique for the Institut National Polytechnique Félix Houphouët-Boigny in Yamoussoukro, Côte d’Ivoire.
+
+Feel free to contact me if you need course material or additional information.
 
