@@ -13,7 +13,7 @@ import os
 os.makedirs('data', exist_ok=True)
 
 # Charger le fichier .bib généré par Zotero
-with open('../publications.bib', 'r', encoding='utf-8') as bibtex_file:
+with open('publications.bib', 'r', encoding='utf-8') as bibtex_file:
     bib_database = bibtexparser.load(bibtex_file)
 
 # Sauvegarder en .json pour Hugo
