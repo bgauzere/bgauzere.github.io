@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f32">
+  <meta name="description" content="Portfolio sonore et photographique des oiseaux autour de Romilly sur Andelle.">
+  <title>Les oiseaux du coin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Retour en haut">
+      <span class="brand-mark" aria-hidden="true">●</span>
+      <span>Les oiseaux autour de Romilly sur Andelle</span>
+    </a>
+    <nav class="nav" aria-label="Choisir une partie">
+      <a href="#oiseaux">Les oiseaux</a>
+      <a href="#pic-noir">Le pic noir</a>
+      <a href="#bonus">Bonus</a>
+      <a href="#quiz">Quiz</a>
+
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">Portfolio à regarder et à écouter</p>
+        <h1 id="intro-title">Ouvre grand les yeux…<br><em>et les oreilles !</em></h1>
+      </div>
+      <p class="intro-note"><span aria-hidden="true">↘</span> Touche un oiseau pour commencer.</p>
+    </section>
+    <div id="app" aria-live="polite"><p class="loading">Les oiseaux arrivent…</p></div>
+  </main>
+
+  <footer>
+    <p>Photographies personnelles de Benoit Gaüzère, sauf six photographies libres créditées.</p>
+    <button class="text-button" id="creditsButton" type="button">Voir les crédits des médias</button>
+  </footer>
+
+  <dialog id="lightbox" class="lightbox">
+    <button class="round-button close-button" type="button" aria-label="Fermer">×</button>
+    <button class="round-button previous-button" type="button" aria-label="Photo précédente">←</button>
+    <figure>
+      <img id="lightboxImage" alt="">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="round-button next-button" type="button" aria-label="Photo suivante">→</button>
+  </dialog>
+
+  <dialog id="creditsDialog" class="credits-dialog">
+    <div class="dialog-heading">
+      <div><p class="eyebrow">Sources</p><h2>Crédits des médias</h2></div>
+      <button class="round-button credits-close" type="button" aria-label="Fermer">×</button>
+    </div>
+    <div id="creditsContent"></div>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

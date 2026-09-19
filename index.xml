@@ -1,32 +1,350 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Benoit Gaüzère website</title><link>https://bgauzere.github.io/</link><description>Recent content on Benoit Gaüzère website</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Vulga IA - Making Machine Learning Visible</title><link>https://bgauzere.github.io/news/vulga_ia/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/vulga_ia/</guid><description>A Small Tool for Explaining Machine Learning Over the last few years, I have had many opportunities to discuss artificial intelligence with a wide variety of audiences: high school students (presentation here, visitors during outreach events such as Pint of Science, colleagues from other disciplines, and of course university students.
-One thing quickly became apparent: many people are curious about machine learning, but the inner workings of these algorithms often remain mysterious.</description></item><item><title>Two New PhD Projects on Graph Machine Learning</title><link>https://bgauzere.github.io/news/new_phd_2025/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/new_phd_2025/</guid><description>Two PhD projects started in late 2025 at LITIS, INSA Rouen Normandie, exploring different aspects of graph machine learning and its applications.
-🔬 Molecular Reactivity Prediction with Machine Learning PhD student: Louisa Bouzidi, co supervised with Laurent Joubert from CARMEN, and Luc Brun from GREYC.
-This PhD focuses on predicting key molecular reactivity parameters (such as electrophilicity and nucleophilicity) using machine learning. The work aims to combine geometric graph neural networks with quantum chemical features to better capture the underlying physico-chemical properties of molecules, while taking into account the dynamic aspect of molecular compounds.</description></item><item><title>Spectral vs. Spatial Graph Convolutions in Practice</title><link>https://bgauzere.github.io/posts/bridging-spectral-spatial/</link><pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/bridging-spectral-spatial/</guid><description>This post revisits a simple idea from our ICLR 2021 paper: most graph convolutions can be understood as filters on graph signals, and filters on graph can be reimplemented as convolution operators. This point of view helps connect spectral and spatial GNNs, and explains why many popular models behave similarly.
-Historically, graph convolutions were defined either in the spectral domain (via the Laplacian) or in the spatial domain (via neighborhood aggregation).</description></item><item><title>The “Fifth Property” of Euclidean Distances: Beyond the Metric Axioms</title><link>https://bgauzere.github.io/posts/5thproperty/</link><pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/5thproperty/</guid><description>This post is heavily adapted from Chapter 5 of the book Convex Optimization &amp;amp; Euclidean Distance Geometry by Jon Dattorro.
-Metrics If you work with distances, you probably already know the four classical axioms:
-Non-negativity: $d(x, y) \ge 0$ Identity of Indiscernibles: $d(x, y) = 0 \iff x = y$ Symmetry: $d(x, y) = d(y, x)$ Triangle Inequality: $d(x, z) \le d(x, y) + d(y, z)$ But here is the catch: being a metric is not enough to be an Euclidean distance.</description></item><item><title>PostDoc Opportunity on ML and Organic Synthesis</title><link>https://bgauzere.github.io/news/offre_postdoc_carmen_2025/</link><pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/offre_postdoc_carmen_2025/</guid><description>📢 Postdoctoral Opportunity INSA Rouen Normandie and LITIS is hiring a Postdoctoral Researcher in Machine Learning for Organic Synthesis.
-🔎 Research Topic This position focuses on the development of machine learning and deep learning models applied to reaction optimization in organic synthesis. Main objectives include:
-Analyzing classical ML models to identify relevant predictive features. Designing Geometric Deep Learning methods using Graph Neural Networks (GNNs) to model molecules. Incorporating quantum-level information into graph-based representations.</description></item><item><title>Impact Énergétique de ChatGPT</title><link>https://bgauzere.github.io/posts/impact_chatgpt/</link><pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/impact_chatgpt/</guid><description>1. Énergie et CO₂ par requête Scénario Modèle / Contexte Énergie (Wh) CO₂ (g)* Ratio vs Google Google Search (chiffre officiel) Datacenters Google (2009–encore valable) 0,28 Wh 0,11 g 1× ChatGPT basse GPT-4o + GPU H100, prompt court (2025) 0,3 Wh 0,12 g 1 – 1,1× ChatGPT médiane GPT-4 normal, « requête moyenne » (EPRI 2024) 2,9 Wh 1,16 g ~10× ChatGPT haute Hypothèses grand-public (2024) 4 – 5 Wh 1,6 – 2 g 14 – 18× *Conversion avec une intensité carbone mondiale moyenne de 0,4 kg CO₂/kWh.</description></item><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/posts/weisfeiler-lehman/</link><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/weisfeiler-lehman/</guid><description>Introduction Dans ce document, nous allons implémenter différents algorithmes d&amp;rsquo;isomorphismes de sous graphes, optimaux ou non.
-Dans un premier temps, nous allons nous concentrer sur 3 algorithmes différents, à savoir :
-Weisfeler-Lehman : revenu à la mode avec le noyau sur graphe puis les graph neural network Morgan Numbering (TODO): utilisé en chimie, assez similaire à Weisfeler-Lehman dans le principe VF2 (TODO): un algorithme d&amp;rsquo;isomorphisme de graphes reconnu, dévellopé au MIVIA lab de Salerno Création des graphes Avant d&amp;rsquo;implémenter les algos, nous allons créer 3 graphes simples à visualiser.</description></item><item><title>🌍💻 Synthèse Perso – Impact écologique du numérique</title><link>https://bgauzere.github.io/posts/impact-ecologique-numerique/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/impact-ecologique-numerique/</guid><description>🌍💻 Synthèse – Impact écologique du numérique 1. Constat global 📊 Le numérique représentait 4,4 % de l’empreinte carbone française en 2022 (ADEME/ARCEP, révision 2024). Répartition : 50 % terminaux, 46 % centres de données, 4 % réseaux (ADEME/ARCEP – Évaluation 2024). Règle empirique « 80 / 20 » : le matériel concentre ~80 % de l’impact, le logiciel ~20 % (ADEME Magazine « Numérique : quel impact environnemental ? », avril 2022 – 65‑90 % des impacts attribués aux terminaux, selon l’indicateur).</description></item><item><title>New Paper on Graph Pooling !</title><link>https://bgauzere.github.io/news/stanovic_paper_2024/</link><pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/stanovic_paper_2024/</guid><description>Graph Neural Networks with Maximal Independent Set-Based Pooling: Mitigating Over-Smoothing and Over-Squashing I am excited to announce our latest work entitled Graph Neural Networks with Maximal Independent Set-Based Pooling: Mitigating Over-Smoothing and Over-Squashing.
-This paper introduces a novel pooling method for graph neural networks (GNNs) based on maximal independent sets (MIS). By leveraging MIS-based pooling, we address two fundamental issues in GNNs: over-smoothing (where node features become indistinguishable across layers) and over-squashing (where information from distant nodes becomes bottlenecked).</description></item><item><title>Participation to S+SSPR 2024 in Venice</title><link>https://bgauzere.github.io/news/sspr_2024/</link><pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/sspr_2024/</guid><description>S+SSPR 2024 For this edition of S+SSPR 2024, I had the pleasure to present our work entitled A Differentiable Approximation of the Graph Edit Distance. This paper, not in its camera ready version yet, consists in an adaptation of the well known Sinkhorn algorithm to replace the Hungarian algorithm to solve the LSAPE problem related to the approximation of the graph edit distance. The main advantage of this approach is to be differentiable, which opens a path to compute the graph edit distance, and edit costs, in an end to end manner.</description></item><item><title>PhD Opportunity GNN and Brain data</title><link>https://bgauzere.github.io/news/famous_these_2024/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/famous_these_2024/</guid><description>ALERT 20/06 : The Phd student has been chosen, thank you for your interest Unlocking the Mysteries of the Brain with Graph-Based Machine Learning In the fascinating world of neuroscience, understanding the brain&amp;rsquo;s intricate structure is key to unlocking the secrets of psychiatric and neurological disorders. Imagine if we could map the brain&amp;rsquo;s folds and curves to reveal patterns that indicate health or disease. This is precisely what our cutting-edge PhD project aims to achieve, leveraging the power of graph-based machine learning (GML) and Graph Neural Networks (GNN).</description></item><item><title>SWERC 2024 - Competitive Programming</title><link>https://bgauzere.github.io/news/swerc_2024/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/swerc_2024/</guid><description>The Competition Late january 2024, I accompanied students of INSA Rouen to a competition of competitive programming : the SWERC 2024 in Paris (https://swerc.eu/2023/). This contest is an international contest between teams of universities from 6 south western Europe countries, part of the more global ICPC. The contest consists in solving 13 problems of different difficulties using raw Python, C++ or other languages in 5 hours. Each problem is a statement with some rules, and must be solved under some constraints which forbids a naive and straightforward implementation.</description></item><item><title>Advent of Code 2023</title><link>https://bgauzere.github.io/news/aoc2023/</link><pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/aoc2023/</guid><description>Advent of code 2023 For the second year, I spent too much time in December to solve the problems of the advent of code : https://adventofcode.com/. Finally, I was quite happy to get the 50 stars. I really like this challenge because it&amp;rsquo;s very well designed from an algorithmic point of view. Each problem is divided into two levels. Generally the first one can be solved by using a brute force and naive strategy, while the second part generally requires to find some tricks to accelerate the computation and find the right solution.</description></item><item><title>Master Internship on GNN and Fair Machine Learning</title><link>https://bgauzere.github.io/news/intern_famous/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/intern_famous/</guid><description>Starting in next february/march, we are looking at a master student to work at the interface of Graph Neural Networks and fair machine learning. This internship will be part of ANR FAMOUS project, with a close collaboration with INT of Marseille.
-The internship will located in Rouen, with App Team of LITIS Lab.
-More details on the internship in this document
-Feel free to reach me if you are interested !</description></item><item><title>Machine Learning on Graph Working Group</title><link>https://bgauzere.github.io/news/gt_graphes/</link><pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/gt_graphes/</guid><description>The App Team at the LITIS Lab boasts significant expertise in graph-based machine learning, a field we have been engaged in for many years. Our team&amp;rsquo;s focus has intensified recently, especially due to the burgeoning interest in machine learning applications for graph data. Collaborative efforts with the GREYC and LIFAT labs have further helped us consolidate our focus in this domain.
-Our involvement in the AGAC project marked a pivotal point, leading to notable discoveries in the realm of Graph Neural Networks, as documented in our publications [1, 2].</description></item><item><title>A new school year just begun</title><link>https://bgauzere.github.io/news/insa_2023_2024/</link><pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/insa_2023_2024/</guid><description>A new school year has just begun at INSA Rouen Normandie, providing an opportunity to introduce the various courses in which I am involved:
-Ananum. In this course, we teach numerical methods for solving linear problems using LU, PALU, Cholesky, and other matrix decomposition techniques. We also delve into SVD problems and iterative methods. Introduction to Machine Learning. Before delving into deep learning and its extensive ecosystem, we revisit the fundamentals and explore alternative methods.</description></item><item><title>Two new ANR projects and one paper at ACPR 2023</title><link>https://bgauzere.github.io/news/anr_2023/</link><pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/anr_2023/</guid><description>Two new ANR projects for 2023 For this year, two projects have been funded. First, ANR FAMOUS will focus on designing fair ML models, including models operating on graphs. This page will be updated with the link to the projects for further details. Note that we will seek for PhD students to work on this topic. Feel free to drop an email if interested. Second, ANR OOD is an ANR project dedicating to the App team of LITIS.</description></item><item><title>Participation to GbR 2023 in Salerno</title><link>https://bgauzere.github.io/news/gbr_2023/</link><pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/gbr_2023/</guid><description>GbR 2023 ! Together with Paul Honeine, Luc Brun and the two PhD students Stevan Stanovic et Clément Gledel, we have two papers accepted in IAPR TC 15 conference : Graph-based Representations for Pattern Recognition which will be held in Salerno next september.
-The two papers are :
-Graph Normalizing Flows to Pre-image Free Machine Learning for Regression, with Clément Gledel and Paul Honeine on the definition of machine learning models operating on graphs without the problem of preimage, hence bringing explicability to our models.</description></item><item><title>Recrutement thèse GRANIT - Caractérisation des dynamiques spatiales dans le cadre de sources géolocalisées et non géolocalisée</title><link>https://bgauzere.github.io/news/these_granit/</link><pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/these_granit/</guid><description>Caractérisation des dynamiques spatiales dans le cadre de sources géolocalisées et non géolocalisée Démarrage : septembre 2023 Contacts : geraldine.del_mondo@insa-rouen.fr, benoit.gauzere@insa-rouen.fr Lieu : LITIS, INSA Rouen Profil attendu : Master 2 en informatique/IA, des compétences minimales en théorie des graphes sont requises Salaire mensuel brut : 2044,12 euros Mots clés : algorithme de graphe, extraction de patterns spatio-temporel, isomorphismes de graphes, application aux données historiques, modélisation par graphes, analyse spatio-temporelle Sujet de thèse</description></item><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/news/graph_isomorphism/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/graph_isomorphism/</guid><description>Introduction Dans ce document, nous allons implémenter différents algorithmes d&amp;rsquo;isomorphismes de sous graphes, optimaux ou non.
-Dans un premier temps, nous allons nous concentrer sur 3 algorithmes différents, à savoir :
-Weisfeler-Lehman : revenu à la mode avec le noyau sur graphe puis les graph neural network Morgan Numbering (TODO): utilisé en chimie, assez similaire à Weisfeler-Lehman dans le principe VF2 (TODO): un algorithme d&amp;rsquo;isomorphisme de graphes reconnu, dévellopé au MIVIA lab de Salerno Création des graphes Avant d&amp;rsquo;implémenter les algos, nous allons créer 3 graphes simples à visualiser.</description></item><item><title>Teaching activities</title><link>https://bgauzere.github.io/teaching/</link><pubDate>Sun, 07 Aug 2022 14:06:29 +0200</pubDate><guid>https://bgauzere.github.io/teaching/</guid><description>Teaching activities Most of my teaching activities are carried out at INSA Rouen Normandie, within the computer science and information technology department (ITI).
-My teaching covers numerical analysis, algorithms, statistics, optimization, and machine learning, with a particular interest in keeping courses closely connected to current tools and research topics.
-Here is a selection of the main courses and teaching activities.
-Numerical Analysis Matrix factorization (LU, QR, Cholesky), linear systems, eigensystems, iterative methods, and scientific computing foundations.</description></item><item><title/><link>https://bgauzere.github.io/gml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/gml/</guid><description>Graph Machine Learning in Yamoussoukro 23rd to 29th of November 2025
-In this webpage, you will find all ressources for my lessons, together with the corrections
-Lessons Introduction Algorithms on Graphs Introduction to Machine Learning with Graphs Node and Graph Embeddings Techniques Graph Neural Networks Advanced GNN Practical works Download all materials for the practicals sessions here
-Corrections are available here.
-Drive Ressources utilisées pour le cours : lien google drive</description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>g# Research Activities
-My current research lies at the interface of graph-based representation of data and the definition of machine learning methods operating on graphs. In my recent works, I focused on:
-learning edit costs for graph edit distance improving pooling layers for GNN defining methods to alleviate the problem of the preimage of graphs applying graph-based machine learning methods to chemoinformatics An up-to-date list of publications can be found on Google Scholar.</description></item><item><title/><link>https://bgauzere.github.io/tpia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/tpia/</guid><description>🧠 TP - Découverte de l’Intelligence Artificielle : entraînez un modèle pour reconnaître des images Bienvenue dans ce TP où tu vas découvrir comment fonctionne l’apprentissage automatique (machine learning) en créant un modèle qui reconnaît des images, sans avoir besoin d’écrire de code au départ !
-Nous allons :
-créer un modèle pour reconnaître des chiens et des chats, le tester automatiquement en Python avec Google Colab, et même essayer de créer ton propre modèle avec d’autres images !</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Benoit Gaüzère website</title><link>https://bgauzere.github.io/</link><description>Recent content on Benoit Gaüzère website</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://bgauzere.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Vulga IA - Making Machine Learning Visible</title><link>https://bgauzere.github.io/news/vulga_ia/</link><pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/vulga_ia/</guid><description>&lt;h1 id="a-small-tool-for-explaining-machine-learning"&gt;A Small Tool for Explaining Machine Learning&lt;/h1&gt;
+&lt;p&gt;Over the last few years, I have had many opportunities to discuss artificial
+intelligence with a wide variety of audiences: high school students
+(presentation &lt;a href="https://gitlab.insa-rouen.fr/bgauzere/slides_ia"&gt;here&lt;/a&gt;, visitors
+during outreach events such as &lt;em&gt;&lt;a href="https://pintofscience.fr/"&gt;Pint of Science&lt;/a&gt;&lt;/em&gt;,
+colleagues from other disciplines, and of course university students.&lt;/p&gt;
+&lt;p&gt;One thing quickly became apparent: many people are curious about machine
+learning, but the inner workings of these algorithms often remain
+mysterious. Terms such as &lt;em&gt;gradient descent&lt;/em&gt;, &lt;em&gt;loss function&lt;/em&gt;, &lt;em&gt;decision boundary&lt;/em&gt;, or &lt;em&gt;neural network&lt;/em&gt; are frequently mentioned, yet they can be
+difficult to explain intuitively and without too much equations.&lt;/p&gt;</description></item><item><title>Two New PhD Projects on Graph Machine Learning</title><link>https://bgauzere.github.io/news/new_phd_2025/</link><pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/new_phd_2025/</guid><description>&lt;p&gt;Two PhD projects started in late 2025 at &lt;em&gt;LITIS, INSA Rouen Normandie&lt;/em&gt;, exploring different aspects of &lt;strong&gt;graph machine learning&lt;/strong&gt; and its applications.&lt;/p&gt;
+&lt;h3 id="-molecular-reactivity-prediction-with-machine-learning"&gt;🔬 Molecular Reactivity Prediction with Machine Learning&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;PhD student: Louisa Bouzidi&lt;/em&gt;, co supervised with Laurent Joubert from CARMEN, and Luc Brun from GREYC.&lt;/p&gt;
+&lt;p&gt;This PhD focuses on predicting key molecular reactivity parameters (such as electrophilicity and nucleophilicity) using machine learning. The work aims to combine &lt;strong&gt;geometric graph neural networks&lt;/strong&gt; with &lt;strong&gt;quantum chemical features&lt;/strong&gt; to better capture the underlying physico-chemical properties of molecules, while taking into account the dynamic aspect of molecular compounds.&lt;/p&gt;</description></item><item><title>Spectral vs. Spatial Graph Convolutions in Practice</title><link>https://bgauzere.github.io/posts/bridging-spectral-spatial/</link><pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/bridging-spectral-spatial/</guid><description>&lt;p&gt;This post revisits a simple idea from our ICLR 2021 paper: most graph convolutions can be understood as &lt;strong&gt;filters on graph signals&lt;/strong&gt;, and filters on graph can be reimplemented as convolution operators. This point of view helps connect spectral and spatial GNNs, and explains why many popular models behave similarly.&lt;/p&gt;
+&lt;p&gt;Historically, graph convolutions were defined either in the spectral domain (via
+the Laplacian) or in the spatial domain (via neighborhood aggregation). In
+practice, both describe the same object: an operator acting on node
+features.&lt;/p&gt;</description></item><item><title>The “Fifth Property” of Euclidean Distances: Beyond the Metric Axioms</title><link>https://bgauzere.github.io/posts/5thproperty/</link><pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/5thproperty/</guid><description>&lt;p&gt;&lt;em&gt;This post is heavily adapted from Chapter 5 of the book &lt;strong&gt;Convex Optimization &amp;amp; Euclidean Distance Geometry&lt;/strong&gt; by Jon Dattorro.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="metrics"&gt;Metrics&lt;/h2&gt;
+&lt;p&gt;If you work with distances, you probably already know the four classical axioms:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Non-negativity&lt;/strong&gt;: $d(x, y) \ge 0$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identity of Indiscernibles&lt;/strong&gt;: $d(x, y) = 0 \iff x = y$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Symmetry&lt;/strong&gt;: $d(x, y) = d(y, x)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Triangle Inequality&lt;/strong&gt;: $d(x, z) \le d(x, y) + d(y, z)$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But here is the catch: &lt;strong&gt;being a metric is not enough to be an Euclidean distance.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>PostDoc Opportunity on ML and Organic Synthesis</title><link>https://bgauzere.github.io/news/offre_postdoc_carmen_2025/</link><pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/offre_postdoc_carmen_2025/</guid><description>&lt;h1 id="-postdoctoral-opportunity"&gt;📢 Postdoctoral Opportunity&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;INSA Rouen Normandie&lt;/strong&gt; and &lt;strong&gt;LITIS&lt;/strong&gt; is hiring a &lt;strong&gt;Postdoctoral Researcher in Machine Learning for Organic Synthesis&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="-research-topic"&gt;🔎 Research Topic&lt;/h2&gt;
+&lt;p&gt;This position focuses on the development of &lt;strong&gt;machine learning and deep learning models&lt;/strong&gt; applied to &lt;strong&gt;reaction optimization in organic synthesis&lt;/strong&gt;.
+Main objectives include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Analyzing classical ML models to identify relevant predictive features.&lt;/li&gt;
+&lt;li&gt;Designing &lt;strong&gt;Geometric Deep Learning&lt;/strong&gt; methods using &lt;strong&gt;Graph Neural Networks (GNNs)&lt;/strong&gt; to model molecules.&lt;/li&gt;
+&lt;li&gt;Incorporating &lt;strong&gt;quantum-level information&lt;/strong&gt; into graph-based representations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Applications will target fundamental problems in organic chemistry such as:&lt;/p&gt;</description></item><item><title>Impact Énergétique de ChatGPT</title><link>https://bgauzere.github.io/posts/impact_chatgpt/</link><pubDate>Tue, 17 Jun 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/impact_chatgpt/</guid><description>&lt;h2 id="1-énergie-et-co-par-requête"&gt;1. Énergie et CO₂ par requête&lt;/h2&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Scénario&lt;/th&gt;
+					&lt;th&gt;Modèle / Contexte&lt;/th&gt;
+					&lt;th&gt;Énergie (Wh)&lt;/th&gt;
+					&lt;th&gt;CO₂ (g)*&lt;/th&gt;
+					&lt;th&gt;Ratio vs Google&lt;/th&gt;
+					&lt;th&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Google Search&lt;/strong&gt; (chiffre officiel)&lt;/td&gt;
+					&lt;td&gt;Datacenters Google (2009–encore valable)&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;0,28 Wh&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;0,11 g&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;1×&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;ChatGPT basse&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;GPT-4o + GPU H100, prompt court (2025)&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;0,3 Wh&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;0,12 g&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;1 – 1,1×&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;ChatGPT médiane&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;GPT-4 normal, « requête moyenne » (EPRI 2024)&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;2,9 Wh&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;1,16 g&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;~10×&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;ChatGPT haute&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Hypothèses grand-public (2024)&lt;/td&gt;
+					&lt;td&gt;4 – 5 Wh&lt;/td&gt;
+					&lt;td&gt;1,6 – 2 g&lt;/td&gt;
+					&lt;td&gt;14 – 18×&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;*Conversion avec une intensité carbone mondiale moyenne de 0,4 kg CO₂/kWh.&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Autre source :
+&lt;img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F22f72acd-bf02-4b85-92bc-262902012108_759x447.png" alt=""&gt;&lt;/p&gt;</description></item><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/posts/weisfeiler-lehman/</link><pubDate>Fri, 09 May 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/weisfeiler-lehman/</guid><description>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Dans ce document, nous allons implémenter différents algorithmes d&amp;rsquo;isomorphismes de sous graphes, optimaux ou non.&lt;/p&gt;
+&lt;p&gt;Dans un premier temps, nous allons nous concentrer sur 3 algorithmes différents, à savoir :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Weisfeler-Lehman : revenu à la mode avec le noyau sur graphe puis les graph neural network&lt;/li&gt;
+&lt;li&gt;Morgan Numbering (TODO): utilisé en chimie, assez similaire à Weisfeler-Lehman dans le principe&lt;/li&gt;
+&lt;li&gt;VF2 (TODO): un algorithme d&amp;rsquo;isomorphisme de graphes reconnu, dévellopé au MIVIA lab de Salerno&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="création-des-graphes"&gt;Création des graphes&lt;/h1&gt;
+&lt;p&gt;Avant d&amp;rsquo;implémenter les algos, nous allons créer 3 graphes simples à visualiser. Deux d&amp;rsquo;entre eux ($G_1$ et $G_3$) sont isormorphes. C&amp;rsquo;est à dire qu&amp;rsquo;ils représentent le même graphe, mais que l&amp;rsquo;ordre des noeuds de chacun des graphes est différent. Il y a une permutation des nœuds.&lt;/p&gt;</description></item><item><title>🌍💻 Synthèse Perso – Impact écologique du numérique</title><link>https://bgauzere.github.io/posts/impact-ecologique-numerique/</link><pubDate>Mon, 21 Apr 2025 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/posts/impact-ecologique-numerique/</guid><description>&lt;h1 id="-synthèse--impact-écologique-du-numérique"&gt;🌍💻 Synthèse – Impact écologique du numérique&lt;/h1&gt;
+&lt;h2 id="1-constat-global-"&gt;1. Constat global 📊&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Le numérique représentait &lt;strong&gt;4,4 %&lt;/strong&gt; de l’empreinte carbone française en 2022 (ADEME/ARCEP, révision 2024).&lt;/li&gt;
+&lt;li&gt;Répartition : 50 % terminaux, 46 % centres de données, 4 % réseaux (&lt;em&gt;ADEME/ARCEP – Évaluation 2024&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Règle empirique « 80 / 20 » : le matériel concentre ~80 % de l’impact, le logiciel ~20 % (&lt;em&gt;ADEME Magazine « Numérique : quel impact environnemental ? », avril 2022 – 65‑90 % des impacts attribués aux terminaux, selon l’indicateur&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Les impacts dépassent le CO₂ : pression sur ressources minières, eau douce 💧, biodiversité 🌿, pollutions locales et génération de déchets électroniques 🗑️.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="2-analyse-par-phase-du-cycle-de-vie-"&gt;2. Analyse par phase du cycle de vie 🔄&lt;/h2&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Phase&lt;/th&gt;
+					&lt;th&gt;Impacts dominants&lt;/th&gt;
+					&lt;th&gt;Tendances&lt;/th&gt;
+					&lt;th&gt;Points de vigilance&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Extraction &amp;amp; fabrication des terminaux&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Émissions grises, épuisement des métaux critiques, déchets miniers&lt;/td&gt;
+					&lt;td&gt;Croissance du parc, miniaturisation énergivore&lt;/td&gt;
+					&lt;td&gt;Durée de vie courte, obsolescence perçue&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Infrastructures (centres de données)&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Électricité (11 % de la conso française), eau pour le refroidissement, construction&lt;/td&gt;
+					&lt;td&gt;IA générative ↗ : +GPU, +énergie&lt;/td&gt;
+					&lt;td&gt;Externalisation hors frontières rend le suivi difficile&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Réseaux&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Électricité ⚡, cuivre/fibres, antennes&lt;/td&gt;
+					&lt;td&gt;Efficacité énergétique par octet ↘ mais volumes ↗&lt;/td&gt;
+					&lt;td&gt;Déploiement 5G et IoT multiplicateurs&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Usage&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;Consommation des appareils &amp;amp; serveurs&lt;/td&gt;
+					&lt;td&gt;Streaming, IA, cloud gaming&lt;/td&gt;
+					&lt;td&gt;Effet rebond, qualité vidéo ↗&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Fin de vie&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;E-déchets, extraction secondaire&lt;/td&gt;
+					&lt;td&gt;e‑waste ↑ (53 Mt en 2023)&lt;/td&gt;
+					&lt;td&gt;Recyclage incomplet, export hors UE&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="3-focus-thématiques-"&gt;3. Focus thématiques 🎯&lt;/h2&gt;
+&lt;h3 id="31-streaming-vidéo"&gt;3.1 Streaming vidéo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Empreinte moyenne : &lt;strong&gt;≈ 55 g CO₂e / h&lt;/strong&gt; de VOD en Europe (&lt;em&gt;Carbon Trust et al., 2023&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Le type de terminal domine le bilan ; passer de HD à SD a un effet marginal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="32-ia-générative--grands-modèles"&gt;3.2 IA générative &amp;amp; grands modèles&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Servir un prompt ChatGPT : &lt;strong&gt;≈ 4 g CO₂e&lt;/strong&gt; (&lt;em&gt;Zhang X. et al., 2024&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;Le &lt;strong&gt;serving&lt;/strong&gt; dépasse le &lt;strong&gt;training&lt;/strong&gt; pour certains modèles.&lt;/li&gt;
+&lt;li&gt;Refroidissement par eau : jusqu’à &lt;strong&gt;≈ 4 × 0,5 L&lt;/strong&gt; par requête (&lt;em&gt;Zhang X. et al., 2024&lt;/em&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bgauzere.github.io/posts/impact_chatgpt/" title="Impact ChatGPT"&gt;Impact ChatGPT&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="33-trafic-vs-infrastructures"&gt;3.3 Trafic vs infrastructures&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Réduire le trafic ne baisse pas directement les impacts, mais peut freiner la construction d’infrastructures si la demande se stabilise.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="4-leviers-daction-collectifs--réglementaires-"&gt;4. Leviers d’action collectifs &amp;amp; réglementaires 🛠️&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Allongement de la durée de vie&lt;/strong&gt; : Directive UE 2024/1799 (« Right to Repair »), indices de réparabilité, pièces détachées.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Réduction du nombre d’appareils&lt;/strong&gt; : sobriété &amp;amp; mutualisation (réemploi, location, partage).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stabilisation des infrastructures&lt;/strong&gt; : moratoires locaux sur data centers (ex. Irlande), cloud régionalisé bas‑carbone.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Écoconception logicielle &amp;amp; web&lt;/strong&gt; : poids des pages, architecture frugale, monitoring.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Transparence &amp;amp; reporting&lt;/strong&gt; : métriques normalisées, obligation de divulgation des intensités carbone &amp;amp; hydriques.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="41-écoconception-logicielle--web-"&gt;4.1 Écoconception logicielle &amp;amp; web ♻️&lt;/h3&gt;
+&lt;p&gt;L’optimisation logicielle agit principalement sur la phase &lt;strong&gt;Usage&lt;/strong&gt; mais présente un &lt;strong&gt;levier indirect majeur&lt;/strong&gt; : allonger la durée de vie des terminaux en évitant l’obsolescence logicielle.&lt;/p&gt;</description></item><item><title>New Paper on Graph Pooling !</title><link>https://bgauzere.github.io/news/stanovic_paper_2024/</link><pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/stanovic_paper_2024/</guid><description>&lt;h1 id="graph-neural-networks-with-maximal-independent-set-based-pooling-mitigating-over-smoothing-and-over-squashing"&gt;Graph Neural Networks with Maximal Independent Set-Based Pooling: Mitigating Over-Smoothing and Over-Squashing&lt;/h1&gt;
+&lt;p&gt;I am excited to announce our latest work entitled
+&lt;a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865524003106"&gt;Graph Neural Networks with Maximal Independent Set-Based Pooling: Mitigating Over-Smoothing and Over-Squashing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This paper introduces a novel pooling method for graph neural networks (GNNs) based on maximal independent sets (MIS). By leveraging MIS-based pooling, we address two fundamental issues in GNNs: &lt;strong&gt;over-smoothing&lt;/strong&gt; (where node features become indistinguishable across layers) and &lt;strong&gt;over-squashing&lt;/strong&gt; (where information from distant nodes becomes bottlenecked). Our approach offers a principled way to enhance the representational capacity of GNNs while improving scalability and robustness.&lt;/p&gt;</description></item><item><title>Participation to S+SSPR 2024 in Venice</title><link>https://bgauzere.github.io/news/sspr_2024/</link><pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/sspr_2024/</guid><description>&lt;h1 id="ssspr-2024"&gt;S+SSPR 2024&lt;/h1&gt;
+&lt;p&gt;For this edition of S+SSPR 2024, I had the pleasure to present our work entitled
+&lt;a href="./Evaluation_of_a_Continuous_Approximation_of_GED.pdf"&gt;A Differentiable Approximation of the Graph Edit Distance&lt;/a&gt;. This paper, not
+in its camera ready version yet, consists in an adaptation of the well known
+Sinkhorn algorithm to replace the Hungarian algorithm to solve the LSAPE problem
+related to the approximation of the graph edit distance. The main advantage of
+this approach is to be differentiable, which opens a path to compute the graph
+edit distance, and edit costs, in an end to end manner.&lt;/p&gt;</description></item><item><title>PhD Opportunity GNN and Brain data</title><link>https://bgauzere.github.io/news/famous_these_2024/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/famous_these_2024/</guid><description>&lt;p&gt;&lt;img src="./brain_famous.png" alt="Brain Graphs"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id="alert-2006--the-phd-student-has-been-chosen-thank-you-for-your-interest"&gt;ALERT 20/06 : The Phd student has been chosen, thank you for your interest&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id="unlocking-the-mysteries-of-the-brain-with-graph-based-machine-learning"&gt;Unlocking the Mysteries of the Brain with Graph-Based Machine Learning&lt;/h2&gt;
+&lt;p&gt;In the fascinating world of neuroscience, understanding the brain&amp;rsquo;s
+intricate structure is key to unlocking the secrets of psychiatric and
+neurological disorders. Imagine if we could map the brain&amp;rsquo;s folds and curves
+to reveal patterns that indicate health or disease. This is precisely what our
+cutting-edge PhD project aims to achieve, leveraging the power of graph-based machine learning (GML) and Graph Neural Networks (GNN).&lt;/p&gt;</description></item><item><title>SWERC 2024 - Competitive Programming</title><link>https://bgauzere.github.io/news/swerc_2024/</link><pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/swerc_2024/</guid><description>&lt;h1 id="the-competition"&gt;The Competition&lt;/h1&gt;
+&lt;p&gt;Late january 2024, I accompanied students of INSA Rouen to a competition of
+competitive programming : the SWERC 2024 in Paris (&lt;a href="https://swerc.eu/2023/)"&gt;https://swerc.eu/2023/)&lt;/a&gt;. This
+contest is an international contest between teams of universities from 6 south western
+Europe countries, part of the more global ICPC. The contest consists in solving 13 problems of different
+difficulties using raw Python, C++ or other languages in 5 hours. Each problem
+is a statement with some rules, and must be solved under some constraints which
+forbids a naive and straightforward implementation.&lt;/p&gt;</description></item><item><title>Advent of Code 2023</title><link>https://bgauzere.github.io/news/aoc2023/</link><pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/aoc2023/</guid><description>&lt;h1 id="advent-of-code-2023"&gt;Advent of code 2023&lt;/h1&gt;
+&lt;p&gt;For the second year, I spent too much time in December to solve the problems of
+the &lt;strong&gt;advent of code&lt;/strong&gt; : &lt;a href="https://adventofcode.com/"&gt;https://adventofcode.com/&lt;/a&gt;. Finally, I was quite happy to
+get the 50 stars. I really like this challenge because it&amp;rsquo;s very well designed
+from an algorithmic point of view. Each problem is divided into two
+levels. Generally the first one can be solved by using a brute force and naive
+strategy, while the second part generally requires to find some tricks to
+accelerate the computation and find the right solution.&lt;/p&gt;</description></item><item><title>Master Internship on GNN and Fair Machine Learning</title><link>https://bgauzere.github.io/news/intern_famous/</link><pubDate>Mon, 27 Nov 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/intern_famous/</guid><description>&lt;p&gt;Starting in next february/march, we are looking at a master student to work at
+the interface of Graph Neural Networks and fair machine learning. This
+internship will be part of ANR FAMOUS project, with a close collaboration with
+INT of Marseille.&lt;/p&gt;
+&lt;p&gt;The internship will located in Rouen, with App Team of LITIS Lab.&lt;/p&gt;
+&lt;p&gt;More details on the internship in this &lt;a href="internship_position.pdf"&gt;document&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Feel free to reach me if you are interested !&lt;/p&gt;</description></item><item><title>Machine Learning on Graph Working Group</title><link>https://bgauzere.github.io/news/gt_graphes/</link><pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/gt_graphes/</guid><description>&lt;p&gt;&lt;img src="brain_graph.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://www.litislab.fr/equipe/app"&gt;App Team&lt;/a&gt; at the &lt;a href="https://www.litislab.fr/"&gt;LITIS Lab&lt;/a&gt; boasts significant expertise in graph-based machine learning, a field we have been engaged in for many years. Our team&amp;rsquo;s focus has intensified recently, especially due to the burgeoning interest in machine learning applications for graph data. Collaborative efforts with the &lt;a href="https://www.greyc.fr/"&gt;GREYC&lt;/a&gt; and &lt;a href="https://lifat.univ-tours.fr"&gt;LIFAT&lt;/a&gt; labs have further helped us consolidate our focus in this domain.&lt;/p&gt;
+&lt;p&gt;Our involvement in the &lt;a href="https://www.normastic.fr/analyse-de-graphes-appliquee-a-la-chemoinformatique/"&gt;AGAC project&lt;/a&gt; marked a pivotal point, leading to notable discoveries in the realm of Graph Neural Networks, as documented in our publications [&lt;a href="https://normandie-univ.hal.science/hal-03135633/"&gt;1&lt;/a&gt;, &lt;a href="http://proceedings.mlr.press/v139/balcilar21a.html"&gt;2&lt;/a&gt;]. Building on these achievements, we embarked on the ambitious &lt;a href="https://www.normastic.fr/projet-anr-codegnn/"&gt;ANR CodeGNN project&lt;/a&gt;. This project aims to delve into three key areas: convolution techniques, pooling methods in Graph Neural Networks (GNNs), and the application of GNNs to spatio-temporal graph data.&lt;/p&gt;</description></item><item><title>A new school year just begun</title><link>https://bgauzere.github.io/news/insa_2023_2024/</link><pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/insa_2023_2024/</guid><description>&lt;p&gt;A new school year has just begun at &lt;a href="https://www.insa-rouen.fr/"&gt;INSA Rouen
+Normandie&lt;/a&gt;, providing an opportunity to introduce the various courses in which I am involved:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://moodle.insa-rouen.fr/course/view.php?id=159"&gt;Ananum.&lt;/a&gt; In this course, we teach numerical methods for solving linear problems using LU, PALU, Cholesky, and other matrix decomposition techniques. We also delve into SVD problems and iterative methods.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://moodle.insa-rouen.fr/course/view.php?id=92"&gt;Introduction to Machine
+Learning.&lt;/a&gt; Before delving into deep learning and its extensive ecosystem, we revisit the fundamentals and explore alternative methods. It&amp;rsquo;s essential to keep an eye on various aspects! In this lesson, we cover topics such as clustering, evaluation protocols, optimization, SVM, Bayesian methods, and more.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://moodle.insa-rouen.fr/course/view.php?id=1206"&gt;Operationnal
+Research.&lt;/a&gt; Apart from machine learning, many problem-solving
+approaches rely on pure algorithms. In this course, we delve into resolution
+methods based on graphs, including the renowned Fulkerson algorithm, graph
+theory, and graph isomorphism problems. We also discuss how to model problems
+effectively.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We look forward to reconvening in January for the second-semester courses !&lt;/p&gt;</description></item><item><title>Two new ANR projects and one paper at ACPR 2023</title><link>https://bgauzere.github.io/news/anr_2023/</link><pubDate>Mon, 28 Aug 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/anr_2023/</guid><description>&lt;h1 id="two-new-anr-projects-for-2023"&gt;Two new ANR projects for 2023&lt;/h1&gt;
+&lt;p&gt;For this year, two projects have been funded. First, &lt;strong&gt;ANR FAMOUS&lt;/strong&gt; will focus on designing fair ML models, including models operating on graphs. This page will be updated with the link to the projects for further details. Note that we will seek for PhD students to work on this topic. Feel free to drop an email if interested. Second, &lt;strong&gt;ANR OOD&lt;/strong&gt; is an ANR project dedicating to the App team of LITIS. In this project, we will focus on anomaly detection. More to come soon.&lt;/p&gt;</description></item><item><title>Participation to GbR 2023 in Salerno</title><link>https://bgauzere.github.io/news/gbr_2023/</link><pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/gbr_2023/</guid><description>&lt;h1 id="gbr-2023-"&gt;GbR 2023 !&lt;/h1&gt;
+&lt;p&gt;Together with Paul Honeine, Luc Brun and the two PhD students Stevan Stanovic et
+Clément Gledel, we have two papers accepted in IAPR TC 15 conference :
+Graph-based Representations for Pattern Recognition which will be held in
+Salerno next september.&lt;/p&gt;
+&lt;p&gt;The two papers are :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Graph Normalizing Flows to Pre-image Free Machine Learning for Regression&lt;/strong&gt;,
+with &lt;strong&gt;Clément Gledel&lt;/strong&gt; and Paul Honeine on the definition of machine learning
+models operating on graphs without the problem of preimage, hence bringing
+explicability to our models.&lt;/p&gt;</description></item><item><title>Recrutement thèse GRANIT - Caractérisation des dynamiques spatiales dans le cadre de sources géolocalisées et non géolocalisée</title><link>https://bgauzere.github.io/news/these_granit/</link><pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/these_granit/</guid><description>&lt;h1 id="caractérisation-des-dynamiques-spatiales-dans-le-cadre-de-sources-géolocalisées-et-non-géolocalisée"&gt;Caractérisation des dynamiques spatiales dans le cadre de sources géolocalisées et non géolocalisée&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Démarrage&lt;/strong&gt; : septembre 2023&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contacts&lt;/strong&gt; : &lt;a href="mailto:geraldine.del_mondo@insa-rouen.fr"&gt;geraldine.del_mondo@insa-rouen.fr&lt;/a&gt;, &lt;a href="mailto:benoit.gauzere@insa-rouen.fr"&gt;benoit.gauzere@insa-rouen.fr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lieu&lt;/strong&gt; : LITIS, INSA Rouen&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Profil attendu&lt;/strong&gt; : Master 2 en informatique/IA, des compétences minimales en
+théorie des graphes sont requises&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Salaire mensuel brut&lt;/strong&gt; : 2044,12 euros&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mots clés&lt;/strong&gt; : algorithme de graphe, extraction de patterns spatio-temporel,
+isomorphismes de graphes, application aux données historiques, modélisation par graphes, analyse spatio-temporelle&lt;/li&gt;
+&lt;li&gt;&lt;a href="these_granit.pdf"&gt;&lt;strong&gt;Sujet de thèse&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Implémentation de différents tests d'isomorphisme de graphes</title><link>https://bgauzere.github.io/news/graph_isomorphism/</link><pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/news/graph_isomorphism/</guid><description>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Dans ce document, nous allons implémenter différents algorithmes d&amp;rsquo;isomorphismes de sous graphes, optimaux ou non.&lt;/p&gt;
+&lt;p&gt;Dans un premier temps, nous allons nous concentrer sur 3 algorithmes différents, à savoir :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Weisfeler-Lehman : revenu à la mode avec le noyau sur graphe puis les graph neural network&lt;/li&gt;
+&lt;li&gt;Morgan Numbering (TODO): utilisé en chimie, assez similaire à Weisfeler-Lehman dans le principe&lt;/li&gt;
+&lt;li&gt;VF2 (TODO): un algorithme d&amp;rsquo;isomorphisme de graphes reconnu, dévellopé au MIVIA lab de Salerno&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="création-des-graphes"&gt;Création des graphes&lt;/h1&gt;
+&lt;p&gt;Avant d&amp;rsquo;implémenter les algos, nous allons créer 3 graphes simples à visualiser. Deux d&amp;rsquo;entre eux ($G_1$ et $G_3$) sont isormorphes. C&amp;rsquo;est à dire qu&amp;rsquo;ils représentent le même graphe, mais que l&amp;rsquo;ordre des noeuds de chacun des graphes est différent. Il y a une permutation des nœuds.&lt;/p&gt;</description></item><item><title>Teaching activities</title><link>https://bgauzere.github.io/teaching/</link><pubDate>Sun, 07 Aug 2022 14:06:29 +0200</pubDate><guid>https://bgauzere.github.io/teaching/</guid><description>&lt;h1 id="teaching-activities"&gt;Teaching activities&lt;/h1&gt;
+&lt;p&gt;Most of my teaching activities are carried out at &lt;a href="https://www.insa-rouen.fr/"&gt;INSA Rouen Normandie&lt;/a&gt;, within the computer science and information technology department (&lt;a href="https://www.insa-rouen.fr/formation/specialites-ingenieurses/informatique-et-technologie-de-linformation"&gt;ITI&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;My teaching covers numerical analysis, algorithms, statistics, optimization, and machine learning, with a particular interest in keeping courses closely connected to current tools and research topics.&lt;/p&gt;
+&lt;p&gt;Here is a selection of the main courses and teaching activities.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://moodle.insa-rouen.fr/course/view.php?id=159"&gt;Numerical Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Matrix factorization (LU, QR, Cholesky), linear systems, eigensystems, iterative methods, and scientific computing foundations.&lt;/p&gt;</description></item><item><title/><link>https://bgauzere.github.io/gml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/gml/</guid><description>&lt;h1 id="graph-machine-learning-in-yamoussoukro"&gt;Graph Machine Learning in Yamoussoukro&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;23rd to 29th of November 2025&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In this webpage, you will find all ressources for my lessons, together with the
+corrections&lt;/p&gt;
+&lt;h2 id="lessons"&gt;Lessons&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="https://bgauzere.github.io/gml/1_introduction_to_graphs.html"&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bgauzere.github.io/gml/2_Algorithms_on_graphs.html"&gt;Algorithms on Graphs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bgauzere.github.io/gml/3_Intro_ML_on_Graphs.html"&gt;Introduction to Machine Learning with
+Graphs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bgauzere.github.io/gml/4_Graph_Embedding.html"&gt;Node and Graph Embeddings Techniques&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bgauzere.github.io/gml/5_GNN.html"&gt;Graph Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bgauzere.github.io/gml/6_Advanced_GNN.html"&gt;Advanced GNN&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="practical-works"&gt;Practical works&lt;/h2&gt;
+&lt;p&gt;Download all materials for the practicals sessions &lt;a href="https://bgauzere.github.io/gml/practical.zip"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Corrections are available &lt;a href="https://bgauzere.github.io/gml/corrections.zip"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="drive"&gt;Drive&lt;/h2&gt;
+&lt;p&gt;Ressources utilisées pour le cours : &lt;a href="https://drive.google.com/drive/folders/1xk41O1oG9dw0dltnqm5GrJWIwdHRBIpT?usp=sharing"&gt;lien google drive&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="references"&gt;References&lt;/h2&gt;
+&lt;h3 id="neural-networks"&gt;Neural Networks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU"&gt;Machine Learning course of Andrew
+Ng&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.manning.com/books/deep-learning-with-python"&gt;Book : Deep Learning with
+Python of François Chollet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.packtpub.com/en-us/product/python-machine-learning-9781789955750"&gt;Python Machine Learning de Sebastian
+Raschka&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.college-de-france.fr/fr/chaire/yann-lecun-informatique-et-sciences-numeriques-chaire-annuelle/events"&gt;Cours de Yann LeCun au Collège de
+France&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.3blue1brown.com/topics/neural-networks"&gt;Chaine Youtube 3Blue1Brown, Series Neural
+Networks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="gnns"&gt;GNNs&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=w6Pw4MOzMuo"&gt;Keynote ICLR 2021 of Michael
+Bronstein&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://geometricdeeplearning.com/book/"&gt;Geometric Deep Learning Book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cs.mcgill.ca/~wlh/grl_book/"&gt;Graph Representation Learning Book of
+W. Hamilton&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reference Lessons&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://web.stanford.edu/class/cs224w/"&gt;Jure Leskovec&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/xbresson/GML2023"&gt;Xavier Bresson&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dataflowr.github.io/website/"&gt;Marc Lelarge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://universitice.univ-rouen.fr/course/view.php?id=8224"&gt;Sébastien Adam&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="projectcompetition"&gt;Project/Competition&lt;/h2&gt;
+&lt;p&gt;To complete the project, do your best on the Kaggle competition &lt;a href="https://www.kaggle.com/t/69c3d02732344c31a23f11ae0d4de5fc"&gt;Graph Machine
+Learning in
+Yamoussoukro&lt;/a&gt;
+The deadline is set to Friday 20th of December. A report (jupyter notebook is
+ok) explaining your work and strategy is required to be sent by mail at
+&lt;a href="mailto:benoit.gauzere@insa-rouen.fr"&gt;benoit.gauzere@insa-rouen.fr&lt;/a&gt; with subject [Project GMLY].&lt;/p&gt;</description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;p&gt;g# Research Activities&lt;/p&gt;
+&lt;p&gt;My current research lies at the interface of graph-based representation of data and the definition of machine learning methods operating on graphs. In my recent works, I focused on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;learning edit costs for graph edit distance&lt;/li&gt;
+&lt;li&gt;improving pooling layers for GNN&lt;/li&gt;
+&lt;li&gt;defining methods to alleviate the problem of the preimage of graphs&lt;/li&gt;
+&lt;li&gt;applying graph-based machine learning methods to chemoinformatics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An up-to-date list of publications can be found on &lt;a href="https://scholar.google.com/citations?user=YqmqE9gAAAAJ&amp;amp;hl=fr"&gt;Google Scholar&lt;/a&gt;.
+All publications are available for download on &lt;a href="https://cv.archives-ouvertes.fr/benoit-gauzere?langChosen=fr"&gt;HAL&lt;/a&gt;. If you still need any pdf, please drop me a mail.&lt;/p&gt;</description></item><item><title/><link>https://bgauzere.github.io/tpia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/tpia/</guid><description>&lt;h1 id="-tp---découverte-de-lintelligence-artificielle--entraînez-un-modèle-pour-reconnaître-des-images"&gt;🧠 TP - Découverte de l’Intelligence Artificielle : entraînez un modèle pour reconnaître des images&lt;/h1&gt;
+&lt;p&gt;Bienvenue dans ce TP où tu vas découvrir comment fonctionne &lt;strong&gt;l’apprentissage automatique (machine learning)&lt;/strong&gt; en créant &lt;strong&gt;un modèle qui reconnaît des images&lt;/strong&gt;, sans avoir besoin d’écrire de code au départ !&lt;/p&gt;
+&lt;p&gt;Nous allons :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;créer un modèle pour reconnaître &lt;strong&gt;des chiens et des chats&lt;/strong&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;le tester automatiquement en Python&lt;/strong&gt; avec Google Colab,&lt;/li&gt;
+&lt;li&gt;et même essayer de créer &lt;strong&gt;ton propre modèle avec d’autres images&lt;/strong&gt; !&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-partie-1--créer-un-premier-modèle-avec-teachable-machine"&gt;🔍 Partie 1 – Créer un premier modèle avec Teachable Machine&lt;/h2&gt;
+&lt;p&gt;👉 Lien : &lt;a href="https://teachablemachine.withgoogle.com/train/image"&gt;Teachable Machine - Image Project&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

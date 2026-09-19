@@ -1,0 +1,103 @@
+{
+  "site": {
+    "title": "Les oiseaux autour de Romilly sur Andelle",
+    "intro": ""
+  },
+  "sections": [
+    {
+      "id": "oiseaux",
+      "label": "Les oiseaux",
+      "title": "Qui avons nous autour de nous ?",
+      "description": "Touche une photo pour la voir en grand, ou le haut-parleur pour écouter l’oiseau.",
+      "birds": [
+        {"id":"hirondelle-rustique","name":"Hirondelle rustique","scientific":"Hirundo rustica","fact":"Elle file dans le ciel pour attraper les insectes en plein vol.","photos":["assets/images/hirondelle-rustique-1.jpg"],"audio":"assets/audio/hirondelle-rustique.mp3"},
+        {"id":"pie-bavarde","name":"Pie bavarde","scientific":"Pica pica","fact":"Son plumage noir et blanc brille de bleu et de vert au soleil.","photos":["assets/images/pie-bavarde-1.jpg"],"audio":"assets/audio/pie-bavarde.mp3","externalPhoto":true},
+        {"id":"pigeon-ramier","name":"Pigeon ramier","scientific":"Columba palumbus","fact":"On le reconnaît à la tache blanche de chaque côté de son cou.","photos":["assets/images/pigeon-ramier-1.jpg"],"audio":"assets/audio/pigeon-ramier.mp3","externalPhoto":true},
+        {"id":"chardonneret-elegant","name":"Chardonneret élégant","scientific":"Carduelis carduelis","fact":"Son masque rouge et ses ailes jaunes font penser à un petit clown.","photos":["assets/images/chardonneret-elegant-2.jpg","assets/images/chardonneret-elegant-1.jpg"],"audio":"assets/audio/chardonneret-elegant.mp3"},
+        {"id":"mesange-bleue","name":"Mésange bleue","scientific":"Cyanistes caeruleus","fact":"Une minuscule acrobate coiffée d’une calotte bleue.","photos":["assets/images/mesange-bleue-1.jpg","assets/images/mesange-bleue-2.jpg","assets/images/mesange-bleue-3.jpg"],"audio":"assets/audio/mesange-bleue.mp3"},
+        {"id":"mesange-charbonniere","name":"Mésange charbonnière","scientific":"Parus major","fact":"Sa cravate noire traverse son ventre jaune.","photos":["assets/images/mesange-charbonniere-1.jpg","assets/images/mesange-charbonniere-2.jpg","assets/images/mesange-charbonniere-3.jpg"],"audio":"assets/audio/mesange-charbonniere.mp3"},
+        {"id":"bergeronnette-grise","name":"Bergeronnette grise","scientific":"Motacilla alba","fact":"Elle marche vite en balançant sans arrêt sa longue queue.","photos":["assets/images/bergeronnette-grise-1.jpg"],"audio":"assets/audio/bergeronnette-grise.mp3"},
+        {"id":"moineau-domestique","name":"Moineau domestique","scientific":"Passer domesticus","fact":"Ce petit voisin pépie près des maisons et vit volontiers en groupe.","photos":["assets/images/moineau-domestique-1.jpg"],"audio":"assets/audio/moineau-domestique.mp3","externalPhoto":true},
+        {"id":"tourterelle-turque","name":"Tourterelle turque","scientific":"Streptopelia decaocto","fact":"Son collier noir dessine un petit croissant derrière son cou.","photos":["assets/images/tourterelle-turque-1.jpg"],"audio":"assets/audio/tourterelle-turque.mp3","externalPhoto":true},
+        {"id":"pinson-des-arbres","name":"Pinson des arbres","scientific":"Fringilla coelebs","fact":"Au printemps, le mâle chante perché bien en vue.","photos":["assets/images/pinson-des-arbres-3.jpg","assets/images/pinson-des-arbres-2.jpg","assets/images/pinson-des-arbres-1.jpg"],"audio":"assets/audio/pinson-des-arbres.ogg"},
+        {"id":"grosbec-casse-noyaux","name":"Gros-bec casse-noyaux","scientific":"Coccothraustes coccothraustes","fact":"Son bec très puissant ouvre les noyaux et les graines les plus dures.","photos":["assets/images/grosbec-1.jpg","assets/images/grosbec-2.jpg","assets/images/grosbec-3.jpg"],"audio":"assets/audio/grosbec-casse-noyaux.mp3"},
+        {"id":"etourneau-sansonnet","name":"Étourneau sansonnet","scientific":"Sturnus vulgaris","fact":"Son plumage sombre brille de mille couleurs et il sait imiter d’autres sons.","photos":["assets/images/etourneau-sansonnet-1.jpg"],"audio":"assets/audio/etourneau-sansonnet.mp3"},
+        {"id":"heron-cendre","name":"Héron cendré","scientific":"Ardea cinerea","fact":"Immobile au bord de l’eau, il attend patiemment qu’un poisson passe.","photos":["assets/images/heron-cendre-1.jpg"],"audio":"assets/audio/heron-cendre.mp3"},
+        {"id":"mesange-longue-queue","name":"Mésange à longue queue","scientific":"Aegithalos caudatus","fact":"Cette petite boule de plumes se déplace en famille, avec une queue presque aussi longue que son corps.","photos":["assets/images/mesange-longue-queue-1.jpg"],"audio":"assets/audio/mesange-longue-queue.mp3"},
+        {"id":"mesange-nonnette","name":"Mésange nonnette","scientific":"Poecile palustris","fact":"Sa calotte noire brillante et sa petite bavette permettent de la reconnaître.","photos":["assets/images/mesange-nonnette-1.jpg"],"audio":"assets/audio/mesange-nonnette.ogg"},
+        {"id":"pic-vert","name":"Pic vert","scientific":"Picus viridis","fact":"Il cherche souvent des fourmis au sol et son rire porte très loin.","photos":["assets/images/pic-vert-1.jpg"],"audio":"assets/audio/pic-vert.mp3"},
+        {"id":"pic-noir","name":"Pic noir","scientific":"Dryocopus martius","fact":"C’est le plus grand pic d’Europe, tout noir avec une calotte rouge.","photos":["assets/images/pic-noir-portrait.jpg"],"audio":"assets/audio/pic-noir.mp3"},
+        {"id":"pic-epeiche","name":"Pic épeiche","scientific":"Dendrocopos major","fact":"Il tambourine sur les troncs avec son bec pour communiquer.","photos":["assets/images/pic-epeiche-1.jpg","assets/images/pic-epeiche-2.jpg"],"audio":"assets/audio/pic-epeiche.mp3"},
+        {"id":"rougegorge-familier","name":"Rougegorge familier","scientific":"Erithacus rubecula","fact":"Curieux et peu farouche, il montre fièrement sa poitrine orange.","photos":["assets/images/rougegorge-2.jpg","assets/images/rougegorge-3.jpg","assets/images/rougegorge-1.jpg"],"audio":"assets/audio/rougegorge-familier.mp3"},
+        {"id":"verdier-europe","name":"Verdier d’Europe","scientific":"Chloris chloris","fact":"Son plumage vert olive est traversé d’un éclair jaune sur les ailes.","photos":["assets/images/verdier-1.jpg","assets/images/verdier-2.jpg"],"audio":"assets/audio/verdier-europe.ogg"}
+      ]
+    },
+    {
+      "id": "bonus",
+      "label": "Bonus",
+      "title": "Trois rencontres surprises",
+      "description": "Des oiseaux plus secrets, aperçus au bon moment.",
+      "birds": [
+        {"id":"chouette-cheveche","name":"Chouette chevêche","scientific":"Athene noctua","fact":"Petite chouette aux grands yeux jaunes, elle chasse surtout à la tombée du jour.","photos":["assets/images/chouette-cheveche-1.jpg"],"audio":"assets/audio/chouette-cheveche-extrait.mp3"},
+        {"id":"huppe-fasciee","name":"Huppe fasciée","scientific":"Upupa epops","fact":"Quand elle est surprise, elle déploie sa grande huppe comme un éventail.","photos":["assets/images/huppe-fasciee-1.jpg"],"audio":"assets/audio/huppe-fasciee.ogg"},
+        {"id":"tourterelle-des-bois","name":"Tourterelle des bois","scientific":"Streptopelia turtur","fact":"Son doux roucoulement accompagne les beaux jours, quand elle revient d’Afrique.","photos":["assets/images/tourterelle-des-bois-1.jpg"],"audio":"assets/audio/tourterelle-des-bois.mp3"}
+      ]
+    }
+  ],
+  "story": {
+    "id": "pic-noir",
+    "label": "Le pic noir",
+    "title": "Le nourrissage du pic noir !",
+    "description": "Une histoire en images : les parents pics noirs reviennent à la loge pour nourrir leurs petits.",
+    "scientific": "Dryocopus martius",
+    "audio": "assets/audio/pic-noir.mp3",
+    "cover": "assets/images/pic-noir-portrait.jpg",
+    "photos": [
+      {"src":"assets/images/pic-noir-4.jpg","caption":"Les petits sont à la loge."},
+      {"src":"assets/images/pic-noir-1.jpg","caption":"Un parent arrive."},
+      {"src":"assets/images/pic-noir-5.jpg","caption":"Les petits ont entendu. Ils réclament."},
+      {"src":"assets/images/pic-noir-6.jpg","caption":"Le parent donne la becquée."},
+      {"src":"assets/images/pic-noir-7.jpg","caption":"Encore un petit effort !"},
+      {"src":"assets/images/pic-noir-2.jpg","caption":"Il est temps de changer de parent."},
+      {"src":"assets/images/pic-noir-3.jpg","caption":"Hop, on échange !"},
+      {"src":"assets/images/pic-noir-8.jpg","caption":"À la prochaine !"}
+    ]
+  },
+  "credits": {
+    "photos": [
+      {"label":"Pie bavarde — Charles J. Sharp, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Common_magpie_(Pica_pica).jpg"},
+      {"label":"Pigeon ramier — Alexis Lours, CC BY 2.0","url":"https://commons.wikimedia.org/wiki/File:Close-up_picture_of_a_common_wood_pigeon.jpg"},
+      {"label":"Moineau domestique — Rhododendrites, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:House_sparrow_male_in_Prospect_Park_(53532).jpg"},
+      {"label":"Tourterelle turque — Mildeep, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Eurasian_Collared-Dove.jpg"},
+      {"label":"Chardonneret élégant — Francis C. Franklin, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Carduelis_carduelis_close_up.jpg"},
+      {"label":"Pinson des arbres — Charles J. Sharp, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Chaffinch_(Fringilla_coelebs)_male.jpg"}
+    ],
+    "audio": [
+      {"label":"Hirondelle rustique — Jonathon Jongsma, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Hirundo_rustica_-_Barn_Swallow_XC254488.mp3"},
+      {"label":"Pie bavarde — Joost van Bruggen, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Pica_pica_-_Eurasian_Magpie_XC432921.mp3"},
+      {"label":"Pigeon ramier — Benoît Van Hecke, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Columba_palumbus_-_Common_Wood_Pigeon_XC561877.mp3"},
+      {"label":"Chardonneret élégant — Sander Pieterse, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Carduelis_carduelis_-_European_Goldfinch_XC101463.mp3"},
+      {"label":"Mésange bleue — NobbiP, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Blaumeise_Cyanistes_caeruleus_0066c.mp3"},
+      {"label":"Mésange charbonnière — NobbiP, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Kohlmeise_Parus_major_0066b.mp3"},
+      {"label":"Bergeronnette grise — Pascal Christe, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Motacilla_alba_-_White_Wagtail_XC466458.mp3"},
+      {"label":"Moineau domestique — NobbiP, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Haussperling_Passer_domesticus_0066e.mp3"},
+      {"label":"Tourterelle turque — Jonathon Jongsma, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Streptopelia_decaocto_-_Eurasian_Collared_Dove_XC82758.mp3"},
+      {"label":"Pinson des arbres — Herr Küppers, CC BY-SA 2.0 DE","url":"https://commons.wikimedia.org/wiki/File:Buchfinkenruf.ogg"},
+      {"label":"Chouette chevêche — Nikolaos Sarikakis, CC BY-SA 4.0 (extrait de 25 s)","url":"https://commons.wikimedia.org/wiki/File:Athene_noctua_-_Little_Owl_XC309481.mp3"},
+      {"label":"Huppe fasciée — Vladimir Yu. Arkhipov, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Upupa_epops.ogg"},
+      {"label":"Pic noir — Klaus-Jürgen Papke, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Dryocopus_martius_-_Black_Woodpecker_XC407246.mp3"},
+      {"label":"Gros-bec casse-noyaux — Benoît Van Hecke, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Coccothraustes_coccothraustes_-_Hawfinch_XC541308.mp3"},
+      {"label":"Étourneau sansonnet — Marie-Lan Taÿ Pamart, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Sturnus_vulgaris_-_Common_Starling_XC473248.mp3"},
+      {"label":"Héron cendré — Joost van Bruggen, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Ardea_cinerea_-_Grey_Heron_XC432231.mp3"},
+      {"label":"Mésange à longue queue — Jonathon Jongsma, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Aegithalos_caudatus_-_Long-tailed_Tit_XC114614.mp3"},
+      {"label":"Mésange nonnette — Vladimir Yu. Arkhipov, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Poecile_palustris.ogg"},
+      {"label":"Pic vert — Joost van Bruggen, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Picus_viridis_-_European_Green_Woodpecker_XC433289.mp3"},
+      {"label":"Pic épeiche — Alexander Kürthy, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Dendrocopos_major_-_Great_Spotted_Woodpecker_XC309807.mp3"},
+      {"label":"Rougegorge familier — Jonathon Jongsma, CC BY-SA 3.0","url":"https://commons.wikimedia.org/wiki/File:Erithacus_rubecula_-_European_Robin_XC114615.mp3"},
+      {"label":"Verdier d’Europe — Hugo.arg, CC0","url":"https://commons.wikimedia.org/wiki/File:Carduelis_chloris_song.ogg"},
+      {"label":"Tourterelle des bois — Alexander Kürthy, CC BY-SA 4.0","url":"https://commons.wikimedia.org/wiki/File:Streptopelia_turtur_-_European_Turtle_Dove_XC481626.mp3"}
+    ],
+    "photoAuthor": "Photographies personnelles : Benoit Gaüzère.",
+    "note": "Six photographies libres complètent la collection : quatre pour les espèces absentes, plus une nouvelle vue du chardonneret élégant et du pinson des arbres. Leurs crédits sont indiqués ci-dessous. Les chants libres sont crédités sur leur fiche Wikimedia Commons."
+  }
+}
