@@ -1,8 +1,9 @@
 {{ $.Scratch.Set "currentYear" "" }}
 
 <div class="publications-list">
+  {{ with hugo.Data.publications }}
   {{/* 1. On trie sur le champ "date" en ordre décroissant */}}
-  {{ range sort .Site.Data.publications "date" "desc" }}
+  {{ range sort . "date" "desc" }}
     
     {{/* Zotero peut exporter "2020" ou "2020-03". On ne garde que les 4 premiers caractères */}}
     {{ $date := index . "date" | default "Date inconnue" }}
@@ -82,4 +83,7 @@
   {{ end }}
   
   {{ if ne ($.Scratch.Get "currentYear") "" }}</ul>{{ end }}
+  {{ else }}
+    <p>La liste des publications n'a pas encore été générée.</p>
+  {{ end }}
 </div>

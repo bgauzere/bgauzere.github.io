@@ -1,5 +1,5 @@
 baseURL = 'https://bgauzere.github.io'
-languageCode = 'en-us'
+locale = 'en-US'
 title = 'Benoit Gaüzère website'
 theme = "researcher" #"PaperMod"# https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
 # Enabling taxonomies for proper post handling
@@ -42,7 +42,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
     url = "https://scholar.google.com/citations?hl=en&user=YqmqE9gAAAAJ"
 
 [permalinks]
-  "/" = "/:filename"
+  "/" = "/:contentbasename"
 
 [menu]
   [[menu.main]]
