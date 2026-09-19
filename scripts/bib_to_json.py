@@ -1,7 +1,7 @@
 # /// script
 # requires-python = ">=3.9"
 # dependencies = [
-#     "bibtexparser",
+#     "bibtexparser~=1.0",
 # ]
 # ///
 
