@@ -1,12 +1,22 @@
 {{ define "main" }}
-<main>
+<main class="container">
   <header>
     <h1>{{ .Title }}</h1>
-  </header>
-  <div>
-    {{ range .Pages }}
-      {{ .Render "summary" }}
+    {{ with .Content }}
+      <div>{{ . }}</div>
     {{ end }}
-  </div>
+  </header>
+  <ul>
+    {{ range .Pages.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}">
+          {{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}
+        </a>
+        {{ with .Description }}
+          <p>{{ . }}</p>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
 </main>
 {{ end }}
