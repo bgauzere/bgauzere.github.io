@@ -277,7 +277,7 @@ isomorphismes de graphes, application aux données historiques, modélisation pa
 &lt;/ul&gt;
 &lt;p&gt;Matrix factorization (LU, QR, Cholesky), linear systems, eigensystems, iterative methods, and scientific computing foundations.&lt;/p&gt;</description></item><item><title/><link>https://bgauzere.github.io/gml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/gml/</guid><description>&lt;h1 id="graph-machine-learning-in-yamoussoukro"&gt;Graph Machine Learning in Yamoussoukro&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;23rd to 29th of November 2025&lt;/p&gt;
+&lt;p&gt;23rd to 27th of November 2026&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;In this webpage, you will find all ressources for my lessons, together with the
 corrections&lt;/p&gt;
@@ -329,7 +329,7 @@ W. Hamilton&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id="projectcompetition"&gt;Project/Competition&lt;/h2&gt;
-&lt;p&gt;To complete the project, do your best on the Kaggle competition &lt;a href="https://www.kaggle.com/t/69c3d02732344c31a23f11ae0d4de5fc"&gt;Graph Machine
+&lt;p&gt;To complete the project, do your best on the Kaggle competition &lt;a href="https://www.kaggle.com/competitions/graph-machine-learning-in-yamoussoukro-2026"&gt;Graph Machine
 Learning in
 Yamoussoukro&lt;/a&gt;
 The deadline is set to Friday 20th of December. A report (jupyter notebook is
