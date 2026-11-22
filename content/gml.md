@@ -1,5 +1,5 @@
 # Graph Machine Learning in Yamoussoukro 
-> 23rd to 29th of November 2025
+> 23rd to 27th of November 2026
 
 In this webpage, you will find all ressources for my lessons, together with the
 corrections
@@ -57,7 +57,7 @@ Ressources utilisées pour le cours : [lien google drive](https://drive.google.c
 
 To complete the project, do your best on the Kaggle competition [Graph Machine
 Learning in
-Yamoussoukro](https://www.kaggle.com/t/69c3d02732344c31a23f11ae0d4de5fc)
+Yamoussoukro](https://www.kaggle.com/competitions/graph-machine-learning-in-yamoussoukro-2026)
 The deadline is set to Friday 20th of December. A report (jupyter notebook is
 ok) explaining your work and strategy is required to be sent by mail at
 benoit.gauzere@insa-rouen.fr with subject [Project GMLY].
