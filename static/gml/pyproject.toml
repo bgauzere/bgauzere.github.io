@@ -1,0 +1,38 @@
+[project]
+name = "gml-yamoussoukro-2026"
+version = "0.1.0"
+description = "Graph Machine Learning practical sessions and corrections"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+    "gensim>=4.4,<5",
+    "graphkit-learn",
+    "ipykernel",
+    "karateclub==1.3.4",
+    "matplotlib",
+    "nbclient",
+    "nbformat",
+    "networkx",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy>=1.16",
+    "tabulate",
+    "torch",
+    "torch-geometric",
+    "tqdm",
+]
+
+[tool.uv]
+# The pinned Karate Club upstream source caps SciPy at 1.12, which predates
+# Python 3.14. Exercise compatibility is covered by the notebook tests.
+override-dependencies = ["scipy>=1.16"]
+
+[tool.uv.sources]
+gensim = { git = "https://github.com/piskvorky/gensim", rev = "37f90ec121eb7cd401448a947e80953e0c53ccdc" }
+karateclub = { git = "https://github.com/benedekrozemberczki/karateclub", rev = "cb46a91df8dcbeb2570debcf6a9d0c518107a2de" }
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

@@ -20,6 +20,8 @@ Download all materials for the practicals sessions [here](/gml/practical.zip)
 
 Corrections are available [here](/gml/corrections.zip). 
 
+You can find a [pyproject.toml](/gml/pyproject.toml) file to configure your python venv.
+
 ## Drive 
 
 Ressources utilisées pour le cours : [lien google drive](https://drive.google.com/drive/folders/1xk41O1oG9dw0dltnqm5GrJWIwdHRBIpT?usp=sharing)
