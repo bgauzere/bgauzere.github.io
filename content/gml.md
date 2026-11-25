@@ -60,7 +60,7 @@ Ressources utilisées pour le cours : [lien google drive](https://drive.google.c
 To complete the project, do your best on the Kaggle competition [Graph Machine
 Learning in
 Yamoussoukro](https://www.kaggle.com/competitions/graph-machine-learning-in-yamoussoukro-2026)
-The deadline is set to Friday 20th of December. A report (jupyter notebook is
+The deadline is set to Saturday 19th of December. A report (jupyter notebook is
 ok) explaining your work and strategy is required to be sent by mail at
 benoit.gauzere@insa-rouen.fr with subject [Project GMLY].
 
