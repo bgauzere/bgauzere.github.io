@@ -294,47 +294,9 @@ Graphs&lt;/a&gt;&lt;/li&gt;
 &lt;h2 id="practical-works"&gt;Practical works&lt;/h2&gt;
 &lt;p&gt;Download all materials for the practicals sessions &lt;a href="https://bgauzere.github.io/gml/practical.zip"&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Corrections are available &lt;a href="https://bgauzere.github.io/gml/corrections.zip"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can find a &lt;a href="https://bgauzere.github.io/gml/pyproject.toml"&gt;pyproject.toml&lt;/a&gt; file to configure your python venv.&lt;/p&gt;
 &lt;h2 id="drive"&gt;Drive&lt;/h2&gt;
-&lt;p&gt;Ressources utilisées pour le cours : &lt;a href="https://drive.google.com/drive/folders/1xk41O1oG9dw0dltnqm5GrJWIwdHRBIpT?usp=sharing"&gt;lien google drive&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="references"&gt;References&lt;/h2&gt;
-&lt;h3 id="neural-networks"&gt;Neural Networks&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU"&gt;Machine Learning course of Andrew
-Ng&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.manning.com/books/deep-learning-with-python"&gt;Book : Deep Learning with
-Python of François Chollet&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.packtpub.com/en-us/product/python-machine-learning-9781789955750"&gt;Python Machine Learning de Sebastian
-Raschka&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.college-de-france.fr/fr/chaire/yann-lecun-informatique-et-sciences-numeriques-chaire-annuelle/events"&gt;Cours de Yann LeCun au Collège de
-France&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.3blue1brown.com/topics/neural-networks"&gt;Chaine Youtube 3Blue1Brown, Series Neural
-Networks&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="gnns"&gt;GNNs&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=w6Pw4MOzMuo"&gt;Keynote ICLR 2021 of Michael
-Bronstein&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://geometricdeeplearning.com/book/"&gt;Geometric Deep Learning Book&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.cs.mcgill.ca/~wlh/grl_book/"&gt;Graph Representation Learning Book of
-W. Hamilton&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Reference Lessons&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://web.stanford.edu/class/cs224w/"&gt;Jure Leskovec&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/xbresson/GML2023"&gt;Xavier Bresson&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://dataflowr.github.io/website/"&gt;Marc Lelarge&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://universitice.univ-rouen.fr/course/view.php?id=8224"&gt;Sébastien Adam&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="projectcompetition"&gt;Project/Competition&lt;/h2&gt;
-&lt;p&gt;To complete the project, do your best on the Kaggle competition &lt;a href="https://www.kaggle.com/competitions/graph-machine-learning-in-yamoussoukro-2026"&gt;Graph Machine
-Learning in
-Yamoussoukro&lt;/a&gt;
-The deadline is set to Friday 20th of December. A report (jupyter notebook is
-ok) explaining your work and strategy is required to be sent by mail at
-&lt;a href="mailto:benoit.gauzere@insa-rouen.fr"&gt;benoit.gauzere@insa-rouen.fr&lt;/a&gt; with subject [Project GMLY].&lt;/p&gt;</description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;p&gt;g# Research Activities&lt;/p&gt;
+&lt;p&gt;Ressources utilisées pour le cours : &lt;a href="https://drive.google.com/drive/folders/1xk41O1oG9dw0dltnqm5GrJWIwdHRBIpT?usp=sharing"&gt;lien google drive&lt;/a&gt;&lt;/p&gt;</description></item><item><title/><link>https://bgauzere.github.io/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bgauzere.github.io/research/</guid><description>&lt;p&gt;g# Research Activities&lt;/p&gt;
 &lt;p&gt;My current research lies at the interface of graph-based representation of data and the definition of machine learning methods operating on graphs. In my recent works, I focused on:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;learning edit costs for graph edit distance&lt;/li&gt;
